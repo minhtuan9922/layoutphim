@@ -5,22 +5,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web phim</title>
+	<link rel="icon" href="img/icon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="img/icon.png" width="24px"></a>
+			<a class="navbar-brand logo" href="#"><img src="img/icon.png"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
@@ -29,24 +31,228 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thể loại</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-menu bg-dark menu-drop" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item text-light" href="#">Action</a>
+							<a class="dropdown-item text-light" href="#">Another action</a>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					<input class="form-control mr-sm-2 bg-secondary text-light input-dark" type="search" placeholder="Tìm kiếm" aria-label="Search">
+					<button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 				</form>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#dangnhap">Đăng nhập</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#dangky">Đăng ký</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
+<!--Model đăng nhập-->
+	<div class="modal fade" id="dangnhap">
+		<div class="modal-dialog">
+			<div class="modal-content bg-dark">
+				<form>
+					<div class="modal-header border-b-dark">
+						<h4 class="modal-title text-light">Đăng nhập</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="email" class="text-light">Email</label>
+							<input type="email" id="email" name="email" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
+						</div>
+						<div class="form-group">
+							<label for="matkhau" class="text-light">Mật khẩu</label>
+							<input type="password" id="matkhau" name="matkhau" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
+						</div>
+					</div>
+					<div class="modal-footer border-t-dark">
+						<p class="text-light text-left">Bạn chưa có tài khoản? <a href="#" data-toggle="modal" data-target="#dangky" data-dismiss="modal">Đăng ký</a></p>
+						<button type="submit" class="btn btn-success">Đăng nhập</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!--Model đăng ký-->
+	<div class="modal fade" id="dangky">
+		<div class="modal-dialog">
+			<div class="modal-content bg-dark">
+				<form>
+					<div class="modal-header border-b-dark">
+						<h4 class="modal-title text-light">Đăng ký</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="email" class="text-light">Email</label>
+							<input type="email" id="email" name="email" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
+						</div>
+						<div class="form-group">
+							<label for="matkhau" class="text-light">Mật khẩu</label>
+							<input type="password" id="matkhau" name="matkhau" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
+						</div>
+						<div class="form-group">
+							<label for="nhaplai_matkhau" class="text-light">Nhập lại mật khẩu</label>
+							<input type="password" id="nhaplai_matkhau" name="nhaplai_matkhau" class="form-control bg-secondary input-dark text-light" placeholder="Nhập lại mật khẩu">
+						</div>
+						<div class="form-group">
+							<label for="ngaysinh" class="text-light">Ngày sinh</label>
+							<input type="date" id="ngaysinh" name="ngaysinh" class="form-control bg-secondary input-dark text-light">
+						</div>
+						<div class="form-group">
+							<label for="matkhau" class="text-light">Giới tính</label>
+							<select class="form-control bg-secondary input-dark text-light">
+								<option>Chọn giới tính</option>
+								<option value="1">Nam</option>
+								<option value="2">Nữ</option>
+							</select>
+						</div>
+					</div>
+					<div class="modal-footer border-t-dark">
+						<p class="text-light text-left">Bạn đã có tài khoản? <a href="#" data-toggle="modal" data-target="#dangnhap" data-dismiss="modal">Đăng nhập</a></p>
+						<button type="submit" class="btn btn-success">Đăng ký</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="slide" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#slide" data-slide-to="0" class="active"></li>
+			<li data-target="#slide" data-slide-to="1"></li>
+			<li data-target="#slide" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active" style="background-image: url(img/slide/backdrop.jpg)">
+				<div class="carousel-caption">
+					<h3>Los Angeles</h3>
+					<p>We had such a great time in LA!</p>
+				</div>   
+			</div>
+			<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
+				<div class="carousel-caption">
+					<h3>Chicago</h3>
+					<p>Thank you, Chicago!</p>
+				</div>   
+			</div>
+			<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
+				<div class="carousel-caption">
+					<h3>New York</h3>
+					<p>We love the Big Apple!</p>
+				</div>   
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#slide" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+			<a class="carousel-control-next" href="#slide" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	<div class="bg-toi wrapper">
+		<div class="container">
+			<h4 class="text-sang text-title">Phim mới cập nhật <i class="fas fa-play"></i></h4>
+			<div class="space25"></div>
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+						</div>
+						<div class="tieude">
+							<a href="#">Đặt tiêu đề phim tại đây.</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<div class="phim">
+						<div class="poster">
+							<img src="img/poster/Aftermath.2017.jpg" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
