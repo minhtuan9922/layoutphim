@@ -124,12 +124,24 @@
 			</div>
 		</div>
 	</div>
-	
+<!--Slide đầu trang-->
 	<div id="slide" class="carousel slide" data-ride="carousel">
 		<ul class="carousel-indicators">
-			<li data-target="#slide" data-slide-to="0" class="active"></li>
-			<li data-target="#slide" data-slide-to="1"></li>
-			<li data-target="#slide" data-slide-to="2"></li>
+			<li data-target="#slide" data-slide-to="0" class="active">
+				<div class="slide-poster">
+					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
+				</div>
+			</li>
+			<li data-target="#slide" data-slide-to="1">
+				<div class="slide-poster">
+					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
+				</div>
+			</li>
+			<li data-target="#slide" data-slide-to="2">
+				<div class="slide-poster">
+					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
+				</div>
+			</li>
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-item active" style="background-image: url(img/slide/backdrop.jpg)">
@@ -158,6 +170,8 @@
 		<span class="carousel-control-next-icon"></span>
 		</a>
 	</div>
+	
+<!--Phần đăng phim-->
 	<div class="bg-toi wrapper">
 		<div class="container">
 			<h4 class="text-sang text-title">Phim mới cập nhật <i class="fas fa-play"></i></h4>
@@ -253,6 +267,24 @@
 			</div>
 		</div>
 	</div>
+	<footer class="bg-dark">
+		<div class="container">
+			<div class="footer">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="text-secondary"><i class="far fa-copyright"></i> 2018 - <?=date('Y')?>. Designed by Minh Tuấn</p>
+					</div>
+					<div class="col-md-6">
+						<ul class="text-md-right footer-icon">
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="#"><i class="far fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

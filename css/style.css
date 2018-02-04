@@ -88,7 +88,7 @@
 	width: 50px;
 }
 .wrapper {
-	padding: 50px 0;
+	padding: 50px 0 20px;
 }
 .phim {
 	position: relative;
@@ -107,7 +107,7 @@
 	position: relative;
 	cursor: pointer;
 }
-.poster:hover {
+.phim:hover .poster {
 	border: 1px solid #DDDDDD;
 	box-shadow: 0 0px 8px #DDDDDD;
 }
@@ -122,7 +122,53 @@
 .tieude a {
 	color: #f8f9fa;
 }
-.tieude a:hover{
+.phim:hover .tieude a{
 	text-decoration: none;
 	color: #FFF56C;
+}
+footer {
+	padding: 30px 0 14px;
+}
+.carousel-indicators {
+	bottom: 0;
+	margin-bottom: 0;
+}
+.carousel-indicators li {
+	text-indent: inherit;
+	width: 100px;
+	opacity: 0.7;
+	transform: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.carousel-indicators li.active, .carousel-indicators li:hover {
+	width: 120px;
+	opacity: 1;
+}
+.slide-poster {
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+}
+.carousel-caption {
+	bottom: 150px;
+}
+.footer-icon {
+	padding-left: 0;
+}
+.footer-icon li {
+	list-style: none;
+	display: inline-block;
+}
+.footer-icon li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+	background: #84806D;
+	color: #0600A3;
+}
+.footer-icon li a:hover {
+	background: #CCCCCC;
 }
