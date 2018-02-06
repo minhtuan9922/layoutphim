@@ -126,183 +126,92 @@
 			</div>
 		</div>
 	</div>
-<!--Slide đầu trang-->
-	<div id="slide" class="carousel slide" data-ride="carousel">
-		<ul class="carousel-indicators">
-			<li data-target="#slide" data-slide-to="0" class="active">
-				<div class="slide-poster">
-					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
-				</div>
-			</li>
-			<li data-target="#slide" data-slide-to="1">
-				<div class="slide-poster">
-					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
-				</div>
-			</li>
-			<li data-target="#slide" data-slide-to="2">
-				<div class="slide-poster">
-					<img src="img/poster/Frozen.2013.jpg" alt="" width="100%">
-				</div>
-			</li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active" style="background-image: url(img/slide/backdrop.jpg)">
-				<div class="carousel-caption">
-					<h3>Los Angeles</h3>
-					<p>We had such a great time in LA!</p>
-				</div>   
+	<div class="space20"></div>
+	<div class="wrapper bg-toi">
+		<div class="container">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1vvFwg_m1IsgltCkAVRaGxgck_R_GEChE/preview" allowfullscreen></iframe>
 			</div>
-			<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
-				<div class="carousel-caption">
-					<h3>Chicago</h3>
-					<p>Thank you, Chicago!</p>
-				</div>   
-			</div>
-			<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
-				<div class="carousel-caption">
-					<h3>New York</h3>
-					<p>We love the Big Apple!</p>
-				</div>   
+			<div class="space20"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="text-sang text-title">Thông tin phim</h4>
+				
+				</div>
+				<div class="col-md-12">
+					<p class="text-sang text-title">Phim cùng thể loại</p>
+					<div class="row">
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+							<div class="phim">
+								<div class="poster">
+									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								</div>
+								<div class="tieude">
+									<a href="#">Đặt tiêu đề phim tại đây.</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="fb-comments" data-href="http://localhost/layoutphim/xemphim" data-numposts="5" width="100%" data-colorscheme="dark"></div>
+				</div>
 			</div>
 		</div>
-		<a class="carousel-control-prev" href="#slide" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-			<a class="carousel-control-next" href="#slide" data-slide="next">
-		<span class="carousel-control-next-icon"></span>
-		</a>
 	</div>
 	
-<!--Phần đăng phim-->
-	<div class="bg-toi wrapper">
-		<div class="container">
-			<h4 class="text-sang text-title">Phim mới cập nhật</h4>
-			<div class="space25"></div>
-			<div class="row">
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-					<div class="phim">
-						<div class="poster">
-							<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-						</div>
-						<div class="tieude">
-							<a href="#">Đặt tiêu đề phim tại đây.</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
+
 	<footer class="bg-dark">
 		<div class="container">
 			<div class="footer">
