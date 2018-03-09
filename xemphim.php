@@ -12,7 +12,6 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/xPYwwjdL.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 
@@ -129,19 +128,53 @@
 	<div class="space20"></div>
 	<div class="wrapper bg-toi">
 		<div class="container">
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1vvFwg_m1IsgltCkAVRaGxgck_R_GEChE/preview" allowfullscreen></iframe>
+			<div class="embed-responsive embed-responsive-16by9" id="khungphim">
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="thuyetminh" role="tabpanel" aria-labelledby="pills-home-tab">
+						<iframe src="https://drive.google.com/file/d/1vvFwg_m1IsgltCkAVRaGxgck_R_GEChE/preview" allowfullscreen></iframe>
+					</div>
+					<div class="tab-pane fade" id="phude" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<iframe src="http://localhost/play/embed.php?url=UVN6Rkhtc0lyNTVIbUFHQm1jM2NqWStPTjExbkRVRDJIVFR4MzFvUlMzYTJuUVEvWW5Qd1lsSVVWTVJ6OTBDVg==" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen></iframe>
+					</div>
+				</div>
+				<ul class="nav nav-pills mb-3 nav-tab" id="tab-button" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="pill" href="#thuyetminh" role="tab" aria-controls="pills-home" aria-selected="true">Thuyết minh</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="pill" href="#phude" role="tab" aria-controls="pills-profile" aria-selected="false">Phụ đề</a>
+					</li>
+				</ul>
 			</div>
+
+
+
 			<div class="space20"></div>
 			<div class="row">
 				<div class="col-md-12">
 					<h4 class="text-sang text-title">Thông tin phim</h4>
-				
-				</div>
-				<div class="col-md-12">
-					<p class="text-sang text-title">Phim cùng thể loại</p>
 					<div class="row">
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-md-3 text-sang">
+							<img class="img-thumbnail" src="img/poster/Pacific.Rim.2013.jpg" alt="" width="100%">
+							<div class="space20"></div>
+						</div>
+						<div class="col-md-9 text-sang">
+							<p>Tên phim: <strong>Tên tiếng anh - Tên tiếng Việt</strong></p>
+							<p>Đạo diễn: Tên đạo diễn</p>
+							<p>Kịch Bản: Emilia Clarke, Kit Harington, Peter Dinklage </p>
+							<p>Diễn viên: Tên diễn viên</p>
+							<p>Diểm imdb: Tên đạo diễn</p>
+							<p>Năm sản xuất: Tên đạo diễn</p>
+							<p>Thể loại:</p>
+							<p>Giới thiệu: Giới thiệu nội dung ngắt gọn về phim</p>
+						</div>
+					</div>
+				</div>
+				<div class="space30"></div>
+				<div class="col-md-12">
+					<h4 class="text-sang text-title">Phim cùng thể loại</h4>
+					<div class="row">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
@@ -151,7 +184,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
@@ -161,7 +194,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
@@ -171,7 +204,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
@@ -181,7 +214,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
@@ -191,7 +224,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 							<div class="phim">
 								<div class="poster">
 									<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>

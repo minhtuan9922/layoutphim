@@ -12,7 +12,8 @@
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/xPYwwjdL.js"></script>
+<!--	<script type="text/javascript" src="js/xPYwwjdL.js"></script>-->
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 
@@ -39,9 +40,10 @@
 						</div>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2 bg-secondary text-light input-dark" type="search" placeholder="Tìm kiếm" aria-label="Search">
+				<form class="form-inline my-2 my-lg-0 form-timkiem">
+					<input class="form-control mr-sm-2 bg-secondary text-light input-dark" type="search" placeholder="Tìm kiếm" aria-label="Search" id="timkiem">
 					<button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+					<div class="ketqua bg-secondary"><a href="#">Kết quả tìm kiếm hiển thị tại đây</a></div>
 				</form>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
@@ -74,7 +76,7 @@
 						</div>
 					</div>
 					<div class="modal-footer border-t-dark">
-						<p class="text-light text-left">Bạn chưa có tài khoản? <a href="#" data-toggle="modal" data-target="#dangky" data-dismiss="modal">Đăng ký</a></p>
+						<p class="text-light text-model-footer">Bạn chưa có tài khoản? <a href="#" data-toggle="modal" data-target="#dangky" data-dismiss="modal">Đăng ký</a></p>
 						<button type="submit" class="btn btn-success">Đăng nhập</button>
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
 					</div>
@@ -118,7 +120,7 @@
 						</div>
 					</div>
 					<div class="modal-footer border-t-dark">
-						<p class="text-light text-left">Bạn đã có tài khoản? <a href="#" data-toggle="modal" data-target="#dangnhap" data-dismiss="modal">Đăng nhập</a></p>
+						<p class="text-light text-model-footer">Bạn đã có tài khoản? <a href="#" data-toggle="modal" data-target="#dangnhap" data-dismiss="modal">Đăng nhập</a></p>
 						<button type="submit" class="btn btn-success">Đăng ký</button>
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
 					</div>
@@ -176,7 +178,7 @@
 <!--Phần đăng phim-->
 	<div class="bg-toi wrapper">
 		<div class="container">
-			<h4 class="text-sang text-title">Phim mới cập nhật</h4>
+			<h4 class="text-sang text-title" id="phim_moi">Phim mới cập nhật</h4>
 			<div class="space25"></div>
 			<div class="row">
 				<div class="col-lg-2 col-md-3 col-sm-4 col-6">
@@ -303,6 +305,7 @@
 			</div>
 		</div>
 	</div>
+
 	<footer class="bg-dark">
 		<div class="container">
 			<div class="footer">
