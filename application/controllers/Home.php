@@ -20,6 +20,9 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index');
+		$data['title'] = 'Trang chủ | phimmt';
+		$data['slide'] = 'home/slide';
+		$data['content'] = 'home/home';
+		$this->load->view('index', $data);
 	}
 }
