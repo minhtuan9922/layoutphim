@@ -46,9 +46,49 @@
 	clear: both;
 }
 .wrapper {
-	padding: 50px 0 20px;
+	width: 100%;
+	margin-top: 56px;
 }
 .menu-left {
 	width: 200px;
 	height: calc(100vh - 56px);
+	position: fixed;
+}
+.menu-left ul {
+	padding-left: 0;
+}
+.menu-left ul li {
+	list-style: none;
+}
+.menu-left a {
+	display: block;
+	padding: 8px 16px;
+	border-radius: 0;
+}
+.menu-left .card {
+	background-color: #343a40;
+	border-radius: 0;
+}
+.menu-left .card-header {
+	padding: 0;
+	border-radius: 0;
+}
+.menu-left a:hover, .menu-left a.active {
+	background: #000000;
+}
+.menu-left .card-header.active{
+	background: #000000;
+}
+.menu-left .card-body {
+	padding: 0 0 0 20px;
+}
+.main {
+	width: 100%;
+	padding: 0px 15px 50px;
+}
+@media (min-width: 768px) {
+	.wrapper {
+		width: calc(100% - 200px);
+		margin-left: 200px;
+	}
 }

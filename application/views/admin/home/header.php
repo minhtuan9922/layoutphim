@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 	<!-- Brand -->
 	<a class="navbar-brand" href="#">Trang quản trị</a>
 
@@ -21,8 +21,60 @@
 		</ul>
 	</div>
 </nav>
-<div class="menu-left bg-dark sticky-top">
-	<ul>
-		<li><a>Trang chủ</a></li>
-	</ul>
+<div class="menu-left bg-dark">
+	<div id="accordion">
+		<div class="card">
+			<div class="card-header">
+				<a class="card-link text-light <?php if($this->uri->uri_string() == 'admin') echo 'active'; ?>" href="<?=base_url('admin') ?>">Trang chủ</a>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'phim') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#phim">Phim</a>
+			</div>
+			<div id="phim" class="collapse <?php if($this->uri->segment(2) == 'phim') echo 'show'; ?>">
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim') echo 'active'; ?>" href="<?=base_url('admin/phim') ?>">Danh sách</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">Thêm phim</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'phim') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#phim">Phim</a>
+			</div>
+			<div id="phim" class="collapse <?php if($this->uri->segment(2) == 'phim') echo 'show'; ?>">
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim') echo 'active'; ?>" href="<?=base_url('admin/phim') ?>">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
 </div>
