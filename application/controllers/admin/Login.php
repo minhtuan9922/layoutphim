@@ -5,15 +5,39 @@ class Login extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		
 	}
 	
 	public function index()
 	{
+		if(isset($_SESSION['admin_id']))
+		{
+			redirect(base_url('admin'));
+		}
+		
+		$this->load->model('madmin');
 		$data['title'] = 'Đăng nhập trang quản trị | phimmt';
-		echo 'Chào mừng bạn đến với trang Đăng nhập';
-//		$data['slide'] = 'home/slide';
-//		$data['content'] = 'home/home';
-//		$this->load->view('index', $data);
+		if(isset($_POST['dangnhap']))
+		{
+			$account = $this->input->post('account');
+			$password = md5($this->input->post('password'));
+			$check = $this->madmin->dangnhap($account,$password);
+			if(count($check) != 0)
+			{
+				$this->session->set_userdata("admin_id", $check['id']);
+				redirect(base_url('admin'));
+			}
+			else
+			{
+				echo '<script>alert("Tài khoản không dúng!")</script>';
+			}
+		}
+		$this->load->view('admin/login', $data);
+		
+	}	
+	
+	public function dangxuat()
+	{
+		$this->session->unset_userdata("admin_id");
+		redirect(base_url('admin/login'));
 	}
 }

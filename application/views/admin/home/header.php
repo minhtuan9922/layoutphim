@@ -15,7 +15,7 @@
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i> Admin</a>
 				<div class="dropdown-menu bg-dark menu-drop" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item bg-dark text-light" href="#">Thông tin</a>
-					<a class="dropdown-item bg-dark text-light" href="#">Đăng xuất</a>
+					<a class="dropdown-item bg-dark text-light" href="<?=base_url('admin/login/dangxuat') ?>">Đăng xuất</a>
 				</div>
 			</li>
 		</ul>
@@ -25,27 +25,24 @@
 	<div id="accordion">
 		<div class="card">
 			<div class="card-header">
-				<a class="card-link text-light <?php if($this->uri->uri_string() == 'admin') echo 'active'; ?>" href="<?=base_url('admin') ?>">Trang chủ</a>
+				<a class="card-link text-light <?php if($this->uri->uri_string() == 'admin') echo 'active'; ?>" href="<?=base_url('admin') ?>"><i class="fas fa-home"></i> Trang chủ</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-header">
-				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'phim') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#phim">Phim</a>
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'phim') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#phim"><i class="fas fa-film"></i> Phim</a>
 			</div>
 			<div id="phim" class="collapse <?php if($this->uri->segment(2) == 'phim') echo 'show'; ?>">
 				<div class="card-body">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim') echo 'active'; ?>" href="<?=base_url('admin/phim') ?>">Danh sách</a>
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim') echo 'active'; ?>" href="<?=base_url('admin/phim') ?>"><i class="fas fa-list-ul"></i> Danh sách</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Thêm phim</a>
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim/themphim') echo 'active'; ?>" href="<?=base_url('admin/phim/themphim') ?>"><i class="fas fa-plus"></i> Thêm phim</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light disabled" href="#">Disabled</a>
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim/phimxoa') echo 'active'; ?>" href="<?=base_url('admin/phim/phimxoa') ?>"><i class="fas fa-trash-alt"></i> Phim đã xóa</a>
 						</li>
 					</ul>
 				</div>
