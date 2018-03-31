@@ -25,20 +25,36 @@
 							</tr>
 						</thead>
 						<tbody>
+							<?php
+							if(isset($danhsach)) 
+							{
+								foreach($danhsach as $tmp)
+								{
+							?>
 							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><?=$tmp['tenphim_vn'] ?></td>
+								<td><?=$tmp['tenphim_en'] ?></td>
+								<td><?=$tmp['daodien'] ?></td>
+								<td><?=$tmp['kichban'] ?></td>
+								<td><?=$tmp['dienvien'] ?></td>
+								<td><?=$tmp['theloai'] ?></td>
+								<td><img src="<?=base_url('img/poster/'.$tmp['poster']) ?>" width="64px"></td>
+								<td><input type="checkbox" value="1" <?php if($tmp['active'] == 1) echo 'checked'; ?>></td>
+								<td>
+									<a href="<?=base_url('admin/phim/chinhsua/'.$tmp['id_phim']) ?>" class="btn btn-info"><i class="fas fa-edit"></i></a>
+									<button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+								</td>
 							</tr>
+							<?php
+								}
+							}
+							?>
 						</tbody>
 					</table>
 				</div> 
+			</div>
+			<div class="card-footer">
+			sldfl
 			</div>
 		</div>
 	</div>

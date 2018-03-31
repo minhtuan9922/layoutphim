@@ -4,130 +4,30 @@
 		<h4 class="text-sang text-title" id="phim_moi">Phim mới cập nhật</h4>
 		<div class="space25"></div>
 		<div class="row">
+			<?php
+			if(isset($phimmoi) && $phimmoi != '')
+			{
+				foreach($phimmoi as $tmp)
+				{
+			?>
 			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 				<div class="phim">
 					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><img src="<?=base_url('img/poster/'.$tmp['poster']) ?>" width="100%" alt="" class="poster-img"></a>
 					</div>
 					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
+						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
 						<div class="nut-play-trailer">
 							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer">Trailer</button>
-							<a href="#" type="button" class="btn btn-danger">Play</a>
+							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>" type="button" class="btn btn-danger">Play</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
-				<div class="phim">
-					<div class="poster">
-						<a href="#dd"><img src="<?=base_url() ?>img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-					</div>
-					<div class="tieude">
-						<a href="#">Đặt tiêu đề phim tại đây.</a>
-					</div>
-				</div>
-			</div>
+			<?php
+				}
+			}
+			?>
 
 		</div>
 	</div>

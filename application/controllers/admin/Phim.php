@@ -15,13 +15,13 @@ class Phim extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Trang quản phim | phimmt';
-		$data['danhsach'] = $this->mphim->danhsach(0,10);
+		$data['danhsach'] = $this->mphim->danhsach(2,10);
 		$data['content'] = 'admin/phim/danhsach';
 		$this->load->view('admin/layout', $data);
 	}
 	public function themphim()
 	{
-		$data['title'] = 'Thêm phim mới | phimmt'; echo md5(12345);
+		$data['title'] = 'Thêm phim mới | phimmt';
 		$data['content'] = 'admin/phim/them';
 		$this->load->view('admin/layout', $data);
 	}
