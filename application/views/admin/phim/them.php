@@ -45,13 +45,7 @@
 					</div>
 					<div class="form-group">
 						<label for="theloai">Thể loại</label>
-						<select multiple name="theloai[]">
-							<option value="1">Volvo</option>
-							<option value="2">Saab</option>
-							<option value="3">Opel</option>
-							<option value="4">Audi</option>
-						</select>
-<!--						<input type="" class="form-control" id="theloai" name="theloai">-->
+						<input type="" class="form-control" id="theloai" name="theloai">
 					</div>
 					<div class="row">
 						<div class="col-lg-4">
@@ -91,7 +85,9 @@
 					</div>
 					<div class="form-group">
 						<label for="poster">Poster</label>
-						<input type="text" class="form-control" id="poster" name="poster">
+						<input type="file" class="form-control" id="poster" name="poster">
+						<div class="space10"></div>
+						<img src="" id="images" width="200px" class="mx-auto d-block img-thumbnail">
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
@@ -145,13 +141,21 @@
 			contentType: false, 
 		}).done(function(ketqua) {
 			var dulieu = JSON.parse(ketqua);
-			console.log(dulieu);
-			console.log(dulieu.tenphim_en);
+			$('#tenphim_en').val(dulieu.tenphim_en);
+			$('#daodien').val(dulieu.daodien);
+			$('#kichban').val(dulieu.kichban);
+			$('#dienvien').val(dulieu.dienvien);
+			$('#theloai').val(dulieu.theloai);
+			$('#nam_sanxuat').val(dulieu.nam_sanxuat);
+			$('#thoiluong').val(dulieu.thoiluong);
+			$('#diem_imdb').val(dulieu.diem_imdb);
+			$('#trailer').val(dulieu.trailer);
+			console.log(dulieu.trailer);
 		});
 	}
 	function chonhinh() 
 	{}
-	$('#hinh_anh').change(function () {
+	$('#poster').change(function () {
         if ( window.FileReader ) {
             var reader = new FileReader();
             reader.onload = function (e) {

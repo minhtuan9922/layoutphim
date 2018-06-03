@@ -34,42 +34,59 @@ class Phim extends CI_Controller {
 	}
 	public function xulyfile_xml()
 	{
-//		if(isset($_POST))
-//		{
-//			$path = "upload/";
-//			$movie = $_FILES['file_xml']['name'];
-//			$movie_tmp = $_FILES['file_xml']['tmp_name'];
-//			move_uploaded_file($movie_tmp,$path.$movie);
-			$xml = simplexml_load_file(base_url('upload/movie.xml'));//.$movie)) or die("Error: Cannot create object");
+		if(isset($_POST))
+		{
+			$path = "upload/";
+			$movie = $_FILES['file_xml']['name'];
+			$movie_tmp = $_FILES['file_xml']['tmp_name'];
+			move_uploaded_file($movie_tmp,$path.$movie);
+			$xml = simplexml_load_file(base_url('upload/'.$movie)) or die("Error: Cannot create object");
 			$tenphim_en = $xml->LocalTitle;
 			$nam_sanxuat = $xml->ProductionYear;
 			$diem_imdb = $xml->IMDBrating;
 			$thoiluong = $xml->RunningTime;
 			$daodien = $xml->Director;
-			$kichban = $xml->LocalTitle;
+			$kichban = str_replace('|', ',', $xml->WritersList);
 			$tieude = $xml->LocalTitle;
 			$theloai = $xml->Genres;
+			$dienvien = $xml->Persons;
+			$trailer = $xml->Trailer;
 //			$data = array(
 //				'tenphim_em' => $tenphim_en,
 //			);
 //			echo json_encode($data);
-
+			
 			$dulieu = '{
 				"tenphim_en":"'.$tenphim_en.'",
 				"nam_sanxuat":"'.$nam_sanxuat.'",
 				"diem_imdb":"'.$diem_imdb.'",
 				"thoiluong":"'.$thoiluong.'",
 				"daodien":"'.$daodien.'",
-				"kichban":"'.$kichban.'"
+				"kichban":"'.$kichban.'",
+				"trailer":"'.($trailer).'"
 				';
-			$i = 1;
+			$theloai_tam = '';
 			foreach($theloai->Genre as $val)
 			{
-				$dulieu .= ',"theloai"'.$i.':"'.$val.'"';
+				$theloai_tam .= $val.',';
+			}
+			$theloai_tam = rtrim($theloai_tam, ',');
+			$dulieu .= ',"theloai":"'.$theloai_tam.'"';
+			$dienvien_tam = '';
+			$i = 0;
+			foreach($dienvien->Person as $val)
+			{
+				$dienvien_tam .= $val->Name.',';
+				if($i > 10) 
+				{
+					break;
+				}
 				$i++;
 			}
+			$dienvien_tam = rtrim($dienvien_tam, ',');
+			$dulieu .= ',"dienvien":"'.$dienvien_tam.'"';
 			$dulieu .= '}';
 			echo $dulieu;
-//		}
+		}
 	}
 }
