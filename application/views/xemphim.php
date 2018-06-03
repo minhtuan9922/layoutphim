@@ -3,10 +3,10 @@
 		<div class="embed-responsive embed-responsive-16by9" id="khungphim">
 			<div class="tab-content" id="pills-tabContent">
 				<div class="tab-pane fade show active" id="thuyetminh" role="tabpanel" aria-labelledby="pills-home-tab">
-					<iframe src="<?=$phim['link_thuyetminh'] ?>" allowfullscreen></iframe>
+					<iframe src="<?=$phim['link_thuyetminh'] ?>" allowfullscreen frameborder="0"></iframe>
 				</div>
 				<div class="tab-pane fade" id="phude" role="tabpanel" aria-labelledby="pills-profile-tab">
-					<iframe src="<?=$phim['link_phude'] ?>" allowfullscreen></iframe>
+					<iframe src="<?=$phim['link_phude'] ?>" allowfullscreen frameborder="1000"></iframe>
 				</div>
 			</div>
 			<ul class="nav nav-pills mb-3 nav-tab" id="tab-button" role="tablist">

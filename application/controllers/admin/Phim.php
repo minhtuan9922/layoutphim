@@ -21,8 +21,55 @@ class Phim extends CI_Controller {
 	}
 	public function themphim()
 	{
-		$data['title'] = 'Thêm phim mới | phimmt';
+		$data['title'] = 'Thêm phim mới';
 		$data['content'] = 'admin/phim/them';
-		$this->load->view('admin/layout', $data);
+		if(isset($_POST['themphim']))
+		{
+			$theloai = $this->input->post('theloai');
+			
+			print_r($theloai);
+		}
+		else {
+		$this->load->view('admin/layout', $data); }
+	}
+	public function xulyfile_xml()
+	{
+//		if(isset($_POST))
+//		{
+//			$path = "upload/";
+//			$movie = $_FILES['file_xml']['name'];
+//			$movie_tmp = $_FILES['file_xml']['tmp_name'];
+//			move_uploaded_file($movie_tmp,$path.$movie);
+			$xml = simplexml_load_file(base_url('upload/movie.xml'));//.$movie)) or die("Error: Cannot create object");
+			$tenphim_en = $xml->LocalTitle;
+			$nam_sanxuat = $xml->ProductionYear;
+			$diem_imdb = $xml->IMDBrating;
+			$thoiluong = $xml->RunningTime;
+			$daodien = $xml->Director;
+			$kichban = $xml->LocalTitle;
+			$tieude = $xml->LocalTitle;
+			$theloai = $xml->Genres;
+//			$data = array(
+//				'tenphim_em' => $tenphim_en,
+//			);
+//			echo json_encode($data);
+
+			$dulieu = '{
+				"tenphim_en":"'.$tenphim_en.'",
+				"nam_sanxuat":"'.$nam_sanxuat.'",
+				"diem_imdb":"'.$diem_imdb.'",
+				"thoiluong":"'.$thoiluong.'",
+				"daodien":"'.$daodien.'",
+				"kichban":"'.$kichban.'"
+				';
+			$i = 1;
+			foreach($theloai->Genre as $val)
+			{
+				$dulieu .= ',"theloai"'.$i.':"'.$val.'"';
+				$i++;
+			}
+			$dulieu .= '}';
+			echo $dulieu;
+//		}
 	}
 }

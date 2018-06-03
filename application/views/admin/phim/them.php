@@ -3,19 +3,19 @@
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="<?=base_url('admin') ?>">Trang chủ</a></li>
 			<li class="breadcrumb-item"><a href="<?=base_url('admin/phim') ?>">Phim</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Thêm phim mới</li>
+			<li class="breadcrumb-item active" aria-current="page"><?=$title ?></li>
 		</ol>
 	</nav>
 	<div class="main">
 		<div class="card">
-			<div class="card-header bg-info text-white">Thêm phim mới</div>
+			<div class="card-header bg-info text-white"><?=$title ?></div>
 			<div class="card-body">
-				<form action="" method="post" enctype="multipart/form-data">
+				<form action="<?=base_url('admin/phim/themphim') ?>" method="post" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label for="tenphim_vn">Tựa Tiếng Việt</label>
-								<input type="text" class="form-control" id="tenphim_vn" name="tenphim_vn" required>
+								<input type="text" class="form-control" id="tenphim_vn" name="tenphim_vn" >
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -45,7 +45,13 @@
 					</div>
 					<div class="form-group">
 						<label for="theloai">Thể loại</label>
-						<input type="text" class="form-control" id="theloai" name="theloai">
+						<select multiple name="theloai[]">
+							<option value="1">Volvo</option>
+							<option value="2">Saab</option>
+							<option value="3">Opel</option>
+							<option value="4">Audi</option>
+						</select>
+<!--						<input type="" class="form-control" id="theloai" name="theloai">-->
 					</div>
 					<div class="row">
 						<div class="col-lg-4">
@@ -113,7 +119,7 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary">Đọc file</button>
+				<button type="button" class="btn btn-primary" onClick="docfile_xml()">Đọc file</button>
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
 			</div>
 		</div>
@@ -125,4 +131,33 @@
 			e.preventDefault();
 		});
 	});
+	function docfile_xml() {
+		var file_xml = $('#file_xml').prop('files')[0];
+		var form_data = new FormData();
+        form_data.append("file_xml", file_xml);
+		$.ajax({
+			typeData: "JSON",
+			url: "<?=base_url('admin/phim/xulyfile_xml') ?>",
+			method: "POST",
+			data: form_data,
+			cache: false,
+			processData: false,
+			contentType: false, 
+		}).done(function(ketqua) {
+			var dulieu = JSON.parse(ketqua);
+			console.log(dulieu);
+			console.log(dulieu.tenphim_en);
+		});
+	}
+	function chonhinh() 
+	{}
+	$('#hinh_anh').change(function () {
+        if ( window.FileReader ) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#images').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+        }
+    })
 </script>

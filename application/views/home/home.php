@@ -19,7 +19,7 @@
 						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
 						<div class="nut-play-trailer">
 							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer">Trailer</button>
-							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>" type="button" class="btn btn-danger">Play</a>
+							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
 						</div>
 					</div>
 				</div>

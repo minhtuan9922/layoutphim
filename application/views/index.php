@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="<?=base_url() ?>css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url() ?>css/style.css">
 	<link rel="stylesheet" href="<?=base_url() ?>fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<script type="text/javascript" src="<?=base_url() ?>js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?=base_url() ?>js/popper.min.js"></script>
 	<script type="text/javascript" src="<?=base_url() ?>js/bootstrap.min.js"></script>
