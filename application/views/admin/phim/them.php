@@ -15,13 +15,13 @@
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label for="tenphim_vn">Tựa Tiếng Việt</label>
-								<input type="text" class="form-control" id="tenphim_vn" name="tenphim_vn" >
+								<input type="text" class="form-control" id="tenphim_vn" name="tenphim_vn" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label for="tenphim_en">Tựa Tiếng Anh</label>
-								<input type="text" class="form-control" id="tenphim_en" name="tenphim_en">
+								<input type="text" class="form-control" id="tenphim_en" name="tenphim_en" required>
 							</div>
 						</div>
 					</div>
@@ -150,7 +150,6 @@
 			$('#thoiluong').val(dulieu.thoiluong);
 			$('#diem_imdb').val(dulieu.diem_imdb);
 			$('#trailer').val(dulieu.trailer);
-			console.log(dulieu.trailer);
 		});
 	}
 	function chonhinh() 
