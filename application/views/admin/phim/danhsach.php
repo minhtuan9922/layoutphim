@@ -54,7 +54,7 @@
 				</div> 
 			</div>
 			<div class="card-footer">
-			sldfl
+			<?=$this->pagination->create_links(); ?>
 			</div>
 		</div>
 	</div>

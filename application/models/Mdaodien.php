@@ -32,4 +32,11 @@ class Mdaodien extends CI_Model{
 		$this->db->like('ten_daodien', $ten_daodien);
 		return $this->db->get()->row_array();
 	}
+	public function thongtin_daodien($id)
+	{
+		$this->db->select('*');
+		$this->db->from('daodien');
+		$this->db->where('id_daodien', $id);
+		return $this->db->get()->row_array();
+	}
 }

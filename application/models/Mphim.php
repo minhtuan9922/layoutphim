@@ -24,8 +24,9 @@ class Mphim extends CI_Model{
 	}
 	public function danhsach($start, $limit) 
 	{
-		$this->db->from('phim');
+		$this->db->from('phim', 'daodien', 'dienvien', 'theloai', 'kichban');
 		$this->db->where('active', 1); 
+		$this->db->order_by('ngay_them desc');
 		$this->db->limit($limit, $start);
 		return $this->db->get()->result_array();
 	}

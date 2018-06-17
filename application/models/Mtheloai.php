@@ -32,4 +32,11 @@ class Mtheloai extends CI_Model{
 		$this->db->like('tentheloai', $tentheloai);
 		return $this->db->get()->row_array();
 	}
+	public function thongtin_theloai($id)
+	{
+		$this->db->select('*');
+		$this->db->from('theloai');
+		$this->db->like('id_theloai', $id);
+		return $this->db->get()->row_array();
+	}
 }

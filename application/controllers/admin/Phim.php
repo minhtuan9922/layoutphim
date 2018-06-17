@@ -21,7 +21,108 @@ class Phim extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Trang quản phim | phimmt';
-		$data['danhsach'] = $this->mphim->danhsach(2,10);
+		
+		if($this->uri->segment(3))
+			$batdau = $this->uri->segment(3);
+		else
+			$batdau =0;
+		//cấu hình phân trang
+		$config['per_page'] = 10;
+		$config['uri_segment'] = 3;
+		$config['num_links'] = 5;
+		
+		//phân trang
+		$config['total_rows'] = $this->mphim->countAll();
+        $config['base_url'] = base_url()."admin/phim";
+
+		$config['full_tag_open'] = '<ul class="pagination">';
+		$config['full_tag_close'] = '</ul>';
+
+		$config['first_link'] = 'Trang đầu';
+		$config['first_tag_open'] = '<li class="page-item"><span class="page-link">';
+		$config['first_tag_close'] = '</span></li>';
+
+		$config['last_link'] = 'Trang cuối';
+		$config['last_tag_open'] = '<li class="page-item"><span class="page-link">';
+		$config['last_tag_close'] = '</span></li>';
+
+		$config['next_link'] = 'Sau';
+		$config['next_tag_open'] = '<li class="page-item"><span class="page-link">';
+		$config['next_tag_close'] = '</span></li>';
+
+		$config['prev_link'] = 'Trước';
+		$config['prev_tag_open'] = '<li class="page-item"><span class="page-link">';
+		$config['prev_tag_close'] = '</span></li>';
+
+		$config['cur_tag_open'] = '<li class="page-item active"><a href="" class="page-link">';
+		$config['cur_tag_close'] = '</a></li>';
+
+		$config['num_tag_open'] = '<li class="page-item"><span class="page-link">';
+		$config['num_tag_close'] = '</span></li>';
+		
+		$config['anchor_class'] = 'follow_link';  
+        $this->load->library('pagination', $config);
+		
+		$danhsach = $this->mphim->danhsach($batdau, $config['per_page']);
+		if(!empty($danhsach))
+		{
+			foreach($danhsach as $item)
+			{
+				$kichban = json_decode($item['kichban']);
+				$thongtin_kichban = '';
+				if(!empty($kichban))
+				{
+					foreach($kichban as $tmp)
+					{
+						$thongtin_kichban .= $this->mkichban->thongtin_kichban($tmp)['kichban'].', ';
+					}
+				}
+				$thongtin_kichban = rtrim($thongtin_kichban, ', ');
+				
+				$dienvien = json_decode($item['dienvien']);
+				$thongtin_dienvien = '';
+				if(!empty($dienvien))
+				{
+					foreach($dienvien as $tmp)
+					{
+						$thongtin_dienvien .= $this->mdienvien->thongtin_dienvien($tmp)['ten_dienvien'].', ';
+					}
+				}
+				$thongtin_dienvien = rtrim($thongtin_dienvien, ', ');
+				
+				$theloai = json_decode($item['theloai']);
+				$thongtin_theloai = '';
+				if(!empty($theloai))
+				{
+					foreach($theloai as $tmp)
+					{
+						$thongtin_theloai .= $this->mtheloai->thongtin_theloai($tmp)['tentheloai'].', ';
+					}
+				}
+				$thongtin_theloai = rtrim($thongtin_theloai, ', ');
+				
+				$data['danhsach'][] = array(
+					'id_phim' => $item['id_phim'],
+					'tenphim_vn' => $item['tenphim_vn'],
+					'tenphim_en' => $item['tenphim_en'],
+					'daodien' => $this->mdaodien->thongtin_daodien($item['daodien'])['ten_daodien'],
+					'kichban' => $thongtin_kichban,
+					'dienvien' => $thongtin_dienvien,
+					'theloai' => $thongtin_theloai,
+					'poster' => $item['poster'],
+					'active' => $item['active'],
+					'luotxem' => $item['luotxem'],
+					'phimbo' => $item['phimbo'],
+					'trailer' => $item['trailer'],
+					'ngay_them' => $item['ngay_them'],
+					'nam_sanxuat' => $item['nam_sanxuat'],
+					'thoiluong' => $item['thoiluong'],
+					'diem_imdb' => $item['diem_imdb'],
+					'link_phude' => $item['link_phude'],
+					'link_thuyetminh' => $item['link_thuyetminh'],
+				);
+			}
+		}
 		$data['content'] = 'admin/phim/danhsach';
 		$this->load->view('admin/layout', $data);
 	}
@@ -60,9 +161,9 @@ class Phim extends CI_Controller {
             if($this->upload->do_upload('poster'))
 			{
 				$img = $this->upload->data();
-				$poster = $config['upload_path'].$img['file_name'];
+				$poster = $img['file_name'];
 				$conf['image_library'] = 'gd2';
-				$conf['source_image'] = $poster;
+				$conf['source_image'] = $config['upload_path'].$img['file_name'];
 				$conf['create_thumb'] = false;
 				$conf['maintain_ratio'] = false;
 				$conf['width']         = 500;
@@ -156,10 +257,6 @@ class Phim extends CI_Controller {
 			$theloai = $xml->Genres;
 			$dienvien = $xml->Persons;
 			$trailer = $xml->Trailer;
-//			$data = array(
-//				'tenphim_em' => $tenphim_en,
-//			);
-//			echo json_encode($data);
 			
 			$dulieu = '{
 				"tenphim_en":"'.$tenphim_en.'",

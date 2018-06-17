@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['xemphim/(:num)/(:any)'] = 'xemphim/index/$1';
+$route['admin/phim/(:num)'] = 'admin/phim/index/$1';

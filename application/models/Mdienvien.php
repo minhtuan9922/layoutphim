@@ -32,4 +32,11 @@ class Mdienvien extends CI_Model{
 		$this->db->like('ten_dienvien', $ten_dienvien);
 		return $this->db->get()->row_array();
 	}
+	public function thongtin_dienvien($id)
+	{
+		$this->db->select('*');
+		$this->db->from('dienvien');
+		$this->db->where('id_dienvien', $id);
+		return $this->db->get()->row_array();
+	}
 }
