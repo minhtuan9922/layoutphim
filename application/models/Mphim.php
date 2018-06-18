@@ -43,4 +43,10 @@ class Mphim extends CI_Model{
 		$this->db->where('id_phim',$id);
         return $this->db->update('phim',$data);
 	}
+	public function chitietphim($id) 
+	{
+		$this->db->from('phim');
+		$this->db->where('id_phim',$id);
+        return $this->db->get()->row_array();
+	}
 }

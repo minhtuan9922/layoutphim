@@ -8,12 +8,15 @@
 	<link rel="icon" href="<?=base_url('asset/') ?>img/icon.png">
 	<link rel="stylesheet" href="<?=base_url('asset/') ?>css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url('asset/') ?>css/style.css">
+	<link rel="stylesheet" href="<?=base_url('asset/') ?>css/alertify.min.css">
+	<link rel="stylesheet" href="<?=base_url('asset/') ?>css/themes/default.min.css">
 	<link rel="stylesheet" href="<?=base_url('asset/') ?>fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<script type="text/javascript" src="<?=base_url('asset/') ?>js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?=base_url('asset/') ?>js/popper.min.js"></script>
 	<script type="text/javascript" src="<?=base_url('asset/') ?>js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?=base_url('asset/') ?>js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="<?=base_url('asset/') ?>js/alertify.min.js"></script>
 	<script type="text/javascript" src="<?=base_url('asset/') ?>js/custom.js"></script>
 </head>
 

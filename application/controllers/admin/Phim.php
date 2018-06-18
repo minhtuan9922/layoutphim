@@ -291,4 +291,101 @@ class Phim extends CI_Controller {
 			echo $dulieu;
 		}
 	}
+	public function chinhsua($id)
+	{
+		$data['title'] = 'Chỉnh sửa phim';
+		$chitietphim = $this->mphim->chitietphim($id);
+		if(!empty($chitietphim))
+		{
+			$kichban = json_decode($chitietphim['kichban']);
+			$thongtin_kichban = '';
+			if(!empty($kichban))
+			{
+				foreach($kichban as $tmp)
+				{
+					$thongtin_kichban .= $this->mkichban->thongtin_kichban($tmp)['kichban'].', ';
+				}
+			}
+			$thongtin_kichban = rtrim($thongtin_kichban, ', ');
+
+			$dienvien = json_decode($chitietphim['dienvien']);
+			$thongtin_dienvien = '';
+			if(!empty($dienvien))
+			{
+				foreach($dienvien as $tmp)
+				{
+					$thongtin_dienvien .= $this->mdienvien->thongtin_dienvien($tmp)['ten_dienvien'].', ';
+				}
+			}
+			$thongtin_dienvien = rtrim($thongtin_dienvien, ', ');
+
+			$theloai = json_decode($chitietphim['theloai']);
+			$thongtin_theloai = '';
+			if(!empty($theloai))
+			{
+				foreach($theloai as $tmp)
+				{
+					$thongtin_theloai .= $this->mtheloai->thongtin_theloai($tmp)['tentheloai'].', ';
+				}
+			}
+			$thongtin_theloai = rtrim($thongtin_theloai, ', ');
+
+			$data['chitietphim'] = array(
+				'id_phim' => $chitietphim['id_phim'],
+				'tenphim_vn' => $chitietphim['tenphim_vn'],
+				'tenphim_en' => $chitietphim['tenphim_en'],
+				'daodien' => $this->mdaodien->thongtin_daodien($chitietphim['daodien'])['ten_daodien'],
+				'kichban' => $thongtin_kichban,
+				'dienvien' => $thongtin_dienvien,
+				'theloai' => $thongtin_theloai,
+				'poster' => $chitietphim['poster'],
+				'active' => $chitietphim['active'],
+				'luotxem' => $chitietphim['luotxem'],
+				'phimbo' => $chitietphim['phimbo'],
+				'trailer' => $chitietphim['trailer'],
+				'ngay_them' => $chitietphim['ngay_them'],
+				'nam_sanxuat' => $chitietphim['nam_sanxuat'],
+				'thoiluong' => $chitietphim['thoiluong'],
+				'diem_imdb' => $chitietphim['diem_imdb'],
+				'link_phude' => $chitietphim['link_phude'],
+				'link_thuyetminh' => $chitietphim['link_thuyetminh'],
+				'gioithieu' => $chitietphim['gioithieu'],
+			);
+		}
+		$data['content'] = 'admin/phim/chinhsua';
+		$this->load->view('admin/layout', $data);
+	}
+	public function capnhat_phimbo_active()
+	{
+		if(isset($_POST['active']))
+		{
+			$id_phim = $this->input->post('id_phim');
+			$active = $this->input->post('active');
+			
+			$kq = $this->mphim->capnhat(array('active'=>$active), $id_phim);
+			if($kq == true)
+			{
+				echo 'Xóa thành công.';
+			}
+			else
+			{
+				echo 'Lỗi';
+			}
+		}
+		if(isset($_POST['phimbo']))
+		{
+			$id_phim = $this->input->post('id_phim');
+			$phimbo = $this->input->post('phimbo');
+			
+			$kq = $this->mphim->capnhat(array('phimbo'=>$phimbo), $id_phim);
+			if($kq == true)
+			{
+				echo 'Cập nhật thành công.';
+			}
+			else
+			{
+				echo 'Lỗi';
+			}
+		}
+	}
 }
