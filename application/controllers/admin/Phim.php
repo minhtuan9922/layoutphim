@@ -394,7 +394,6 @@ class Phim extends CI_Controller {
 				'gioithieu' => $gioithieu,
 				'phimbo' => $phimbo,
 				'trailer' => $trailer,
-				'ngay_them' => date('Y-m-d H:i:s'),
 			);
 			$id_phim = $this->mphim->capnhat($dat, $id);
 		}

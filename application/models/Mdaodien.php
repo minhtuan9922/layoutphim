@@ -9,7 +9,7 @@ class Mdaodien extends CI_Model{
 
 	public function themdaodien($data = array())
 	{
-		$check_daodien = $this->check_id_daodien($data['ten_daodien']);
+		$check_daodien = $this->check_id_daodien($data['ten_daodien_kd']);
 		if(!empty($check_daodien))
 		{
 			return $check_daodien['id_daodien'];
@@ -29,7 +29,7 @@ class Mdaodien extends CI_Model{
 	{
 		$this->db->select('*');
 		$this->db->from('daodien');
-		$this->db->like('ten_daodien', $ten_daodien);
+		$this->db->where('ten_daodien', $ten_daodien);
 		return $this->db->get()->row_array();
 	}
 	public function thongtin_daodien($id)

@@ -29,7 +29,7 @@ class Mkichban extends CI_Model{
 	{
 		$this->db->select('*');
 		$this->db->from('kichban');
-		$this->db->like('kichban', $kichban);
+		$this->db->where('kichban', $kichban);
 		return $this->db->get()->row_array();
 	}
 	public function thongtin_kichban($id)
