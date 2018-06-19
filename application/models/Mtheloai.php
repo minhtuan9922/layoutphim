@@ -36,7 +36,13 @@ class Mtheloai extends CI_Model{
 	{
 		$this->db->select('*');
 		$this->db->from('theloai');
-		$this->db->like('id_theloai', $id);
+		$this->db->where('id_theloai', $id);
 		return $this->db->get()->row_array();
+	}
+	public function theloai()
+	{
+		$this->db->from('theloai');
+		$this->db->where('status', 1);
+		return $this->db->get()->result_array();
 	}
 }

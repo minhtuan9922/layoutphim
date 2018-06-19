@@ -11,6 +11,7 @@ class Mphim extends CI_Model{
 	{
 		$this->db->select('*');
 		$this->db->from('phim');
+		$this->db->where('active', 1);
 		$this->db->order_by('id_phim', 'desc');
 		$this->db->limit('12');
 		return $this->db->get()->result_array();

@@ -1,11 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Chuanhoa extends CI_Model{
-
-	public function __construct() {
-	parent::__construct();
-	}
+class Chuanhoa {
 
 	public function gach_noi($str)
 	{

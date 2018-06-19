@@ -13,13 +13,13 @@
 			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 				<div class="phim">
 					<div class="poster">
-						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><img src="<?=base_url('img/poster/'.$tmp['poster']) ?>" width="100%" alt="" class="poster-img"></a>
+						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><img src="<?=base_url('img/poster/'.$tmp['poster']) ?>" width="100%" alt="" class="poster-img"></a>
 					</div>
 					<div class="tieude">
-						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
+						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
 						<div class="nut-play-trailer">
 							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer">Trailer</button>
-							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->mphim->convert_vi_to_en($tmp['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
+							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
 						</div>
 					</div>
 				</div>

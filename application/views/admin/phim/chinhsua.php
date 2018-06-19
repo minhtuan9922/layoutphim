@@ -10,7 +10,7 @@
 		<div class="card">
 			<div class="card-header bg-info text-white"><?=$title ?></div>
 			<div class="card-body">
-				<form action="<?=base_url('admin/phim/themphim') ?>" method="post" enctype="multipart/form-data">
+				<form action="<?=base_url('admin/phim/chinhsua/'.$chitietphim['id_phim']) ?>" method="post" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="form-group">
@@ -77,7 +77,7 @@
 					</div>
 					<div class="form-group">
 						<label for="gioithieu">Giới thiệu</label>
-						<textarea type="text" class="form-control" id="gioithieu" name="gioithieu" value="<?=$chitietphim['gioithieu'] ?>"></textarea>
+						<textarea type="text" class="form-control" id="gioithieu" name="gioithieu" rows="6"><?=$chitietphim['gioithieu'] ?></textarea>
 					</div>
 					<div class="form-group">
 						<label for="trailer">Trailer</label>
@@ -95,7 +95,7 @@
 					  		<input class="form-check-input" type="checkbox" name="phimbo" value="1" <?php if($chitietphim['phimbo'] == 1) echo 'checked'; ?> > Phim bộ
 						</label>
 					</div>
-					<button type="submit" name="themphim" class="btn btn-primary">Thêm phim</button>
+					<button type="submit" name="luu" class="btn btn-primary">Lưu phim</button>
 					<button class="btn btn-info" data-toggle="modal" data-target="#myModal" id="docfile_xml">Đọc file XML</button>
 				</form>
 			</div>

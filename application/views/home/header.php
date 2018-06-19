@@ -15,8 +15,18 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thể loại</a>
 					<div class="dropdown-menu bg-dark menu-drop" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-light" href="#">Action</a>
-						<a class="dropdown-item text-light" href="#">Another action</a>
+						<?php
+						$theloai = $this->mtheloai->theloai();
+					   	if(!empty($theloai))
+						{
+							foreach($theloai as $tmp)
+							{
+						?>
+						<a class="dropdown-item text-light" href="<?=base_url('theloai/'.$tmp['tentheloai_kd']) ?>"><?=$tmp['tentheloai'] ?></a>
+						<?php
+							}
+						}
+					   	?>
 					</div>
 				</li>
 			</ul>

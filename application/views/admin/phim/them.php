@@ -77,7 +77,7 @@
 					</div>
 					<div class="form-group">
 						<label for="gioithieu">Giới thiệu</label>
-						<textarea type="text" class="form-control" id="gioithieu" name="gioithieu"></textarea>
+						<textarea type="text" class="form-control" id="gioithieu" name="gioithieu" rows="6"></textarea>
 					</div>
 					<div class="form-group">
 						<label for="trailer">Trailer</label>
