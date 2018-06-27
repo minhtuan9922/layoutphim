@@ -27,18 +27,19 @@
 				<h4 class="text-sang text-title">Thông tin phim</h4>
 				<div class="row">
 					<div class="col-md-3 text-sang">
-						<img class="img-thumbnail" src="img/poster/Pacific.Rim.2013.jpg" alt="" width="100%">
+						<img class="img-thumbnail" src="<?=base_url('img/poster/'.$phim['poster']) ?>" alt="" width="100%">
 						<div class="space20"></div>
 					</div>
 					<div class="col-md-9 text-sang">
-						<p>Tên phim: <strong>Tên tiếng anh - Tên tiếng Việt</strong></p>
-						<p>Đạo diễn: Tên đạo diễn</p>
-						<p>Kịch Bản: Emilia Clarke, Kit Harington, Peter Dinklage </p>
-						<p>Diễn viên: Tên diễn viên</p>
-						<p>Diểm imdb: Tên đạo diễn</p>
-						<p>Năm sản xuất: Tên đạo diễn</p>
-						<p>Thể loại:</p>
-						<p>Giới thiệu: Giới thiệu nội dung ngắt gọn về phim</p>
+						<p><strong><?=$phim['tenphim_vn'].' - '.$phim['tenphim_en'] ?></strong></p>
+						<p>Đạo diễn: <?=$phim['daodien'] ?></p>
+						<p>Kịch Bản: <?=$phim['kichban'] ?></p>
+						<p>Diễn viên: <?=$phim['dienvien'] ?></p>
+						<p>Diểm imdb: <?=$phim['diem_imdb'] ?></p>
+						<p>Năm sản xuất: <?=$phim['nam_sanxuat'] ?></p>
+						<p>Thể loại: <?=$phim['theloai'] ?></p>
+						<p>Thời lượng: <?=date('g', strtotime($phim['thoiluong'])).'h '.date('i', strtotime($phim['thoiluong'])) ?></p>
+						<p>Giới thiệu: <?=$phim['gioithieu'] ?></p>
 					</div>
 				</div>
 			</div>
