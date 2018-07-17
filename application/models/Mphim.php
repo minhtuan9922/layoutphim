@@ -56,12 +56,13 @@ class Mphim extends CI_Model{
 	{
 		if(!empty($data))
 		{
-			$sql = '';
+			$sql = '(';
 			foreach($data as $item)
 			{
-				$sql .= 'theloai like \'%"'.$item.'"%\' or';
+				$sql .= 'theloai like \'%"'.$item.'"%\' or ';
 			}
-			$sql = rtrim($sql, ' or');
+			$sql = rtrim($sql, ' or ');
+			$sql .= ')';
 			
 			$this->db->from('phim');
 			$this->db->where($sql);
