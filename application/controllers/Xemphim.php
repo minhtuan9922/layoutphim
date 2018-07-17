@@ -68,6 +68,9 @@ class Xemphim extends CI_Controller {
 			'link_thuyetminh' => $phim['link_thuyetminh'],
 			'gioithieu' => $phim['gioithieu'],
 		);
+		
+		$data['phimcungtheloai'] = $this->mphim->phimcungtheloai($theloai, $phim['id_phim']);
+		
 		$data['content'] = 'xemphim';
 		$this->load->view('index', $data);
 	}

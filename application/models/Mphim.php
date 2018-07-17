@@ -52,4 +52,25 @@ class Mphim extends CI_Model{
 		$this->db->where('id_phim',$id);
         return $this->db->get()->row_array();
 	}
+	public function phimcungtheloai($data = array(), $id)
+	{
+		if(!empty($data))
+		{
+			$sql = '';
+			foreach($data as $item)
+			{
+				$sql .= 'theloai like \'%"'.$item.'"%\' or';
+			}
+			$sql = rtrim($sql, ' or');
+			
+			$this->db->from('phim');
+			$this->db->where($sql);
+			$this->db->where('id_phim != '.$id);
+			$this->db->order_by('id_phim', 'RANDOM');
+			$this->db->limit(6);
+			return $this->db->get()->result_array();
+		}
+		
+		
+	}
 }

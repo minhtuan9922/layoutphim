@@ -45,4 +45,5 @@ class Mtheloai extends CI_Model{
 		$this->db->where('status', 1);
 		return $this->db->get()->result_array();
 	}
+	
 }

@@ -47,71 +47,30 @@
 			<div class="col-md-12">
 				<h4 class="text-sang text-title">Phim cùng thể loại</h4>
 				<div class="row">
+					<?php
+					if(!empty($phimcungtheloai))
+					{
+						foreach($phimcungtheloai as $item)
+						{
+					?>
 					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
 						<div class="phim">
 							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
+								<a href="<?=base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])) ?>"><img src="<?=base_url('img/poster/'.$item['poster']) ?>" width="100%" alt="" class="poster-img"></a>
 							</div>
 							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
+								<a href="<?=base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])) ?>"><?=$item['tenphim_vn'] ?></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
-						<div class="phim">
-							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-							</div>
-							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
-						<div class="phim">
-							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-							</div>
-							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
-						<div class="phim">
-							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-							</div>
-							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
-						<div class="phim">
-							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-							</div>
-							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6">
-						<div class="phim">
-							<div class="poster">
-								<a href="#dd"><img src="img/poster/Aftermath.2017.jpg" width="100%" alt="" class="poster-img"></a>
-							</div>
-							<div class="tieude">
-								<a href="#">Đặt tiêu đề phim tại đây.</a>
-							</div>
-						</div>
-					</div>
-
+					<?php
+						}
+					}
+					?>
 				</div>
 			</div>
 			<div class="col-md-12">
-				<div class="fb-comments" data-href="http://localhost/layoutphim/xemphim" data-numposts="5" width="100%" data-colorscheme="dark"></div>
+				<div class="fb-comments" data-href="<?=base_url(uri_string()) ?>" data-numposts="5" width="100%" data-colorscheme="dark"></div>
 			</div>
 		</div>
 	</div>
