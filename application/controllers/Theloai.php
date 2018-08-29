@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Theloai extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		
@@ -9,8 +9,11 @@ class Home extends CI_Controller {
 	}
 	public function index()
 	{
+		$check_theloai = $this->mtheloai->check_id_theloai_kd($this->uri->segment(3));
+		echo '<pre>';
+		print_r($check_theloai);
+		echo '</pre>';
 		$data['title'] = 'Trang chủ | phimmt';
-		$data['slide'] = 'home/slide';
 		$data['phimmoi'] = $this->mphim->phimmoicapnhat();
 		$theloai = $this->mtheloai->theloai();
 		

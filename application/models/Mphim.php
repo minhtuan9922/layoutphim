@@ -74,4 +74,19 @@ class Mphim extends CI_Model{
 		
 		
 	}
+	public function get_list_phim($id_theloai, $limit = NULL, $start = NULL)
+	{
+		$this->db->from('phim');
+		$this->db->like('theloai', '"'.$id_theloai.'"');
+		if($limit != NULL && $start == NULL)
+		{
+			$this->db->limit($limit);
+		}
+		if($limit != NULL && $start != NULL)
+		{
+			$this->db->limit($limit, $start);
+		}
+		$this->db->order_by('rand()');
+		return $this->db->get()->result_array();
+	}
 }
