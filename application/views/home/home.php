@@ -1,14 +1,16 @@
 <!--Phần đăng phim-->
 <div class="bg-toi wrapper">
 	<div class="container">
+		<?php
+		if(isset($phimmoi) && $phimmoi != '')
+		{
+		?>
 		<h4 class="text-sang text-title" id="phim_moi">Phim mới cập nhật</h4>
 		<div class="space25"></div>
 		<div class="row">
 			<?php
-			if(isset($phimmoi) && $phimmoi != '')
+			foreach($phimmoi as $tmp)
 			{
-				foreach($phimmoi as $tmp)
-				{
 			?>
 			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 				<div class="phim">
@@ -25,10 +27,12 @@
 				</div>
 			</div>
 			<?php
-				}
 			}
 			?>
 		</div>
+		<?php
+		}
+		?>
 		<div class="space25"></div>
 		<?php
 		if(!empty($list_phim))
@@ -66,6 +70,12 @@
 		</div>
 		<?php
 			}
+		}
+		?>
+		<?php
+		if(isset($pagination))
+		{
+			echo $pagination;
 		}
 		?>
 	</div>

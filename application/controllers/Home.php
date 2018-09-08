@@ -19,7 +19,7 @@ class Home extends CI_Controller {
 		{
 			$result[] = array(
 				'theloai' => $item['tentheloai'],
-				'phim' => $this->mphim->get_list_phim($item['id_theloai'], 12),
+				'phim' => $this->mphim->get_list_phim($item['id_theloai'], 12, NULL, 'rand()'),
 			);
 		}
 		$data['list_phim'] = $result;

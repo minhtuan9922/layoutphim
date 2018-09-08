@@ -2,16 +2,16 @@
 	<div class="container">
 		<div class="embed-responsive embed-responsive-16by9" id="khungphim">
 			<div class="tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active" id="thuyetminh" role="tabpanel" aria-labelledby="pills-home-tab">
+				<div class="tab-pane fade <?php if(!empty($phim['link_thuyetminh'])) echo 'show active'; ?>" id="thuyetminh" role="tabpanel" aria-labelledby="pills-home-tab">
 					<iframe src="<?=$phim['link_thuyetminh'] ?>" allowfullscreen frameborder="0"></iframe>
 				</div>
-				<div class="tab-pane fade <?php if(empty($phim['link_thuetminh'])) echo 'show active'; ?>" id="phude" role="tabpanel" aria-labelledby="pills-profile-tab">
+				<div class="tab-pane fade <?php if(empty($phim['link_thuyetminh'])) echo 'show active'; ?>" id="phude" role="tabpanel" aria-labelledby="pills-profile-tab">
 					<iframe src="<?=$phim['link_phude'] ?>" allowfullscreen frameborder="1000"></iframe>
 				</div>
 			</div>
 			<ul class="nav nav-pills mb-3 nav-tab" id="tab-button" role="tablist">
 				<?php
-				if(!empty($phim['link_thuetminh']))
+				if(!empty($phim['link_thuyetminh']))
 				{
 				?>
 				<li class="nav-item">
