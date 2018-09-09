@@ -1,562 +1,250 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Title>
-	<LocalTitle>Black Panther</LocalTitle>
-	<OriginalTitle>Black Panther</OriginalTitle>
+	<LocalTitle>Jurassic World: Fallen Kingdom</LocalTitle>
+	<OriginalTitle>Jurassic World: Fallen Kingdom</OriginalTitle>
 	<ProductionYear>2018</ProductionYear>
-	<Added>5/7/2018 7:48:00 PM</Added>
-	<IMDBrating>7.6</IMDBrating>
+	<Added>9/8/2018 1:14:37 PM</Added>
+	<IMDBrating>0.0</IMDBrating>
 	<ContentRating>PG-13</ContentRating>
 	<MPAARating>PG-13</MPAARating>
-	<IMDB>tt1825683</IMDB>
-	<IMDbId>tt1825683</IMDbId>
-	<TMDbId>284054</TMDbId>
-	<Budget>200000000</Budget>
-	<Revenue>1325776812</Revenue>
+	<IMDB>tt4881806</IMDB>
+	<IMDbId>tt4881806</IMDbId>
+	<TMDbId>351286</TMDbId>
+	<Budget>170000000</Budget>
+	<Revenue>1290354745</Revenue>
 	<Language>English</Language>
 	<LanguageCode>en</LanguageCode>
 	<Country>US</Country>
-	<RunningTime>134</RunningTime>
-	<Overview>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of...
-    See more &amp;raquo;</Overview>
+	<RunningTime>129</RunningTime>
+	<Overview>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Overview>
 	<Genres>
 		<Genre>Action</Genre>
 		<Genre>Adventure</Genre>
 		<Genre>Sci-Fi</Genre>
 	</Genres>
 	<Studios>
-		<Studio>Marvel Studios</Studio>
-		<Studio>Walt Disney Pictures</Studio>
+		<Studio>Amblin Entertainment</Studio>
+		<Studio>Apaches Entertainment</Studio>
+		<Studio>Legendary Entertainment</Studio>
+		<Studio>Universal Pictures</Studio>
+		<Studio>Perfect World Pictures</Studio>
+		<Studio>The Kennedy/Marshall Company</Studio>
 	</Studios>
 	<Persons>
 		<Person>
-			<Name>Chadwick Boseman</Name>
+			<Name>Chris Pratt</Name>
 			<Type>Actor</Type>
-			<Role>T'Challa / Black Panther</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/if0BTPOSkbnvIjry5OcfV7GfRrO.jpg</Image>
+			<Role>Owen Grady</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/gXKyT1YU5RWWPaE1je3ht58eUZr.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Michael B. Jordan</Name>
+			<Name>Bryce Dallas Howard</Name>
 			<Type>Actor</Type>
-			<Role>N’Jadaka / Erik Killmonger</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/xjMZd0k7G0nN6BXTjQBzf3Gyrz7.jpg</Image>
+			<Role>Claire Dearing</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7HIHalGGoJd101Wt3Y78Znfiohj.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Lupita Nyong'o</Name>
+			<Name>Rafe Spall</Name>
 			<Type>Actor</Type>
-			<Role>Nakia</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/y3p0OMzIuAmcNt700RayK5A0k6t.jpg</Image>
+			<Role>Eli Mills</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7ucsDEWvcMU4SpxtZEaYErPpXHh.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Danai Gurira</Name>
+			<Name>Justice Smith</Name>
 			<Type>Actor</Type>
-			<Role>Okoye</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/xgo39kFf6rAynb1i9J1BeLfSXxg.jpg</Image>
+			<Role>Franklin Webb</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/9G8pKfvfbqs5fmRo0VtlHqxdVBQ.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Martin Freeman</Name>
+			<Name>Daniella Pineda</Name>
 			<Type>Actor</Type>
-			<Role>Everett K. Ross</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/ashlWz2KDQTbo8NPUbVOwcB3zXJ.jpg</Image>
+			<Role>Zia Rodriguez</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/AdmgjO8pLFqN1H40uo7Ws4h6IyK.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Daniel Kaluuya</Name>
+			<Name>James Cromwell</Name>
 			<Type>Actor</Type>
-			<Role>W'Kabi</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/24trqMr2PBwAmttp9X4F3ZErgt4.jpg</Image>
+			<Role>Benjamin Lockwood</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/f9HU6zS2K2DCRt2WoJBK61ElqPJ.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Letitia Wright</Name>
+			<Name>Toby Jones</Name>
 			<Type>Actor</Type>
-			<Role>Shuri</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/iWL9HWJ1FhX3F7qRQCCSTIBP8Lt.jpg</Image>
+			<Role>Mr. Eversoll</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/eOZe7EZ0Ojq8PaIn1HLVex5dZwc.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Winston Duke</Name>
+			<Name>Ted Levine</Name>
 			<Type>Actor</Type>
-			<Role>M'Baku</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/xWc0UDuhLLESmDIK8EAtls46Zx3.jpg</Image>
+			<Role>Ken Wheatley</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7O3vgqgicfNeGr3leC0qB074fjX.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Angela Bassett</Name>
+			<Name>Jeff Goldblum</Name>
 			<Type>Actor</Type>
-			<Role>Ramonda</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/qvIFNQLWzWyqjykiU0ONQ7u6Ihz.jpg</Image>
+			<Role>Ian Malcolm</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Forest Whitaker</Name>
+			<Name>BD Wong</Name>
 			<Type>Actor</Type>
-			<Role>Zuri</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/4pMQkelS5lK661m9Kz3oIxLYiyS.jpg</Image>
+			<Role>Dr. Wu</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/w7Hs9m6ocS2qlibvrLOvmyCKbAN.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Andy Serkis</Name>
+			<Name>Geraldine Chaplin</Name>
 			<Type>Actor</Type>
-			<Role>Ulysses Klaue / Klaw</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/olYcaJoZuHVW92gZgtVMUWGqMR8.jpg</Image>
+			<Role>Iris</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/mnPoiJrhJjJArySW8wMpf84pCxu.jpg</Image>
 		</Person>
 		<Person>
-			<Name>John Kani</Name>
+			<Name>Isabella Sermon</Name>
 			<Type>Actor</Type>
-			<Role>T'Chaka</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/iOKWcdeCNbEREAWMWIZBy6p805j.jpg</Image>
+			<Role>Maisie Lockwood</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/17lNC9C1mNuP0o5AJamwTJ9oaD5.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Sterling K. Brown</Name>
+			<Name>Peter Jason</Name>
 			<Type>Actor</Type>
-			<Role>N'Jobu</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/l0Zth6GbkZbMpyl52RPMCO7GQA5.jpg</Image>
+			<Role>Senator Sherwood</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/2VqCiv4R0kZW1Nwi60fIzmHKxpc.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Seth Carr</Name>
+			<Name>Charlie Rawes</Name>
 			<Type>Actor</Type>
-			<Role>Young Killmonger</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/bO4OGAf932dxyW9LRNgHsYra758.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Denzel Whitaker</Name>
-			<Type>Actor</Type>
-			<Role>Young Zuri</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/yN4ZZDDDJI2UoKVI1BlIWwd5mp8.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Florence Kasumba</Name>
-			<Type>Actor</Type>
-			<Role>Ayo</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/oLKR9435H3sjeCWWvD0rLGsL5t9.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Isaach De Bankolé</Name>
-			<Type>Actor</Type>
-			<Role>River Tribe Elder</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/pr2AoaFlgQfdbIIv88UhCyp8wuF.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Danny Sapani</Name>
-			<Type>Actor</Type>
-			<Role>Border Tribe Elder</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/4VeGdZjOEMCdO6AHbYiLI7FdT39.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Sydelle Noel</Name>
-			<Type>Actor</Type>
-			<Role>Xoliswa</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/39EkTMquEQenyyRkXYCPpKsOKnY.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Janeshia Adams-Ginyard</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7jfm3qieBQgwG6hpinh9NUEAZtF.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Jénel Stevens</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/n4tOkOkzpiNFhEDzZHgNzJAe79w.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Shaunette Renée Wilson</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/fPjeTxxE2sB0bQUcAoO13mKsKK5.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Stan Lee</Name>
-			<Type>Actor</Type>
-			<Role>Casino Patron</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/dTr2gJPL7jELKVkcjtoNx80uVKR.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Sebastian Stan</Name>
-			<Type>Actor</Type>
-			<Role>James Bucky Barnes</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/8MOp9cazWpC4CrGLZnD11A6Dv8c.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Bambadjan Bamba</Name>
-			<Type>Actor</Type>
-			<Role>Military Leader</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/eYlzlI6dVc96gnFEBJe3MPFGMrV.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Jeremy Sample</Name>
-			<Type>Actor</Type>
-			<Role>Jabari Fisherman</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/eD0QPs81GFucXeNx9B1SzSgONqG.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Sope Aluko</Name>
-			<Type>Actor</Type>
-			<Role>Shaman</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/tPWSMWE2PgT6NTbMo281JarKYkO.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Alexis Rhee</Name>
-			<Type>Actor</Type>
-			<Role>Sophia</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/vu4RAoiD4eXXt0KRA882IwmZQAE.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Tahseen Ghauri</Name>
-			<Type>Actor</Type>
-			<Role>U.N. Official</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/63aehtREPF3tWAxReTkJeMhqZGF.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Danny Chung</Name>
-			<Type>Actor</Type>
-			<Role>Casino Dealer</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/zDdG3uBSPQCBFGYMIhtbv3uKzUG.jpg</Image>
-		</Person>
-		<Person>
-			<Name>David S. Lee</Name>
-			<Type>Actor</Type>
-			<Role>Limbani</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jcQP0Uonk5cIiYjdmC2toGCpo6w.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Mark Ashworth</Name>
-			<Type>Actor</Type>
-			<Role>Security Guard</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jWBtSHaP3iSmQJC7GTPca8GNPc1.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Shad Gaspard</Name>
-			<Type>Actor</Type>
-			<Role>Actor</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/oRaLNXPr0LUJEw1LFyLQVPPnj84.jpg</Image>
-		</Person>
-		<Person>
-			<Name>William Cowboy Reed</Name>
-			<Type>Actor</Type>
-			<Role>Museum Guard</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jQvNTAIgN7ZrDOSHD2jKGi1ZJ7f.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Alex Hibbert</Name>
-			<Type>Actor</Type>
-			<Role>Young Oakland Kid</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/rWUu41SSz4bTiphToue2BrAlqZv.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Lucy Hockings</Name>
-			<Type>Actor</Type>
-			<Role>BBC Reporter</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/nTcf3wQBsSSQNMCJt9AtLH20OBg.jpg</Image>
-		</Person>
-		<Person>
-			<Name>Ashton Tyler</Name>
-			<Type>Actor</Type>
-			<Role>Young T'Challa</Role>
+			<Role>Lead Mercenary</Role>
 			<Image />
 		</Person>
 		<Person>
-			<Name>Atandwa Kani</Name>
+			<Name>Kevin Layne</Name>
 			<Type>Actor</Type>
-			<Role>Young T'Chaka</Role>
+			<Role>Sub Pilot</Role>
 			<Image />
 		</Person>
 		<Person>
-			<Name>Connie Chiume</Name>
+			<Name>Robert Emms</Name>
 			<Type>Actor</Type>
-			<Role>Mining Tribe Elder</Role>
-			<Image />
+			<Role>Tech Merc</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/4wdONknsZLWHpH2NSyk0FyPPO8A.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Dorothy  Steel</Name>
+			<Name>Michael Papajohn</Name>
 			<Type>Actor</Type>
-			<Role>Merchant Tribe Elder</Role>
-			<Image />
+			<Role>InGen Contractor (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/9nVHCoYxCpGh9pO00xp7SybWd7b.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Marija Abney</Name>
+			<Name>Daniel Stisen</Name>
 			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Maria Hippolyte</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Marie Mouroum</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Zola Williams</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Christine Hollingsworth</Name>
-			<Type>Actor</Type>
-			<Role>Dora Milaje</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Nabiyah Be</Name>
-			<Type>Actor</Type>
-			<Role>Linda</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Michael David Yuhl</Name>
-			<Type>Actor</Type>
-			<Role>Ambassador</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Elizabeth Elkins</Name>
-			<Type>Actor</Type>
-			<Role>CIA Agent</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Raven Wynn</Name>
-			<Type>Actor</Type>
-			<Role>Korean Market Shopper</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Amechi Okocha</Name>
-			<Type>Actor</Type>
-			<Role>Bueze</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Jamel Chambers</Name>
-			<Type>Actor</Type>
-			<Role>Merchant (uncredited)</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Tony Sears</Name>
-			<Type>Actor</Type>
-			<Role>French Ambassador</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Francesca Faridany</Name>
-			<Type>Actor</Type>
-			<Role>Museum Director</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Roland Kilumbu</Name>
-			<Type>Actor</Type>
-			<Role>Young Military</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Timothy Carr</Name>
-			<Type>Actor</Type>
-			<Role>UN Security Guard</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Apollo GT</Name>
-			<Type>Actor</Type>
-			<Role>Fish Market Shopper</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>James Siderits</Name>
-			<Type>Actor</Type>
-			<Role>U.N. Official / Translator</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Travis Love</Name>
-			<Type>Actor</Type>
-			<Role>Jabari Warrior</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Lidya Jewett</Name>
-			<Type>Actor</Type>
-			<Role>Young Nakia</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Alona Leoine</Name>
-			<Type>Actor</Type>
-			<Role>School Child / Playground Kid</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Kinley Fleurejuste</Name>
-			<Type>Actor</Type>
-			<Role>Uptown Patron</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Ofu Obekpa</Name>
-			<Type>Actor</Type>
-			<Role>Kings Guard</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Michael R. Ciminna</Name>
-			<Type>Actor</Type>
-			<Role>Security Guard</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>John Y Lee</Name>
-			<Type>Actor</Type>
-			<Role>Casino Dealer</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Byron Coolie</Name>
-			<Type>Actor</Type>
-			<Role>Wakandan</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>William Walker</Name>
-			<Type>Actor</Type>
-			<Role>Museum Security Guard</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Joseph Akharoh Jr.</Name>
-			<Type>Actor</Type>
-			<Role>Citizen Of Wakanda</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Stanley Aughtry</Name>
-			<Type>Actor</Type>
-			<Role>Merchant Tribe Warrior</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Raenen Golez</Name>
-			<Type>Actor</Type>
-			<Role>Casino Patron</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Leo De Rivera</Name>
-			<Type>Actor</Type>
-			<Role>Casino Bartender</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Tevin Beech</Name>
-			<Type>Actor</Type>
-			<Role>Guard</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Tari Omoro</Name>
-			<Type>Actor</Type>
-			<Role>Jabari Drummer</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Andrea Antonio Canal</Name>
-			<Type>Actor</Type>
-			<Role>Casino Guest</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>David Dunston</Name>
-			<Type>Actor</Type>
-			<Role>Citizen Of Wakanda</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Emelita T. Gonzalez</Name>
-			<Type>Actor</Type>
-			<Role>UN Philippine Represenitive</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Josue Louis-Charles</Name>
-			<Type>Actor</Type>
-			<Role>Mining Tribe</Role>
-			<Image />
-		</Person>
-		<Person>
-			<Name>Isaac Phillips</Name>
-			<Type>Actor</Type>
-			<Role>Mining Tribe #2</Role>
-			<Image />
+			<Role>Russian Bodyguard (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jhyIFfBnM5nLhHdpFiGIW6qk9x5.jpg</Image>
 		</Person>
 	</Persons>
 	<Awards></Awards>
-	<BackdropURL>http://image.tmdb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg</BackdropURL>
-	<Director>Ryan Coogler</Director>
+	<BackdropURL>http://image.tmdb.org/t/p/original/3s9O5af2xWKWR5JzP2iJZpZeQQg.jpg</BackdropURL>
+	<Director>J. A. Bayona</Director>
 	<FullCertifications></FullCertifications>
 	<FormalMPAA></FormalMPAA>
-	<Votes>268388</Votes>
-	<Synopsis>King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.</Synopsis>
-	<Plot>King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.</Plot>
-	<Outline>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of...
-    See more &amp;raquo;</Outline>
-	<ShortDescription>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of...
-    See more &amp;raquo;</ShortDescription>
-	<PosterURL>http://image.tmdb.org/t/p/original/uxzzxijgPIY7slzFvMotPv8wjKA.jpg</PosterURL>
-	<Tagline>Long live the king</Tagline>
+	<Votes>125064</Votes>
+	<Synopsis>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Synopsis>
+	<Plot>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Plot>
+	<Outline>Three years after the Jurassic World theme park was closed down, Owen and Claire return to Isla Nublar to save the dinosaurs when they learn that a once dormant volcano on the island is active and is threatening to extinguish all life there. Along the way, Owen sets out to find Blue, his lead raptor, and discovers a conspiracy that could disrupt the natural order of the entire planet. Life has found a way, again.</Outline>
+	<ShortDescription>Three years after the Jurassic World theme park was closed down, Owen and Claire return to Isla Nublar to save the dinosaurs when they learn that a once dormant volcano on the island is active and is threatening to extinguish all life there. Along the way, Owen sets out to find Blue, his lead raptor, and discovers a conspiracy that could disrupt the natural order of the entire planet. Life has found a way, again.</ShortDescription>
+	<PosterURL>http://image.tmdb.org/t/p/original/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg</PosterURL>
+	<Tagline>The park is gone</Tagline>
 	<Taglines>
-		<Tagline>Long live the king</Tagline>
+		<Tagline>The park is gone</Tagline>
 	</Taglines>
 	<Top250></Top250>
-	<TrailerURL>http://www.youtube.com/watch?v=xjDjIWPwcPU</TrailerURL>
-	<Website>https://marvel.com/movies/movie/224/black_panther</Website>
-	<ReleaseDate>2018-02-13</ReleaseDate>
-	<WritersList>Joe Robert Cole|Ryan Coogler|Jack Kirby|Stan Lee|Simeon Wilkins</WritersList>
-	<Popularity>390.736942</Popularity>
-	<VoteCount>4837</VoteCount>
-	<TMDbCollectionId>0</TMDbCollectionId>
-	<CollectionNumber>0</CollectionNumber>
+	<TrailerURL>http://www.youtube.com/watch?v=vn9mMeWcgoM</TrailerURL>
+	<Website>http://www.jurassicworld.com</Website>
+	<ReleaseDate>2018-06-06</ReleaseDate>
+	<WritersList>Derek Connolly|Colin Trevorrow|Michael Crichton</WritersList>
+	<Popularity>163.502</Popularity>
+	<VoteCount>3034</VoteCount>
+	<TMDbCollectionId>328</TMDbCollectionId>
+	<CollectionNumber>328</CollectionNumber>
+	<CollectionName>Jurassic Park</CollectionName>
 	<Tags>
-		<Tag>africa</Tag>
-		<Tag>superhero</Tag>
-		<Tag>based on comic</Tag>
-		<Tag>marvel cinematic universe</Tag>
+		<Tag>tyrannosaurus rex</Tag>
+		<Tag>volcano</Tag>
+		<Tag>sequel</Tag>
+		<Tag>rescue mission</Tag>
+		<Tag>wild animal</Tag>
+		<Tag>dinosaur</Tag>
+		<Tag>genetic engineering</Tag>
+		<Tag>prehistoric creature</Tag>
+		<Tag>aftercreditsstinger</Tag>
+		<Tag>monster island</Tag>
 	</Tags>
 	<SimilarMovies>
-		<SimilarMovie>Justice League</SimilarMovie>
-		<SimilarMovie>Superman Returns</SimilarMovie>
-		<SimilarMovie>Superman</SimilarMovie>
-		<SimilarMovie>Avengers: Age of Ultron</SimilarMovie>
-		<SimilarMovie>Superman II</SimilarMovie>
-		<SimilarMovie>Superman: Doomsday</SimilarMovie>
-		<SimilarMovie>Superman III</SimilarMovie>
-		<SimilarMovie>Hellboy II: The Golden Army</SimilarMovie>
-		<SimilarMovie>Man of Steel</SimilarMovie>
-		<SimilarMovie>Wonder Woman</SimilarMovie>
-		<SimilarMovie>Avengers: Infinity War</SimilarMovie>
-		<SimilarMovie>Batman v Superman: Dawn of Justice</SimilarMovie>
-		<SimilarMovie>The Incredible Hulk</SimilarMovie>
-		<SimilarMovie>Hulk</SimilarMovie>
-		<SimilarMovie>Batman Returns</SimilarMovie>
-		<SimilarMovie>Untitled Avengers Movie</SimilarMovie>
-		<SimilarMovie>The Avengers</SimilarMovie>
-		<SimilarMovie>The Dark Knight</SimilarMovie>
-		<SimilarMovie>Captain Marvel</SimilarMovie>
-		<SimilarMovie>Son of Batman</SimilarMovie>
+		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
+		<SimilarMovie>Jurassic Park</SimilarMovie>
+		<SimilarMovie>Ice Age</SimilarMovie>
+		<SimilarMovie>Jurassic World</SimilarMovie>
+		<SimilarMovie>Dinosaur</SimilarMovie>
+		<SimilarMovie>The Good Dinosaur</SimilarMovie>
+		<SimilarMovie>The Land Before Time</SimilarMovie>
+		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
+		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
+		<SimilarMovie>We're Back! A Dinosaur's Story</SimilarMovie>
+		<SimilarMovie>Age of Dinosaurs</SimilarMovie>
+		<SimilarMovie>One Million Years B.C.</SimilarMovie>
+		<SimilarMovie>The People That Time Forgot</SimilarMovie>
+		<SimilarMovie>The Lost World</SimilarMovie>
+		<SimilarMovie>Minions: Cro Minion</SimilarMovie>
+		<SimilarMovie>Dinosaur 13</SimilarMovie>
 	</SimilarMovies>
 	<OtherID_RottenTomatoes></OtherID_RottenTomatoes>
 	<RottenTomatoesId></RottenTomatoesId>
 	<CriticRating></CriticRating>
 	<CriticRatingSummary></CriticRatingSummary>
-	<IMDB_ID>tt1825683</IMDB_ID>
-	<TMDB>284054</TMDB>
-	<TMDB_ID>284054</TMDB_ID>
-	<Rating>7.6</Rating>
+	<IMDB_ID>tt4881806</IMDB_ID>
+	<TMDB>351286</TMDB>
+	<TMDB_ID>351286</TMDB_ID>
+	<Rating>0.0</Rating>
 	<certification>PG-13</certification>
-	<Trailer>http://www.youtube.com/watch?v=xjDjIWPwcPU</Trailer>
-	<Runtime>134</Runtime>
-	<Description>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of...
-    See more &amp;raquo;</Description>
-	<PremiereDate>2018-02-13</PremiereDate>
+	<Trailer>http://www.youtube.com/watch?v=vn9mMeWcgoM</Trailer>
+	<Runtime>129</Runtime>
+	<Description>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Description>
+	<PremiereDate>2018-06-06</PremiereDate>
+	<VideoAspect>2.35:1</VideoAspect>
+	<VideoBitrate>4588000</VideoBitrate>
+	<VideoCodec>x264</VideoCodec>
+	<VideoCodecType>H.264</VideoCodecType>
+	<VideoCodecRaw>AVC</VideoCodecRaw>
+	<VideoFileSize>6484948073</VideoFileSize>
+	<VideoHeight>536</VideoHeight>
+	<VideoLength>128</VideoLength>
+	<VideoLengthSeconds>7698</VideoLengthSeconds>
+	<VideoQuality>Great (720p HD)</VideoQuality>
+	<VideoWidth>1280</VideoWidth>
+	<AudioBitrate>1536000</AudioBitrate>
+	<AudioChannels>5.1</AudioChannels>
+	<AudioCodec>DTS</AudioCodec>
+	<AudioCodecRaw>DTS Coherent Acoustics</AudioCodecRaw>
+	<AudioFrequency>48000</AudioFrequency>
+	<AspectRatio>2.39:1</AspectRatio>
+	<MediaInfo>
+		<Video>
+			<Codec>x264</Codec>
+			<FFCodec>H.264</FFCodec>
+			<BitRate>4588000</BitRate>
+			<Height>536</Height>
+			<Width>1280</Width>
+			<FrameRate>23.976</FrameRate>
+			<Duration>128</Duration>
+			<DurationSeconds>7698</DurationSeconds>
+			<ScanType>Progressive</ScanType>
+		</Video>
+		<Audio>
+			<Codec>DTS</Codec>
+			<FFCodec>DTS</FFCodec>
+			<Channels>6</Channels>
+			<BitRate>1536000</BitRate>
+			<Language>eng</Language>
+		</Audio>
+	</MediaInfo>
+	<VideoHasSubtitles>True</VideoHasSubtitles>
+	<Type></Type>
 </Title>

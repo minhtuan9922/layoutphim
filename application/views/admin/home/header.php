@@ -50,22 +50,16 @@
 		</div>
 		<div class="card">
 			<div class="card-header">
-				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'phim') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#phim">Phim</a>
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'theloai') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#theloai"><i class="fas fa-list-ul"></i> Thể loại</a>
 			</div>
-			<div id="phim" class="collapse <?php if($this->uri->segment(2) == 'phim') echo 'show'; ?>">
+			<div id="theloai" class="collapse <?php if($this->uri->segment(2) == 'theloai') echo 'show'; ?>">
 				<div class="card-body">
 					<ul class="nav flex-column">
 						<li class="nav-item">
-							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/phim') echo 'active'; ?>" href="<?=base_url('admin/phim') ?>">Link</a>
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/theloai') echo 'active'; ?>" href="<?=base_url('admin/theloai') ?>"><i class="fas fa-list-ul"></i> Danh sách</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light disabled" href="#">Disabled</a>
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/theloai/them') echo 'active'; ?>" href="<?=base_url('admin/theloai/them') ?>"><i class="fas fa-plus"></i> Thêm thể loại</a>
 						</li>
 					</ul>
 				</div>

@@ -50,6 +50,7 @@ class Mphim extends CI_Model{
 	{
 		$this->db->from('phim');
 		$this->db->where('id_phim',$id);
+		$this->db->where('active = 1');
         return $this->db->get()->row_array();
 	}
 	public function phimcungtheloai($data = array(), $id)
@@ -67,6 +68,7 @@ class Mphim extends CI_Model{
 			$this->db->from('phim');
 			$this->db->where($sql);
 			$this->db->where('id_phim != '.$id);
+			$this->db->where('active = 1');
 			$this->db->order_by('id_phim', 'RANDOM');
 			$this->db->limit(6);
 			return $this->db->get()->result_array();
@@ -77,6 +79,7 @@ class Mphim extends CI_Model{
 	public function get_list_phim($id_theloai, $limit = NULL, $start = NULL, $order = NULL)
 	{
 		$this->db->from('phim');
+		$this->db->where('active = 1');
 		$this->db->like('theloai', '"'.$id_theloai.'"');
 		if($limit != NULL && $start == NULL)
 		{
@@ -95,6 +98,7 @@ class Mphim extends CI_Model{
 	public function count_list_phim($id_theloai)
 	{
 		$this->db->from('phim');
+		$this->db->where('active = 1');
 		$this->db->like('theloai', '"'.$id_theloai.'"');
 		return $this->db->count_all_results();
 	}

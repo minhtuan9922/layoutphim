@@ -122,6 +122,11 @@ class Phim extends CI_Controller {
 				);
 			}
 		}
+		if(isset($_SESSION['success']))
+		{
+			$data['success'] = $_SESSION['success'];
+			unset($_SESSION['success']);
+		}
 		$data['content'] = 'admin/phim/danhsach';
 		$this->load->view('admin/layout', $data);
 	}
@@ -140,10 +145,13 @@ class Phim extends CI_Controller {
 			$theloai = explode(',',$this->input->post('theloai'));
 			$thoiluong = $this->input->post('thoiluong');
 			$diem_imdb = $this->input->post('diem_imdb');
-			$link_phude = $this->input->post('link_phude');
-			$link_thuyetminh = $this->input->post('link_thuyetminh');
+			$link_phude = strstr($this->input->post('link_phude'), '=');
+			$link_phude = ltrim($link_phude, '=');
+			$link_thuyetminh = strstr($this->input->post('link_thuyetminh'), '=');
+			$link_thuyetminh = ltrim($link_thuyetminh, '=');
 			$gioithieu = $this->input->post('gioithieu');
-			$trailer = $this->input->post('trailer');
+			$trailer = strstr($this->input->post('trailer'), '=');
+			$trailer = ltrim($trailer, '=');
 			$phimbo = $this->input->post('phimbo');
 			
 			if(empty($phimbo))
@@ -209,7 +217,7 @@ class Phim extends CI_Controller {
 					$tam2['tentheloai'] = trim($item);
 					$tam2['tentheloai_kd'] = $this->chuanhoa->convert_vi_to_en(trim($item));
 					$id_theloai = $this->mtheloai->themtheloai($tam2);
-					$dat_theloai[] = $id_theloai;
+					$dat_theloai[] = (string)$id_theloai;
 				}
 			}
 			$dat = array(
@@ -231,6 +239,11 @@ class Phim extends CI_Controller {
 				'ngay_them' => date('Y-m-d H:i:s'),
 			);
 			$id_phim = $this->mphim->themphim($dat);
+			if($id_phim)
+			{
+				$_SESSION['success'] = 'Thêm phim thành công!';
+				redirect(base_url('admin/phim'));
+			}
 		}
 		else 
 		{
@@ -305,10 +318,28 @@ class Phim extends CI_Controller {
 			$theloai = explode(',',$this->input->post('theloai'));
 			$thoiluong = $this->input->post('thoiluong');
 			$diem_imdb = $this->input->post('diem_imdb');
-			$link_phude = $this->input->post('link_phude');
-			$link_thuyetminh = $this->input->post('link_thuyetminh');
+			$link_phude = trim($this->input->post('link_phude'));
+			if(strpos($link_phude, '=') !== false)
+			{
+				$link_phude = strstr($link_phude, '=');
+				$link_phude = ltrim($link_phude, '=');
+				$link_phude = 'https://drive.google.com/file/d/'.$link_phude.'/preview';
+			}
+			$link_thuyetminh = trim($this->input->post('link_thuyetminh'));
+			if(strpos($link_thuyetminh, '=') !== false)
+			{
+				$link_thuyetminh = strstr($link_thuyetminh, '=');
+				$link_thuyetminh = ltrim($link_thuyetminh, '=');
+				$link_thuyetminh = 'https://drive.google.com/file/d/'.$link_thuyetminh.'/preview';
+			}
 			$gioithieu = $this->input->post('gioithieu');
-			$trailer = $this->input->post('trailer');
+			$trailer = trim($this->input->post('trailer'));
+			if(strpos($trailer, '=') !== false)
+			{
+				$trailer = strstr($trailer, '=');
+				$trailer = ltrim($trailer, '=');
+				$trailer = 'https://www.youtube.com/embed/'.$trailer;
+			}
 			$phimbo = $this->input->post('phimbo');
 			
 			if(empty($phimbo))
@@ -396,6 +427,11 @@ class Phim extends CI_Controller {
 				'trailer' => $trailer,
 			);
 			$id_phim = $this->mphim->capnhat($dat, $id);
+			if($id_phim)
+			{
+				$_SESSION['success'] = 'Cập nhật thành công!';
+				redirect(base_url('admin/phim'));
+			}
 		}
 		
 		$chitietphim = $this->mphim->chitietphim($id);

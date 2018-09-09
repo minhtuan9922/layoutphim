@@ -6,6 +6,17 @@
 		</ol>
 	</nav>
 	<div class="main">
+		<?php
+		if(isset($success))
+		{
+		?>
+		<div class="alert alert-success alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<?=$success ?>
+		</div>
+		<?php
+		}
+		?>
 		<div class="card">
 			<div class="card-header bg-info text-white">Header</div>
 			<div class="card-body p-0">

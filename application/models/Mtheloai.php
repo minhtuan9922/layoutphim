@@ -20,10 +20,10 @@ class Mtheloai extends CI_Model{
 			return $this->db->insert_id();
 		}
 	}
-	public function capnhat($data = array(), $id) 
+	public function capnhat($data = array(), $id_theloai) 
 	{
-		$this->db->where('id_phim',$id);
-        return $this->db->update('phim',$data);
+		$this->db->where('id_theloai',$id_theloai);
+        return $this->db->update('theloai',$data);
 	}
 	public function check_id_theloai($tentheloai)
 	{
@@ -52,5 +52,14 @@ class Mtheloai extends CI_Model{
 		$this->db->where('status', 1);
 		return $this->db->get()->result_array();
 	}
-	
+	public function list_theloai()
+	{
+		$this->db->from('theloai');
+		return $this->db->get()->result_array();
+	}
+	public function xoa_theloai($id_theloai)
+	{
+		$this->db->where('id_theloai', $id_theloai);
+		return $this->db->delete('theloai');
+	}
 }
