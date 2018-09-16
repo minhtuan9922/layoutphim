@@ -23,9 +23,6 @@
 <body>
 	<?php
 	$this->load->view('admin/home/header');
-	if(isset($slide)) {
-		$this->load->view($slide);
-	}
 	$this->load->view($content);
 	//$this->load->view('admin/home/footer');
 	?>

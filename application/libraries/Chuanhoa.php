@@ -5,6 +5,7 @@ class Chuanhoa {
 
 	public function gach_noi($str)
 	{
+		$str = preg_replace("/(:|\(|\))/", '', $str);
 		$str = preg_replace("/( )/", '_', $str);
   		return $str;
 	}

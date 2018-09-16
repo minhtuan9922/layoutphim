@@ -145,13 +145,21 @@ class Phim extends CI_Controller {
 			$theloai = explode(',',$this->input->post('theloai'));
 			$thoiluong = $this->input->post('thoiluong');
 			$diem_imdb = $this->input->post('diem_imdb');
+			
 			$link_phude = strstr($this->input->post('link_phude'), '=');
 			$link_phude = ltrim($link_phude, '=');
+			$link_phude = 'https://drive.google.com/file/d/'.$link_phude.'/preview';
+			
 			$link_thuyetminh = strstr($this->input->post('link_thuyetminh'), '=');
 			$link_thuyetminh = ltrim($link_thuyetminh, '=');
+			$link_thuyetminh = 'https://drive.google.com/file/d/'.$link_thuyetminh.'/preview';
+			
 			$gioithieu = $this->input->post('gioithieu');
+			
 			$trailer = strstr($this->input->post('trailer'), '=');
 			$trailer = ltrim($trailer, '=');
+			$trailer = 'https://www.youtube.com/embed/'.$trailer;
+			
 			$phimbo = $this->input->post('phimbo');
 			
 			if(empty($phimbo))

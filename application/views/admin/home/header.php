@@ -65,6 +65,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'slide') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#slide"><i class="far fa-image"></i> Slide</a>
+			</div>
+			<div id="slide" class="collapse <?php if($this->uri->segment(2) == 'slide') echo 'show'; ?>">
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/slide') echo 'active'; ?>" href="<?=base_url('admin/slide') ?>"><i class="fas fa-list-ul"></i> Danh sách</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/slide/them') echo 'active'; ?>" href="<?=base_url('admin/slide/them') ?>"><i class="fas fa-plus"></i> Thêm slide</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		
 
 	</div>

@@ -23,12 +23,19 @@ class Mphim extends CI_Model{
 		$this->db->where('id_phim', $id);
 		return $this->db->get()->row_array();
 	}
-	public function danhsach($start, $limit) 
+	public function danhsach($start = NULL, $limit = NULL) 
 	{
 		$this->db->from('phim');
 		$this->db->where('active', 1); 
 		$this->db->order_by('ngay_them desc');
-		$this->db->limit($limit, $start);
+		if($limit != NULL && $start == NULL)
+		{
+			$this->db->limit($limit);
+		}
+		elseif($limit != NULL && $start != NULL)
+		{
+			$this->db->limit($limit, $start);
+		}
 		return $this->db->get()->result_array();
 	}
 	public function countAll(){
