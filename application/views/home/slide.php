@@ -1,41 +1,38 @@
 <!--Slide đầu trang-->
 <div id="slide" class="carousel slide" data-ride="carousel">
 	<ul class="carousel-indicators">
-		<li data-target="#slide" data-slide-to="0" class="active">
+		<?php
+		if(!empty($list_slide))
+		{
+			foreach($list_slide as $k => $item)
+			{
+		?>
+		<li data-target="#slide" data-slide-to="<?=$k ?>" class="<?php if($k == 0) echo 'active'; ?>">
 			<div class="slide-poster">
-				<img src="<?=base_url() ?>img/poster/Frozen.2013.jpg" alt="" width="100%">
+				<img src="<?=base_url('img/poster/'.$item['poster']) ?>" alt="" width="100%">
 			</div>
 		</li>
-		<li data-target="#slide" data-slide-to="1">
-			<div class="slide-poster">
-				<img src="<?=base_url() ?>img/poster/Frozen.2013.jpg" alt="" width="100%">
-			</div>
-		</li>
-		<li data-target="#slide" data-slide-to="2">
-			<div class="slide-poster">
-				<img src="<?=base_url() ?>img/poster/Frozen.2013.jpg" alt="" width="100%">
-			</div>
-		</li>
+		<?php
+			}
+		}
+		?>
 	</ul>
 	<div class="carousel-inner">
-		<div class="carousel-item active" style="background-image: url(img/slide/backdrop.jpg)">
+		<?php
+		if(!empty($list_slide))
+		{
+			foreach($list_slide as $k => $item)
+			{
+		?>
+		<div class="carousel-item <?php if($k == 0) echo 'active'; ?>" style="background-image: url(img/slide/<?=$item['background'] ?>)">
 			<div class="carousel-caption">
-				<h3>Los Angeles</h3>
-				<p>We had such a great time in LA!</p>
+				<h3><a href="<?=base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])) ?>"><?=$item['tenphim_vn'] ?></a></h3>
 			</div>   
 		</div>
-		<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
-			<div class="carousel-caption">
-				<h3>Chicago</h3>
-				<p>Thank you, Chicago!</p>
-			</div>   
-		</div>
-		<div class="carousel-item" style="background-image: url(img/slide/backdrop.jpg)">
-			<div class="carousel-caption">
-				<h3>New York</h3>
-				<p>We love the Big Apple!</p>
-			</div>   
-		</div>
+		<?php
+			}
+		}
+		?>
 	</div>
 	<a class="carousel-control-prev" href="#slide" data-slide="prev">
 		<span class="carousel-control-prev-icon"></span>

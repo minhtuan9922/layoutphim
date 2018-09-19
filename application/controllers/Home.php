@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		
-		//$this->load->model('mphim');
+		$this->load->model('mslide');
 	}
 	public function index()
 	{
@@ -23,6 +23,9 @@ class Home extends CI_Controller {
 			);
 		}
 		$data['list_phim'] = $result;
+		
+		$data['list_slide'] = $this->mslide->danhsach();
+		
 		$data['content'] = 'home/home';
 		$this->load->view('index', $data);
 	}
