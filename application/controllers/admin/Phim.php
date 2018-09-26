@@ -38,28 +38,29 @@ class Phim extends CI_Controller {
 		$config['full_tag_close'] = '</ul>';
 
 		$config['first_link'] = 'Trang đầu';
-		$config['first_tag_open'] = '<li class="page-item"><span class="page-link">';
-		$config['first_tag_close'] = '</span></li>';
+		$config['first_tag_open'] = '<li class="page-item">';
+		$config['first_tag_close'] = '</li>';
 
 		$config['last_link'] = 'Trang cuối';
-		$config['last_tag_open'] = '<li class="page-item"><span class="page-link">';
-		$config['last_tag_close'] = '</span></li>';
+		$config['last_tag_open'] = '<li class="page-item">';
+		$config['last_tag_close'] = '</li>';
 
 		$config['next_link'] = 'Sau';
-		$config['next_tag_open'] = '<li class="page-item"><span class="page-link">';
-		$config['next_tag_close'] = '</span></li>';
+		$config['next_tag_open'] = '<li class="page-item">';
+		$config['next_tag_close'] = '</li>';
 
 		$config['prev_link'] = 'Trước';
-		$config['prev_tag_open'] = '<li class="page-item"><span class="page-link">';
-		$config['prev_tag_close'] = '</span></li>';
+		$config['prev_tag_open'] = '<li class="page-item">';
+		$config['prev_tag_close'] = '</li>';
 
 		$config['cur_tag_open'] = '<li class="page-item active"><a href="" class="page-link">';
 		$config['cur_tag_close'] = '</a></li>';
 
-		$config['num_tag_open'] = '<li class="page-item"><span class="page-link">';
-		$config['num_tag_close'] = '</span></li>';
+		$config['num_tag_open'] = '<li class="page-item">';
+		$config['num_tag_close'] = '</li>';
 		
 		$config['anchor_class'] = 'follow_link';  
+		$config['attributes'] = array('class' => 'page-link'); 
         $this->load->library('pagination', $config);
 		
 		$danhsach = $this->mphim->danhsach($batdau, $config['per_page']);
@@ -148,17 +149,26 @@ class Phim extends CI_Controller {
 			
 			$link_phude = strstr($this->input->post('link_phude'), '=');
 			$link_phude = ltrim($link_phude, '=');
-			$link_phude = 'https://drive.google.com/file/d/'.$link_phude.'/preview';
+			if($link_phude != '')
+			{
+				$link_phude = 'https://drive.google.com/file/d/'.$link_phude.'/preview';
+			}
 			
 			$link_thuyetminh = strstr($this->input->post('link_thuyetminh'), '=');
 			$link_thuyetminh = ltrim($link_thuyetminh, '=');
-			$link_thuyetminh = 'https://drive.google.com/file/d/'.$link_thuyetminh.'/preview';
+			if($link_thuyetminh != '')
+			{
+				$link_thuyetminh = 'https://drive.google.com/file/d/'.$link_thuyetminh.'/preview';
+			}
 			
 			$gioithieu = $this->input->post('gioithieu');
 			
 			$trailer = strstr($this->input->post('trailer'), '=');
 			$trailer = ltrim($trailer, '=');
-			$trailer = 'https://www.youtube.com/embed/'.$trailer;
+			if($trailer != '')
+			{
+				$trailer = 'https://www.youtube.com/embed/'.$trailer;
+			}
 			
 			$phimbo = $this->input->post('phimbo');
 			

@@ -29,4 +29,14 @@ class Home extends CI_Controller {
 		$data['content'] = 'home/home';
 		$this->load->view('index', $data);
 	}
+	public function trailer()
+	{
+		if(isset($_POST['id']))
+		{
+			$phim = $this->mphim->playphim($_POST['id']);
+			$trailer = $phim['trailer'];
+			$json['trailer'] = $trailer;
+			echo json_encode($json);
+		}
+	}
 }

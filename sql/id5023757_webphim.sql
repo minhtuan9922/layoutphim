@@ -2,10 +2,10 @@
 -- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jun 28, 2018 at 04:09 PM
--- Server version: 10.2.12-MariaDB
--- PHP Version: 7.0.26
+-- Máy chủ: localhost
+-- Thời gian đã tạo: Th9 19, 2018 lúc 12:58 PM
+-- Phiên bản máy phục vụ: 10.2.12-MariaDB
+-- Phiên bản PHP: 7.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `id5023757_webphim`
+-- Cơ sở dữ liệu: `id5023757_webphim`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Cấu trúc bảng cho bảng `admin`
 --
 
 CREATE TABLE `admin` (
@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `admin`
+-- Đang đổ dữ liệu cho bảng `admin`
 --
 
 INSERT INTO `admin` (`id`, `account`, `password`, `ten`, `active`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `admin` (`id`, `account`, `password`, `ten`, `active`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `daodien`
+-- Cấu trúc bảng cho bảng `daodien`
 --
 
 CREATE TABLE `daodien` (
@@ -56,17 +56,36 @@ CREATE TABLE `daodien` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `daodien`
+-- Đang đổ dữ liệu cho bảng `daodien`
 --
 
 INSERT INTO `daodien` (`id_daodien`, `ten_daodien`, `ten_daodien_kd`) VALUES
 (1, 'Ryan Coogler', 'Ryan-Coogler'),
-(2, '', '');
+(2, '', ''),
+(3, 'Ryan Coogler', 'Ryan-Coogler'),
+(4, 'Ryan Coogler', 'Ryan-Coogler'),
+(5, 'Ryan Coogler', 'Ryan-Coogler'),
+(6, 'Hiroaki Miyamoto', 'Hiroaki-Miyamoto'),
+(7, 'Hiroaki Miyamoto', 'Hiroaki-Miyamoto'),
+(8, 'Hiroaki Miyamoto', 'Hiroaki-Miyamoto'),
+(9, 'Mike Mendez', 'Mike-Mendez'),
+(10, 'Baoqiang Wang', 'Baoqiang-Wang'),
+(11, 'D.J. Caruso', 'D.J.-Caruso'),
+(12, 'Hark Tsui', 'Hark-Tsui'),
+(13, 'Joss Whedon', 'Joss-Whedon'),
+(14, 'Joss Whedon', 'Joss-Whedon'),
+(15, 'J. A. Bayona', 'J.-A.-Bayona'),
+(16, 'Gary Ross', 'Gary-Ross'),
+(17, 'Gary Ross', 'Gary-Ross'),
+(18, 'David Leitch', 'David-Leitch'),
+(19, 'David Leitch', 'David-Leitch'),
+(20, 'Nitesh Tiwari', 'Nitesh-Tiwari'),
+(21, 'Nitesh Tiwari', 'Nitesh-Tiwari');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dienvien`
+-- Cấu trúc bảng cho bảng `dienvien`
 --
 
 CREATE TABLE `dienvien` (
@@ -76,7 +95,7 @@ CREATE TABLE `dienvien` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `dienvien`
+-- Đang đổ dữ liệu cho bảng `dienvien`
 --
 
 INSERT INTO `dienvien` (`id_dienvien`, `ten_dienvien`, `ten_dienvien_kd`) VALUES
@@ -92,12 +111,78 @@ INSERT INTO `dienvien` (`id_dienvien`, `ten_dienvien`, `ten_dienvien_kd`) VALUES
 (10, 'Forest Whitaker', 'Forest-Whitaker'),
 (11, 'Andy Serkis', 'Andy-Serkis'),
 (12, 'John Kani', 'John-Kani'),
-(123, '', '');
+(123, '', ''),
+(124, 'Brina Palencia', 'Brina-Palencia'),
+(125, 'Christopher Sabat', 'Christopher-Sabat'),
+(126, 'Keith Silverstein', 'Keith-Silverstein'),
+(127, 'Colleen Clinkenbeard', 'Colleen-Clinkenbeard'),
+(128, 'Patrick Seitz', 'Patrick-Seitz'),
+(129, 'Eric Vale', 'Eric-Vale'),
+(130, 'Hikari Mitsushima', 'Hikari-Mitsushima'),
+(131, 'Mayumi Tanaka', 'Mayumi-Tanaka'),
+(132, 'Ikue Ôtani', 'Ikue-Otani'),
+(133, 'Ian Sinclair', 'Ian-Sinclair'),
+(134, 'Luci Christian', 'Luci-Christian'),
+(135, 'Kappei Yamaguchi', 'Kappei-Yamaguchi'),
+(136, 'Dolph Lundgren', 'Dolph-Lundgren'),
+(137, 'Kristina Klebe', 'Kristina-Klebe'),
+(138, 'Tony Bentley', 'Tony-Bentley'),
+(139, 'Baoqiang Wang', 'Baoqiang-Wang'),
+(140, 'Yan Liu', 'Yan-Liu'),
+(141, 'Bai-Ke', 'Bai-Ke'),
+(142, 'Vin Diesel', 'Vin-Diesel'),
+(143, 'Donnie Yen', 'Donnie-Yen'),
+(144, 'Deepika Padukone', 'Deepika-Padukone'),
+(145, 'Kris Wu', 'Kris-Wu'),
+(146, 'Kenny Lin', 'Kenny-Lin'),
+(147, 'Chen Yao', 'Chen-Yao'),
+(148, 'Robert Downey Jr.', 'Robert-Downey-Jr.'),
+(149, 'Chris Evans', 'Chris-Evans'),
+(150, 'Mark Ruffalo', 'Mark-Ruffalo'),
+(151, 'Chris Pratt', 'Chris-Pratt'),
+(152, 'Bryce Dallas Howard', 'Bryce-Dallas-Howard'),
+(153, 'Rafe Spall', 'Rafe-Spall'),
+(154, 'Justice Smith', 'Justice-Smith'),
+(155, 'Daniella Pineda', 'Daniella-Pineda'),
+(156, 'James Cromwell', 'James-Cromwell'),
+(157, 'Toby Jones', 'Toby-Jones'),
+(158, 'Ted Levine', 'Ted-Levine'),
+(159, 'Jeff Goldblum', 'Jeff-Goldblum'),
+(160, 'BD Wong', 'BD-Wong'),
+(161, 'Geraldine Chaplin', 'Geraldine-Chaplin'),
+(162, 'Isabella Sermon', 'Isabella-Sermon'),
+(163, 'Sandra Bullock', 'Sandra-Bullock'),
+(164, 'Cate Blanchett', 'Cate-Blanchett'),
+(165, 'Anne Hathaway', 'Anne-Hathaway'),
+(166, 'Sarah Paulson', 'Sarah-Paulson'),
+(167, 'Rihanna', 'Rihanna'),
+(168, 'Mindy Kaling', 'Mindy-Kaling'),
+(169, 'Awkwafina', 'Awkwafina'),
+(170, 'Helena Bonham Carter', 'Helena-Bonham-Carter'),
+(171, 'Richard Armitage', 'Richard-Armitage'),
+(172, 'James Corden', 'James-Corden'),
+(173, 'Dakota Fanning', 'Dakota-Fanning'),
+(174, 'Elliott Gould', 'Elliott-Gould'),
+(175, 'Ryan Reynolds', 'Ryan-Reynolds'),
+(176, 'Josh Brolin', 'Josh-Brolin'),
+(177, 'Morena Baccarin', 'Morena-Baccarin'),
+(178, 'Julian Dennison', 'Julian-Dennison'),
+(179, 'Zazie Beetz', 'Zazie-Beetz'),
+(180, 'T.J. Miller', 'T.J.-Miller'),
+(181, 'Leslie Uggams', 'Leslie-Uggams'),
+(182, 'Karan Soni', 'Karan-Soni'),
+(183, 'Brianna Hildebrand', 'Brianna-Hildebrand'),
+(184, 'Jack Kesy', 'Jack-Kesy'),
+(185, 'Eddie Marsan', 'Eddie-Marsan'),
+(186, 'Shiori Kutsuna', 'Shiori-Kutsuna'),
+(187, 'Aamir Khan', 'Aamir-Khan'),
+(188, 'Sakshi Tanwar', 'Sakshi-Tanwar'),
+(189, 'Fatima Sana Shaikh', 'Fatima-Sana-Shaikh');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kichban`
+-- Cấu trúc bảng cho bảng `kichban`
 --
 
 CREATE TABLE `kichban` (
@@ -107,7 +192,7 @@ CREATE TABLE `kichban` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `kichban`
+-- Đang đổ dữ liệu cho bảng `kichban`
 --
 
 INSERT INTO `kichban` (`id_kichban`, `kichban`, `kichban_kd`) VALUES
@@ -116,12 +201,40 @@ INSERT INTO `kichban` (`id_kichban`, `kichban`, `kichban_kd`) VALUES
 (3, 'Jack Kirby', 'Jack-Kirby'),
 (4, 'Stan Lee', 'Stan-Lee'),
 (5, 'Simeon Wilkins', 'Simeon-Wilkins'),
-(6, '', '');
+(6, '', ''),
+(7, 'Clint Bickham', 'Clint-Bickham'),
+(8, 'Tsutomu Kuroiwa', 'Tsutomu-Kuroiwa'),
+(9, 'Brina Palencia', 'Brina-Palencia'),
+(10, 'Christopher Sabat', 'Christopher-Sabat'),
+(11, 'Keith Silverstein', 'Keith-Silverstein'),
+(12, 'Dan Berk', 'Dan-Berk'),
+(13, 'Robert Olsen', 'Robert-Olsen'),
+(14, 'Ding Ding', 'Ding-Ding'),
+(15, 'Baoqiang Wang', 'Baoqiang-Wang'),
+(16, 'Rich Wilkes', 'Rich-Wilkes'),
+(17, 'F. Scott Frazier', 'F.-Scott-Frazier'),
+(18, 'Stephen Chow', 'Stephen-Chow'),
+(19, 'Si-Cheun Lee', 'Si-Cheun-Lee'),
+(20, 'Joss Whedon', 'Joss-Whedon'),
+(21, 'Derek Connolly', 'Derek-Connolly'),
+(22, 'Colin Trevorrow', 'Colin-Trevorrow'),
+(23, 'Michael Crichton', 'Michael-Crichton'),
+(24, 'Gary Ross', 'Gary-Ross'),
+(25, 'Olivia Milch', 'Olivia-Milch'),
+(26, 'George Clayton Johnson', 'George-Clayton-Johnson'),
+(27, 'Jack Golden Russell', 'Jack-Golden-Russell'),
+(28, 'Paul Wernick', 'Paul-Wernick'),
+(29, 'Rhett Reese', 'Rhett-Reese'),
+(30, 'Fabian Nicieza', 'Fabian-Nicieza'),
+(31, 'Rob Liefeld', 'Rob-Liefeld'),
+(32, 'Ryan Reynolds', 'Ryan-Reynolds'),
+(33, 'Piyush Gupta', 'Piyush-Gupta'),
+(34, 'Shreyas Jain', 'Shreyas-Jain');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `phim`
+-- Cấu trúc bảng cho bảng `phim`
 --
 
 CREATE TABLE `phim` (
@@ -147,17 +260,17 @@ CREATE TABLE `phim` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `phim`
+-- Đang đổ dữ liệu cho bảng `phim`
 --
 
 INSERT INTO `phim` (`id_phim`, `tenphim_vn`, `tenphim_en`, `daodien`, `kichban`, `dienvien`, `theloai`, `nam_sanxuat`, `thoiluong`, `diem_imdb`, `link_phude`, `link_thuyetminh`, `poster`, `active`, `luotxem`, `gioithieu`, `phimbo`, `trailer`, `ngay_them`) VALUES
-(1, 'Thợ Săn Quỷ (2017)', 'Do not Kill It (2017) ', '', '', '', '', 2017, '00:00:00', 5.1, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqQXoxQ05OQUJTcTQ/preview', '', 'Dont.Kill.It.2016.jpg', 1, 44, 'Một con quỷ cổ xưa đang đe dọa một thị trấn nhỏ ở Mississippi.\r\n', 0, NULL, NULL),
-(2, 'Đại Náo Thiên Trúc (2017)', 'Buddies in India (2017)', '', '', '', '', 2017, '00:00:00', 4.0, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqSzZfeHEwVzd1QW8/preview', 'Buddies.in.India.2017.jpg', 1, 52, 'Đại Náo Thiên Trúc là tác phẩm điện ảnh phóng tác dựa trên tiểu thuyết Tây Du Ký của Ngô Thừa Ân. Xoay quanh quá trình sang Ấn Độ tìm kiếm di chúc của nhóm 4 người Đường Sâm, Vũ Không, Chu Thiên Bằng và Ngộ Tĩnh. Trong phim, Lục Tiểu Linh Đồng vào vai Võ Thánh, cha của Vũ Không (Vương Bảo Cường). Đặc biệt, ông còn tái hiện lại hình ảnh Tôn Ngộ Không huyền thoại của mình trên màn ảnh rộng.', 0, NULL, NULL),
+(1, 'Thợ Săn Quỷ (2017)', 'Do not Kill It (2017) ', '9', '[12,13]', '[136,137,138]', '[\"4\",\"12\",\"6\"]', 2017, '01:23:00', 5.2, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqQXoxQ05OQUJTcTQ/preview', '', 'Dont.Kill.It.2016.jpg', 1, 44, 'Một con quỷ cổ xưa đang đe dọa một thị trấn nhỏ ở Mississippi.\r\n', 0, '', NULL),
+(2, 'Đại Náo Thiên Trúc (2017)', 'Buddies in India (2017)', '10', '[14,15]', '[139,140,141]', '[\"4\",\"12\"]', 2017, '00:00:00', 4.0, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqSzZfeHEwVzd1QW8/preview', 'Buddies.in.India.2017.jpg', 1, 52, 'Đại Náo Thiên Trúc là tác phẩm điện ảnh phóng tác dựa trên tiểu thuyết Tây Du Ký của Ngô Thừa Ân. Xoay quanh quá trình sang Ấn Độ tìm kiếm di chúc của nhóm 4 người Đường Sâm, Vũ Không, Chu Thiên Bằng và Ngộ Tĩnh. Trong phim, Lục Tiểu Linh Đồng vào vai Võ Thánh, cha của Vũ Không (Vương Bảo Cường). Đặc biệt, ông còn tái hiện lại hình ảnh Tôn Ngộ Không huyền thoại của mình trên màn ảnh rộng.', 0, '', NULL),
 (3, 'Siêu Chiến Binh (2017)', 'The Guardians (2017)', '', '', '', '', 2017, '00:00:00', 3.7, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqUnFOTWJxODJFbTg/preview', 'The.Guardians.2017.jpg', 1, 15, 'Khi cuộc chiến tranh lạnh giữa Nga và Mỹ không ngừng leo thang căng thẳng, một tổ chức tên Patriot được lập ra nhằm đào tạo một biệt đội siêu anh hùng bao gồm các thành viên của những nước Xô Viết. Họ được cải tạo gen và biến thành những chiến binh bất khả chiến bại. Suốt nhiều năm, những siêu anh hùng này cố gắng che giấu danh tính của mình cho đến khi thời thế buộc họ phải xuất hiện, bảo vệ nền hòa bình trái đất.', 0, NULL, NULL),
 (4, 'Sau Thảm Họa (2017)', 'Aftermath (2017)', '', '', '', '', 2017, '00:00:00', 5.7, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqWHFqck5QNHp5OXM/preview', 'Aftermath.2017.jpg', 1, 25, 'Bộ phim dựa trên một sự việc có thật về thảm họa hàng không. Roman (Arnold Schwarzenegger thủ vai) nóng lòng chào đón vợ và cô con gái đang mang thai trở về nước Mỹ. Trong tư thế háo hức, nhưng khi đến sân bay, ông nhận được tin khủng khiếp rằng người thân của mình đã tử nạn trong vụ va chạm máy bay thảm khốc. Trong chớp mắt, mất hết cả gia đình, quá suy sụp, Roman thu mình vào một thế giới đau khổ và trống rỗng, nơi chỉ lấp đầy những kỷ niệm cùng những câu hỏi không có lời đáp. Người đàn ông có số phận nghiệt ngã nhất thế gian không thể nào yên lòng và quyết tâm tìm ra người chịu trách nhiệm cho mất mát của ông.', 0, NULL, NULL),
 (5, 'Những Kẻ Khờ Mơ Mộng (2016)', 'La La Land (2016)', '', '', '', '', 2016, '00:00:00', 8.3, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqLUpTOW5xUXBQd2M/preview', '', 'La.La.Land.2016.jpg', 1, 58, 'La La Land là câu chuyện tình yêu tuyệt đẹp thời hiện đại giữa chàng nhạc công piano tài hoa chuyên diễn tại các quán bar Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, tình yêu và sự thành công dường như không thể song hành. Khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao? ', 0, NULL, NULL),
-(7, 'Tây Du Ký: Mối Tình Ngoại Truyện 2 (2017)', 'Journey to the West: The Demons Strike Back (2017)', '', '', '', '', 2017, '00:00:00', 5.5, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqbzlPRmZQUDREcDg/preview', 'Journey.to.the.West.The.Demons.Strike.Back2017.jpg', 1, 50, 'Tây Du Hàng Ma Thiên 2 2016 dựa trên cốt truyện nổi tiếng Tây Du Ký của Ngô Thừa Ân, chủ yếu xoay quanh câu chuyện thu phục 3 đệ tử của Đường Tam Tạng (Ngô Diệc Phàm). Trong đó, Lâm Canh Tân sẽ hóa thân thành Tôn Ngộ Không, khác xa với các hình tượng Tôn Ngộ Không khác. Tác phẩm do Châu Tinh Trì chỉ đạo diễn xuất, sẽ là một sự bùng nổ hay thảm họa?\r\n', 0, NULL, NULL),
-(8, 'xXx: Phản Đòn (2017)', 'xXx: Return of Xander Cage (2017)', '', '', '', '', 2017, '00:00:00', 5.3, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqcVJlUVpXQ0l0SUk/preview', 'xXx.Return.of.Xander.Cage.2017.jpg', 1, 99, 'xXx: Return Of Xander Cage 2017 là một tác phẩm điện ảnh hành động gay cấn được phát hành bởi hãng Paramount Pictures. Không chỉ quy tụ dàn diễn viên nổi tiếng quốc tế như Vin Diesel, Samuel L.Jackson, Chân Tử Đan, mà Sự Trở Lại Của Xander Cage còn có sự góp mặt của các nhân tố mới tiềm năng, điển hình như nam diễn viên Ngô Diệc Phàm.\r\n', 0, NULL, NULL),
+(7, 'Tây Du Ký: Mối Tình Ngoại Truyện 2 (2017)', 'Journey to the West: The Demons Strike Back (2017)', '12', '[18,19]', '[145,146,147]', '[\"4\",\"12\",\"6\"]', 2017, '01:49:00', 5.4, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqbzlPRmZQUDREcDg/preview', 'Journey.to.the.West.The.Demons.Strike.Back2017.jpg', 1, 50, 'Tây Du Hàng Ma Thiên 2 2016 dựa trên cốt truyện nổi tiếng Tây Du Ký của Ngô Thừa Ân, chủ yếu xoay quanh câu chuyện thu phục 3 đệ tử của Đường Tam Tạng (Ngô Diệc Phàm). Trong đó, Lâm Canh Tân sẽ hóa thân thành Tôn Ngộ Không, khác xa với các hình tượng Tôn Ngộ Không khác. Tác phẩm do Châu Tinh Trì chỉ đạo diễn xuất, sẽ là một sự bùng nổ hay thảm họa?\r\n', 0, '', NULL),
+(8, 'xXx: Phản Đòn (2017)', 'xXx: Return of Xander Cage (2017)', '11', '[16,17]', '[142,143,144]', '[\"4\",\"12\"]', 2017, '01:47:00', 5.3, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqcVJlUVpXQ0l0SUk/preview', 'xXx.Return.of.Xander.Cage.2017.jpg', 1, 99, 'xXx: Return Of Xander Cage 2017 là một tác phẩm điện ảnh hành động gay cấn được phát hành bởi hãng Paramount Pictures. Không chỉ quy tụ dàn diễn viên nổi tiếng quốc tế như Vin Diesel, Samuel L.Jackson, Chân Tử Đan, mà Sự Trở Lại Của Xander Cage còn có sự góp mặt của các nhân tố mới tiềm năng, điển hình như nam diễn viên Ngô Diệc Phàm.\r\n', 0, '', NULL),
 (9, 'Vũ Điệu Thần Tiên (2016)', 'Ballerina (2016)', '', '', '', '', 2016, '00:00:00', 6.8, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqNXVwVGZwc0twYXM/preview', 'Ballerina.2016.jpg', 1, 13, 'Vào những năm 1880, Félicie- một cô gái mồ côi nghèo với mơ ước trở thành một nữ diễn viên múa ballet nhưng không được đào tạo một cách chính quy… Cô bé quyết định thoát khỏi vùng nông thôn Brittany để đến với Paris hoa lệ cùng cậu bạn thân Victor. 11 tuổi – không một chút kinh nghiệm – không một xu dính túi nhưng với sự giúp đỡ của Victor và Odette (cựu diễn viên múa ballet tài giỏi) và sự quyết tâm cao độ, Félicie chấp nhận đương đầu với vô số thách thức để theo đuổi đam mê của mình. Liệu cô bé có đủ can đảm theo đuổi đam mê và biến ước mơ thành sự thật? ', 0, NULL, NULL),
 (10, 'Biệt Đội Mãnh Hổ (2016)', 'Railroad Tigers (2016)', '', '', '', '', 2016, '00:00:00', 6.1, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqOFZvSkdQVXZtMEk/preview', 'Railroad.Tigers.2016.jpg', 1, 16, 'Railroad Tigers là bộ phim hành động, lịch sử được nhiều người chờ đón. Năm 1941, trong bối cảnh Trung Quốc thù trong giặc ngoài, một công nhân đường sắt Trung Quốc đã dẫn dắt những anh em có cùng chí hướng để chống lại quân Nhật, cướp lấy thực phẩm cứu khổ tế bần. Trước tình hình đó, quân đội Nhật bắt đầu gửi thêm quân đội tới đàn áp khiến đội Mãnh Hổ gặp vô vàn khó khăn. Đây là bộ phim võ thuật tiếp theo của “ông vua” Thành Long, phim còn có sự tham gia của nam diễn viên thực lực trẻ tuổi Vương Đại Lục và cựu thành viên nhóm nhạc EXO- Hoàng Tử Thao. ', 0, NULL, NULL),
 (11, 'Đột Kích Màn Đêm (2017)', 'Sleepless (2017)', '', '', '', '', 2017, '00:00:00', 5.6, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqTExqZUlFODdoUHM/preview', 'Sleepless.2017.jpg', 1, 8, 'Sau khi phi vụ vận chuyển ma túy trái phép gặp thất bại bởi hai cảnh sát Vincent Downs (Jamie Foxx) và Sean (Tip T.I. Harris), gã chủ sòng bài Stan Rubino (Dermot Mulroney) quyết định ra tay trả thù bằng cách bắt cóc con trai của Vincent (Octavius J. Johnson).\r\nBị truy đuổi bởi cả thanh tra đến từ Sở Nội vụ là Jen Bryant (Michelle Monaghan) lẫn những tên trùm khét tiếng, viên sĩ quan da màu buộc phải dựa vào bản năng để có thể giải cứu con trai mình ngay trong đêm định mệnh. ', 0, NULL, NULL),
@@ -194,17 +307,17 @@ INSERT INTO `phim` (`id_phim`, `tenphim_vn`, `tenphim_en`, `daodien`, `kichban`,
 (43, 'Người Hobbit 2: Đại Chiến Với Rồng Lửa (2013)', 'The Hobbit: The Desolation of Smaug (2013)', '', '', '', '', 2013, '00:00:00', 7.9, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqWThuN09GdGk3aUE/preview', 'The.Hobbit.The.Desolation.of.Smaug.2013.jpg', 1, 4, 'Bỏ lại đằng sau những cảnh quay mát mắt của làng Shire, các thảo nguyên rộng lớn hay khung cảnh kỳ vĩ xinh đẹp của thung lũng Rivendell, Người Hobbit: Đại chiến với rồng lửa không còn là một bộ phim mãn nhãn về mặt thị giác với những cảnh quay lộng lẫy như phần trước, Người Hobbit: Hành trình vô định. Ngược lại, Người Hobbit: Đại chiến với rồng lửa mang đến một cái nhìn huyền bí, tăm tối và vô cùng u ám về hành trình giết rồng của 13 người lùn và một chàng Hobbit. Gần như toàn bộ bối cảnh của phim đều diễn ra trong nhà kho, ngục tối, dưới lòng đất, các hầm mỏ hay những đại sảnh tối đen. Bên cạnh đó, những cảnh quay chém giết trần trụi và mạnh bạo cũng dễ dàng khiến khán giả phải “lạnh sống lưng” khi thưởng thức tác phẩm điện ảnh này.', 0, NULL, NULL),
 (44, 'Người Hobbit: Hành Trình Vô Định (2012)', 'The Hobbit: An Unexpected Journey (2012)', '', '', '', '', 2012, '00:00:00', 7.9, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqMVNHRHoyd0VjQ2M/preview', 'The.Hobbit.An.Unexpected.Journey.2012.jpg', 1, 4, 'The Hobbit đưa người xem trở về với thế giới Trung Địa huyền ảo và tham gia vào cuộc hành trình vô định của Bilbo Baggins – chú của nhân vật Frodo. Lấy mốc thời gian trước những sự kiện xảy ra trong ba phần Chúa Nhẫn, The Hobbit xoay quanh nhân vật Bilbo Baggins, người bị cuốn vào một chuyến phiêu lưu phi thường để đoạt lại xứ sở Người Lùn đang bị chiếm giữ bởi con rồng khổng lồ Smaug. Chuyến đi của Bilbo có sự hộ tống của Pháp sư Gandalf Áo Xám và 13 thành viên tộc Người Lùn mà dẫn đầu là hoàng tử Thorin Oakensheild. Cuộc hành trình đưa họ tới những vùng đất kỳ lạ của Trung Địa – nơi có những vị tiên lộng lẫy, những con yêu tinh khổng lồ, những phù thủy bí hiểm và cả những linh hồn giấu mặt đang theo dõi nhất cử nhất động của họ.', 0, NULL, NULL),
 (45, 'Bố Già Xứ Venice (2017)', 'Once Upon a Time in Venice (2017)', '', '', '', '', 2017, '00:00:00', 5.3, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqYkRZc09BMUVoQjA/preview', 'Once.Upon.a.Time.in.Venice.2017.jpg', 1, 5, 'Phim Bố Già Xứ Venice xoay quanh Steve Ford (Bruce Willis), gã thám tử tư với phương châm sống: “hết mình với phụ nữ, mạnh bạo với đám đàn ông” bất ngờ bị một băng đảng khét tiếng đánh cắp chú chó cưng. Để cứu lấy người bạn thân thương, Steve buộc phải trộm ma túy theo yêu cầu của tay trùm Spyder và đối mặt với những tình huống tréo ngoe, dở khóc dở cười…', 0, NULL, NULL),
-(46, 'Huấn Luyện Viên Đấu Vật (2016)', 'Dangal (2016)', '', '', '', '', 2016, '00:00:00', 8.7, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqbVY5dXp2TDM4Y1U/preview', 'Dangal 2016.jpg', 1, 4, 'Dangal kể về nhà vô địch đô vật Mahavir Singh Phogat, dám đứng lên chống lại những kẻ cuồng loạn để huấn luyện cho hai con gái anh – Geeta Phgat và Babita Kumari theo con đường đô vật chuyên nghiệp. Bộ phim đề cao sức mạnh của người phụ nữ, khuyến khích phụ nữ tham gia thể thao và đề cao tinh thần tự hào dân tộc.', 0, NULL, NULL),
+(46, 'Huấn Luyện Viên Đấu Vật (2016)', 'Dangal (2016)', '21', '[\"33\",\"34\"]', '[\"187\",\"188\",\"189\"]', '[\"4\",\"14\"]', 2016, '00:00:00', 8.7, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqbVY5dXp2TDM4Y1U/preview', 'Dangal 2016.jpg', 1, 4, 'Dangal kể về nhà vô địch đô vật Mahavir Singh Phogat, dám đứng lên chống lại những kẻ cuồng loạn để huấn luyện cho hai con gái anh – Geeta Phgat và Babita Kumari theo con đường đô vật chuyên nghiệp. Bộ phim đề cao sức mạnh của người phụ nữ, khuyến khích phụ nữ tham gia thể thao và đề cao tinh thần tự hào dân tộc.', 0, '', NULL),
 (47, 'Ðảo Hải Tặc (1999)', 'One Piece (1999)', '', '', '', '', 1999, '00:00:00', 8.7, '', '', 'one piece.jpg', 1, 64, 'Câu chuyện bắt đầu với cảnh xử tử của Vua Hải Tặc Gold Roger. Ngay trước khi chết, Roger tiết lộ rằng kho báu của ông ta để hết ngoài biển ấy nếu ai tìm được sẽ là của kẻ đó. Và thế là những người có máu phưu lưu và những kẻ tham vọng đều đổ xô ra biển tìm kiếm kho báu vĩ đại nhất, One Piece. Kỉ nguyên hải tặc bắt đâu.', 0, NULL, NULL),
 (49, 'Boruto: Naruto Thế Hệ Tiếp Theo (2017)', 'Boruto: Naruto Next Generations (2017)', '', '', '', '', 2017, '00:00:00', 8.5, '', '', 'boruto.jpg', 1, 38, 'Naruto đã đạt ước nguyện của mình khi trở thành Hokaghe và kết hôn cùng Hinata, với sự xuất hiện của 2 đứa bé tên Boruto và Himawari - một thế hệ mới của ninja đã sẵn sàng.\r\n', 0, NULL, NULL),
-(50, 'Trò Chươi Vương Quyền 1 (2011)', 'Game of Thrones Season 1 (2011)', '2', '[\"6\"]', '[\"123\"]', '[\"4\"]', 2011, '00:00:00', 9.5, '', '', 'Game_of_Thrones_Season_1_(2011)1.jpg', 1, 6, 'Game of Throne kể về bảy gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros. Những gia tộc thống trị là Houses Stark, Lannister, và Baratheon. Vị vua của Westeros, Robert Baratheon, yêu cầu người bạn cũ của ông là Eddard – lãnh chúa Stark giữ chức vụ cao, Eddard miễn cưỡng chấp nhận mệnh lệnh để tìm ra sự thật đằng sau. Trong lúc ấy, gia tộc của Nữ hoàng, Lannisters, có lẽ đang dự tính mưu đồ để tước đoạt quyền lực. Ở phía bên kia biển khơi, những thành viên cuối cùng của dòng tộc trước đây đã bị truất phế quyền thống trị ,Targaryens, cũng đang sắp đặt kế hoạch giành lại ngai vàng. Còn ở phía cực Bắc, Bóng Trắng – loài quỷ vốn chìm trong giấc ngủ rất dài, nay đã thức giấc,… ', 1, '', '2018-06-20 00:09:44'),
+(50, 'Trò Chươi Vương Quyền 1 (2011)', 'Game of Thrones Season 1 (2011)', '2', '[\"6\"]', '[\"123\"]', '[\"4\"]', 2011, '00:00:00', 9.5, '', '', 'Game_of_Thrones_Season_1_(2011)1.jpg', 1, 6, 'Game of Throne kể về bảy gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros. Những gia tộc thống trị là Houses Stark, Lannister, và Baratheon. Vị vua của Westeros, Robert Baratheon, yêu cầu người bạn cũ của ông là Eddard – lãnh chúa Stark giữ chức vụ cao, Eddard miễn cưỡng chấp nhận mệnh lệnh để tìm ra sự thật đằng sau. Trong lúc ấy, gia tộc của Nữ hoàng, Lannisters, có lẽ đang dự tính mưu đồ để tước đoạt quyền lực. Ở phía bên kia biển khơi, những thành viên cuối cùng của dòng tộc trước đây đã bị truất phế quyền thống trị ,Targaryens, cũng đang sắp đặt kế hoạch giành lại ngai vàng. Còn ở phía cực Bắc, Bóng Trắng – loài quỷ vốn chìm trong giấc ngủ rất dài, nay đã thức giấc,… ', 0, '', '2018-06-20 00:09:44'),
 (51, 'Trò Chươi Vương Quyền 2 (2012)', 'Game Of Thrones Season 2 (2012)', '', '', '', '', 2012, '00:00:00', 9.5, '', '', 'game-of-thrones-season-2-promo.png', 1, 11, 'Tiếp nối phần 1 , với phần 2 lần này phim nói về Vùng đất huyền thoại Westeros đang tiếp tục bị 7 gia đình quý tộc đấu đá nhau để giành quyền kiểm soát, nhằm đạt được mục đích 7 gia tộc này đã không từ bất kì thủ đoạn nào dù có bỉ ổi đến mấy. Theo thống kê Game of Thrones 2 là 1 trong những bộ phim được mong chờ nhất năm 2012. Giống như phần 1, phần 2 của loạt phim này làm khán giả mãn nhãn với những cảnh quay hoành tráng những tình huống căng thẳng tới ngẹt thở đẩy người xem vào trạng thái không biết nhân vật của mình sẽ chết lúc nào. ', 0, NULL, NULL),
 (52, 'Trò Chươi Vương Quyền 3 (2013)', 'Game Of Thrones Season 3 (2013)', '', '', '', '', 2013, '00:00:00', 9.5, '', '', 'Game-of-Thrones-Season-3-Episode-6-Preview.jpg', 1, 6, 'Game of Thrones là một series do HBO sản xuất được chuyển thể từ bộ tiểu thuyết sử thi giả tưởng A Song of Ice and Fire của tác gia người Mĩ George R. Martin. Nội dung kể về 7 gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros. Những gia tộc thống trị là Houses Stark, Lannister, và Baratheon. Vị vua của Westeros, Robert Baratheon, yêu cầu người bạn cũ của ông là Eddard – lãnh chúa Stark giữ chức vụ cao nhất (Cánh tay mặt của Nhà vua) và ngầm cảnh báo “Cánh tay” trước đây đã chết vì bị ám sát; Eddard chấp nhận mệnh lệnh để tìm ra sự thật đằng sau. Trong lúc ấy, gia tộc của Nữ hoàng, Lannisters, có lẽ đang dự tính mưu đồ để tước đoạt quyền lực. Ở phía bên kia biển khơi, những thành viên cuối cùng của dòng tộc trước đây đã bị truất phế quyền thống trị ,Targaryens, cũng đang sắp đặt kế hoạch giành lại ngai vàng. Sự xung đột giữa các gia tộc này, và với sự tồn tại của các dòng tộc lớn khác như Greyjoy, Tully, Arryn, và Tyrell đã dẫn đến cuộc chiến toàn diện. Trong khoảng thời gian này thì ở phía cực Bắc, Bóng Trắng – loài quỷ vốn chìm trong ', 0, NULL, NULL),
 (53, 'Trò Chươi Vương Quyền 4 (2014)', 'Game Of Thrones Season 4 (2014)', '2', '[\"6\"]', '[\"123\"]', '[\"4\"]', 2014, '00:00:00', 9.5, '', '', 'Game_Of_Thrones_Season_4_(2014)1.jpg', 1, 2, 'Phần 4 của series phim truyền hình nổi tiếng Game Of Thrones sẽ dựa theo nửa cuối của tiểu thuyết A Storm of Swords (Quyển thứ 3 của tiểu thuyết A Song of Ice and Fire). Cuộc tranh đấu không mệt mỏi của 7 gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros được tiếp tục trong phần 4. Một mưu đồ chính trị mới lại trỗi dậy và các phe phái còn sống sót không chỉ đấu tranh với kẻ thù bên ngoài mà còn với giặc trong. Gia tộc Lannister giành chiến thắng sau khi đã đánh bại các mối đe dọa, mặc dù vùng đất thần thoại Westeros đã nằm trong tay sự kiểm soát của gia tộc Lannister, nhưng vẫn còn hai phe phái phản đối họ: Greyjoys và Baratheons! Lần này thì các thế lực siêu nhiên đang nổi dậy như đội quân White Walkers đang dần tràn về vương quốc từ phương bắc, phù thủy Đỏ với các phép thuật hắc ám của mình đang dần trở nên mạnh hơn, 3 con rồng của công chúa Daenerys Targaryen cũng đã lớn và sẽ trở thành một thế lực lớn trong cuộc tranh đấu này.', 1, '', NULL),
 (54, 'Trò Chươi Vương Quyền 5 (2015)', 'Game Of Thrones Season 5 (2015)', '2', '[\"6\"]', '[\"123\"]', '[\"4\"]', 2015, '00:00:00', 9.5, '', '', 'Game_Of_Thrones_Season_5_(2015).jpg', 1, 3, 'Phần 5 tiếp tục câu truyện về 7 gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros. Những gia tộc thống trị là Stark, Lannister, và Baratheon. Vị vua của Westeros, Robert Baratheon, yêu cầu người bạn cũ của ông là Eddard – lãnh chúa Stark giữ chức vụ cao nhất (Cánh tay mặt của Nhà vua) và ngầm cảnh báo Cánh tay trước đây đã chết vì bị ám sát; Eddard chấp nhận mệnh lệnh để tìm ra sự thật đằng sau. ', 1, '', NULL),
 (55, 'Trò Chươi Vương Quyền 6 (2016)', 'Game of Thrones Season 6 (2016)', '', '', '', '', 2016, '00:00:00', 9.5, '', '', 'Game of Thrones  s06.jpg', 0, 3, 'Phần 6 của series phim truyền hình ăn khách hàng đầu HBO Game of Thrones sẽ quay lại vào tháng 4/2016 ', 0, NULL, NULL),
 (56, 'Trò Chươi Vương Quyền 7 (2017)', 'Game of Thrones Season 7 (2017)', '', '', '', '', 2017, '00:00:00', 9.5, '', '', 'Game of Thrones  s07.jpg', 0, 10, 'Trong Game of Thrones phần 7, một cái kết thật sự của Trò chơi vương quyền đang đến gần hơn bao giờ hết. Cuộc chiến giữa các nữ chúa, cuộc chiến của các vị vua phương Bắc, sự đoàn tụ của nhà Stark, tiếng gầm của sư tử nhà Lannister, sự trỗi dậy của gia tộc rồng Targaryen, sự sụp đổ của tường thành, sự trỗi dậy của dòng máu rồng…?', 0, NULL, NULL),
-(57, 'Biệt Đội Siêu Anh Hùng 2: Đế Chế Ultron (2015)', 'Avengers: Age of Ultron (2015)', '', '', '', '', 2015, '00:00:00', 7.4, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqUDFfcFVDV1htZnM/preview', '', 'Avengers.Age.of.Ultron.2015.jpg', 1, 2, 'Trong phần này, biệt đội siêu anh hùng của chúng ta sẽ phải chiến đấu với binh đoàn robot được biết đến với cái tên là Ultron.', 0, NULL, NULL),
+(57, 'Biệt Đội Siêu Anh Hùng 2: Đế Chế Ultron (2015)', 'Avengers: Age of Ultron (2015)', '14', '[\"20\",\"4\"]', '[\"148\",\"149\",\"150\"]', '[\"4\",\"5\",\"6\"]', 2015, '02:21:00', 7.4, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqUDFfcFVDV1htZnM/preview', '', 'Avengers.Age.of.Ultron.2015.jpg', 1, 2, 'Trong phần này, biệt đội siêu anh hùng của chúng ta sẽ phải chiến đấu với binh đoàn robot được biết đến với cái tên là Ultron.', 0, '', NULL),
 (58, 'Cô Gái Và Gã Khổng Lồ (2016)', 'Colossal (2016)', '', '', '', '', 2017, '00:00:00', 6.3, 'https://drive.google.com/file/d/0Bz7FgiHfhIxqLTNzcTZmQlhVcGs/preview', '', 'Colossal.2016.jpg', 1, 3, 'Vừa thất nghiệp lại vừa thất tình, cô nàng tuổi 30 - Gloria rời New York phồn hoa để trở về thị trấn nơi mình lớn lên. Cuộc sống đang ở đỉnh điểm của suy sụp chán nản thì Gloria gặp lại Oscar – cậu bạn cũ từng học chung tiểu học. Và đặc biệt hơn nữa, cô phát hiện ra mối liên hệ kỳ lạ giữa mình và con quái vật khổng lồ đang tàn phá thế giới... ', 0, NULL, NULL),
 (61, 'Chiến Binh Báo Đen (2018) 44', 'Black Panther (2018)', '1', '[\"1\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"1\"]', 2018, '00:01:34', 7.6, 'link phụ đề', 'link thuyết minh', 'Black_Panther_(2018)1.jpg', 0, 0, 'phim hay quá', 1, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-19 22:10:06'),
 (62, 'Chiến Binh Báo Đen (2018)', 'Black Panther (2018)', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '', '', 2018, '00:01:34', 7.6, '', '', '', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-06 23:06:02'),
@@ -214,12 +327,17 @@ INSERT INTO `phim` (`id_phim`, `tenphim_vn`, `tenphim_en`, `daodien`, `kichban`,
 (66, 'aldlfladf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[4,5,6]', 2018, '00:01:34', 7.6, '', '', '', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:41:05'),
 (67, 'aldlfladf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', 7.6, '', '', '', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:41:27'),
 (68, 'sdfasdfdsaf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', 7.6, '', '', 'img/poster/Black_Panther1.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:48:22'),
-(69, 'adfadf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', 7.6, '', '', 'Black_Panther2.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:50:42');
+(69, 'adfadf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', 7.6, '', '', 'Black_Panther2.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:50:42'),
+(70, 'Chiến Binh Báo Đen (2018)', 'Black Panther (2018)', '5', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '02:14:00', 7.6, 'https://drive.google.com/file/d/1w2f-_KQKQQTNQ3gBmX1UiulzfVDALFHj/preview', '', 'Black_Panther_(2018).jpg', 1, 0, 'Black Panther 2018 sẽ lấy bội cảnh hậu Nội chiến Siêu anh hùng. Sau khi phụ thân qua đời, T’Chala gánh lên vai trọng trách bảo vệ quê nhà khỏi những kẻ thù độc địa đang dần bành trướng thế lực. Tạo hình hai ác nhân của phim cũng được “nhá hàng”, gồm có Erik Killmonger - kẻ phản bội từng bị trục xuất khỏi Wakanda và M’Baku/ Man-Ape - thủ lĩnh của bộ tộc đối địch.', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-28 23:44:47'),
+(71, 'Đảo Hải Tặc: Gold (2016)', 'One Piece Film Gold (2016)', '8', '[\"7\",\"8\",\"9\",\"10\",\"11\"]', '[\"124\",\"125\",\"126\",\"127\",\"128\",\"129\",\"130\",\"131\",\"132\",\"133\",\"134\",\"135\"]', '[\"11\",\"5\",\"12\"]', 2016, '02:00:00', 7.8, '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqamNXeERHS0NIdmM/preview', 'One_Piece_Film_Gold_(2016).jpg', 1, 0, 'One Piece Film Gold là bộ phim điện ảnh thứ 13 của thương hiệu One Piece\r\nTrong bộ phim lần này, băng hải tặc Mũ Rơm sẽ phải đối đầu với Guild Tesoro, kẻ sở hữu trái ác quỷ Gold - Gold và là chủ nhân của Gran Tesoro - Thành phố giải trí nổi bằng vàng lớn nhất thế giới. Gran Tesoro là một thành phố độc lập, quy tụ hàng trăm tay chơi và hải tặc trên khắp thế giới; một nơi mà đến chính phủ cũng không thể kiểm soát. Guild Tesoro thống trị tất cả mọi thứ, thậm chí là hải tặc hay chính phủ bằng Vàng và tham vọng của hắn ngày càng lớn dần. Cán cân quyền lực của Tân thế giới bắt đầu thay đổi từ đây… ', 0, 'http://www.youtube.com/watch?v=kcMqZY3xbs0', '2018-07-11 18:29:53'),
+(72, 'Thế Giới Khủng Long: Vương Quốc Sụp Đổ (2018)', 'Jurassic World: Fallen Kingdom (2018)', '15', '[21,22,23]', '[151,152,153,154,155,156,157,158,159,160,161,162]', '[\"4\",\"5\",\"6\"]', 2018, '02:08:00', 6.4, '', 'https://drive.google.com/file/d/1-pvE7mVjAjvUPcnODsKFMeaiVig4Nm3T/preview', 'Jurassic_World:_Fallen_Kingdom_(2018).jpg', 1, 0, 'Bốn năm sau thảm họa Công Viên kỷ Jura bị hủy diệt. Một vài con khủng long vẫn còn sống sót trong rừng trong khi Isla Nublar bị con người bỏ hoang. Owen và Claire quyết định tiến hành chiến dịch giải cứu những con khủng long còn sống sót khỏi sự tuyệt chủng khi ngọn núi lửa tại khu vực này bắt đầu hoạt động trở lại. Họ vô tình khám phá ra một âm mưu có thể khiến toàn bộ hành tinh đối mặt với một hiểm họa to lớn chưa từng thấy kể từ thời tiền sử.', 0, 'http://www.youtube.com/watch?v=vn9mMeWcgoM', '2018-09-09 19:39:18'),
+(73, 'Băng Cướp Thế Kỷ: Đẳng Cấp Quý Cô (2018)', 'Ocean\'s Eight (2018)', '17', '[\"24\",\"25\",\"24\",\"26\",\"27\"]', '[\"163\",\"164\",\"165\",\"166\",\"167\",\"168\",\"169\",\"170\",\"171\",\"172\",\"173\",\"174\"]', '[\"4\",\"12\",\"13\"]', 2018, '01:50:00', 6.3, '', 'https://drive.google.com/file/d/1UdnRXR8kW4RqvWh2QluxZjXQfyO9SGvn/preview', 'Oceans_Eight_(2018).jpg', 1, 0, '17 năm trước, Hội 11 tên cướp thế kỷ của Ocean đã ghi dấu ấn trong thể loại heist film lẫn trong lòng khán giả. Với những tài tử hot số 1 khi đó như George Clooney và Brad Pitt, Ocean’s Eleven giành được những lời tán thưởng như “thông minh”, “phong cách”, “cool ngầu”... và kéo theo 2 phần sequel thành công. Bẵng đi 11 năm thì phần tiếp theo Ocean\'s 8 (tên Việt là Băng Cướp Thế Kỷ: Đẳng Cấp Quý Cô) được vẻ lịch lãm quyến rũ, óc hài hước và tiết tấu nhanh của trilogy đàn anh.', 0, 'https://www.youtube.com/embed/MFWF9dU5Zc0', '2018-09-10 20:40:58'),
+(74, 'Deadpool 2 (2018)', 'Deadpool 2 (2018)', '19', '[\"28\",\"29\",\"30\",\"31\",\"32\"]', '[\"175\",\"176\",\"177\",\"178\",\"179\",\"180\",\"181\",\"182\",\"183\",\"184\",\"185\",\"186\"]', '[\"4\",\"5\",\"6\"]', 2018, '01:59:00', 7.9, '', 'https://drive.google.com/file/d/17YzDo6VK_kaWMV4i8--XBGn1dLqKAZbY/preview', 'Deadpool_2_(2018).jpg', 1, 0, 'Deadpool là nhân vật phản anh hùng (anti-hero) cực kỳ được yêu thích trong vũ trụ Marvel. Bộ phim solo của \"anh khả ái dọn dẹp ngang trái\" vào năm 2016 đã thành công rực rỡ với doanh thu lên đến 783 triệu USD.', 0, 'https://www.youtube.com/embed/Z5ezsReZcxU', '2018-09-10 20:57:58');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `theloai`
+-- Cấu trúc bảng cho bảng `theloai`
 --
 
 CREATE TABLE `theloai` (
@@ -230,93 +348,97 @@ CREATE TABLE `theloai` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `theloai`
+-- Đang đổ dữ liệu cho bảng `theloai`
 --
 
 INSERT INTO `theloai` (`id_theloai`, `tentheloai`, `tentheloai_kd`, `status`) VALUES
 (4, 'Hành động', 'Hanh-dong', 1),
 (5, 'Phưu lưu', 'Phuu-luu', 1),
-(6, 'Viễn tưởng', 'Vien-tuong', 1);
+(6, 'Viễn tưởng', 'Vien-tuong', 1),
+(11, 'Hoạt hình', 'Hoat-hinh', 1),
+(12, 'Hài hước', 'Hai-huoc', 1),
+(13, 'Tội phạm', 'Toi-pham', 1),
+(14, 'Võ thuật', 'Vo-thuat', 1);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `admin`
+-- Chỉ mục cho bảng `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `daodien`
+-- Chỉ mục cho bảng `daodien`
 --
 ALTER TABLE `daodien`
   ADD PRIMARY KEY (`id_daodien`);
 
 --
--- Indexes for table `dienvien`
+-- Chỉ mục cho bảng `dienvien`
 --
 ALTER TABLE `dienvien`
   ADD PRIMARY KEY (`id_dienvien`);
 
 --
--- Indexes for table `kichban`
+-- Chỉ mục cho bảng `kichban`
 --
 ALTER TABLE `kichban`
   ADD PRIMARY KEY (`id_kichban`);
 
 --
--- Indexes for table `phim`
+-- Chỉ mục cho bảng `phim`
 --
 ALTER TABLE `phim`
   ADD PRIMARY KEY (`id_phim`);
 
 --
--- Indexes for table `theloai`
+-- Chỉ mục cho bảng `theloai`
 --
 ALTER TABLE `theloai`
   ADD PRIMARY KEY (`id_theloai`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT cho bảng `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `daodien`
+-- AUTO_INCREMENT cho bảng `daodien`
 --
 ALTER TABLE `daodien`
-  MODIFY `id_daodien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_daodien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `dienvien`
+-- AUTO_INCREMENT cho bảng `dienvien`
 --
 ALTER TABLE `dienvien`
-  MODIFY `id_dienvien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `id_dienvien` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 
 --
--- AUTO_INCREMENT for table `kichban`
+-- AUTO_INCREMENT cho bảng `kichban`
 --
 ALTER TABLE `kichban`
-  MODIFY `id_kichban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_kichban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT for table `phim`
+-- AUTO_INCREMENT cho bảng `phim`
 --
 ALTER TABLE `phim`
-  MODIFY `id_phim` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id_phim` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
--- AUTO_INCREMENT for table `theloai`
+-- AUTO_INCREMENT cho bảng `theloai`
 --
 ALTER TABLE `theloai`
-  MODIFY `id_theloai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_theloai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

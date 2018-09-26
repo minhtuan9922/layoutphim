@@ -20,7 +20,7 @@
 					<div class="tieude">
 						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
 						<div class="nut-play-trailer">
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer">Trailer</button>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer" onClick="play_trailer(<?=$tmp['id_phim'] ?>)">Trailer</button>
 							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
 						</div>
 					</div>
@@ -57,7 +57,7 @@
 					<div class="tieude">
 						<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>"><?=$tmp['tenphim_vn'] ?></a>
 						<div class="nut-play-trailer">
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer">Trailer</button>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer" onClick="play_trailer(<?=$tmp['id_phim'] ?>)">Trailer</button>
 							<a href="<?=base_url('xemphim/'.$tmp['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($tmp['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
 						</div>
 					</div>
@@ -85,8 +85,27 @@
 	<div class="modal-dialog modal-lg modal-dialog-centered">
 		<div class="modal-content trailer">
 			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" id="trailer_youtube"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 </div>
+<script>
+	function play_trailer(id) {
+		$.ajax({
+			dataType: "JSON",
+			method: "POST",
+			url: "<?=base_url('home/trailer'); ?>",
+			data:{id:id},
+			success: function(result)
+			{
+				if(result.trailer) {
+					$('#trailer iframe').attr('src', result.trailer);
+				}
+			}
+		});
+	}
+	$("#trailer").on('hidden.bs.modal', function () {
+		$('#trailer iframe').attr('src', '');
+	});
+</script>

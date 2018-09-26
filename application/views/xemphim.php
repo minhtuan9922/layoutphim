@@ -23,7 +23,7 @@
 				{
 				?>
 				<li class="nav-item">
-					<a class="nav-link <?php if(empty($phim['link_thuetminh'])) echo 'active'; ?>" data-toggle="pill" href="#phude" role="tab" aria-controls="pills-profile" aria-selected="false">Phụ đề</a>
+					<a class="nav-link <?php if(empty($phim['link_thuyetminh'])) echo 'active'; ?>" data-toggle="pill" href="#phude" role="tab" aria-controls="pills-profile" aria-selected="false">Phụ đề</a>
 				</li>
 				<?php
 				}
@@ -47,7 +47,7 @@
 						<p>Đạo diễn: <?=$phim['daodien'] ?></p>
 						<p>Kịch Bản: <?=$phim['kichban'] ?></p>
 						<p>Diễn viên: <?=$phim['dienvien'] ?></p>
-						<p>Diểm imdb: <?=$phim['diem_imdb'] ?></p>
+						<p>Điểm imdb: <?=$phim['diem_imdb'] ?></p>
 						<p>Năm sản xuất: <?=$phim['nam_sanxuat'] ?></p>
 						<p>Thể loại: <?=$phim['theloai'] ?></p>
 						<p>Thời lượng: <?=date('g', strtotime($phim['thoiluong'])).'h '.date('i', strtotime($phim['thoiluong'])) ?></p>

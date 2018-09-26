@@ -12,6 +12,7 @@ class Mslide extends CI_Model{
 		$this->db->select('*');
 		$this->db->from('slide, phim');
 		$this->db->where('slide.id_phim = phim.id_phim');
+		$this->db->order_by('vitri', 'asc');
 		return $this->db->get()->result_array();
 	}
 	public function them_slide($db = array())

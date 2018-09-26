@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="<?=base_url() ?>js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?=base_url() ?>js/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="<?=base_url() ?>js/custom.js"></script>
+	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body>

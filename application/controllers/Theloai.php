@@ -15,7 +15,7 @@ class Theloai extends CI_Controller {
 		else
 			$batdau =0;
 		//cấu hình phân trang
-		$config['per_page'] = 2;
+		$config['per_page'] = 24;
 		$config['uri_segment'] = 3;
 		$config['num_links'] = 5;
 		
@@ -59,7 +59,7 @@ class Theloai extends CI_Controller {
 		$result = array();
 		$result[] = array(
 			'theloai' => $check_theloai['tentheloai'],
-			'phim' => $this->mphim->get_list_phim($check_theloai['id_theloai'], $config['per_page'], $batdau),
+			'phim' => $this->mphim->get_list_phim($check_theloai['id_theloai'], $config['per_page'], $batdau, "id_phim desc"),
 		);
 		$data['list_phim'] = $result;
 		
