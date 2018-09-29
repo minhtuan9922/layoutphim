@@ -109,4 +109,11 @@ class Mphim extends CI_Model{
 		$this->db->like('theloai', '"'.$id_theloai.'"');
 		return $this->db->count_all_results();
 	}
+	public function timphim($tukhoa)
+	{
+		$this->db->from('phim');
+		$this->db->where("tenphim_vn like '".$tukhoa."%' or tenphim_en like '".$tukhoa."%'");
+		$this->db->limit(10);
+		return $this->db->get()->result_array();
+	}
 }

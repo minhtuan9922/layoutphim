@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
-		<a class="navbar-brand logo" href="#"><img src="<?=base_url() ?>img/icon.png"></a>
+		<a class="navbar-brand logo" href="<?=base_url() ?>"><img src="<?=base_url() ?>img/icon.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
@@ -33,7 +33,14 @@
 			<form class="form-inline my-2 my-lg-0 form-timkiem">
 				<input class="form-control mr-sm-2 bg-secondary text-light input-dark" type="search" placeholder="Tìm kiếm" aria-label="Search" id="timkiem">
 				<button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-				<div class="ketqua bg-secondary"><a href="#">Kết quả tìm kiếm hiển thị tại đây</a></div>
+				<div class="ketqua bg-secondary">
+					<div class="media">
+						<img class="align-self-center mr-3" src=".../64x64" alt="Generic placeholder image" width="40px">
+						<div class="media-body">
+							<h5 class="mt-0"><a href="" >tenphim</a></h5>
+						</div>
+					</div>
+				</div>
 			</form>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -118,3 +125,23 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(document).ready(function(){
+		$('#timkiem').keyup(function() {
+			$('.ketqua').show('fast');
+			var tukhoa = $('#timkiem').val();
+			$(window).click(function() {
+				$('.ketqua').hide();
+			});
+			$.ajax({
+				method:"POST",
+				url: "<?=base_url('home/timkiem') ?>",
+				data:{tukhoa:tukhoa},
+				success: function(result)
+				{
+					$('.ketqua').html(result);
+				}
+			});
+		});
+	});
+</script>

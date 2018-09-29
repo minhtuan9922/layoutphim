@@ -39,4 +39,33 @@ class Home extends CI_Controller {
 			echo json_encode($json);
 		}
 	}
+	public function timkiem()
+	{
+		if(isset($_POST['tukhoa']))
+		{
+			$tukhoa = $_POST['tukhoa'];
+			$kq = $this->mphim->timphim($tukhoa);
+			$html = '';
+			if(!empty($kq))
+			{
+				foreach($kq as $item)
+				{
+					$html .= '<a href="'.base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])).'" >
+								<div class="media">
+									<img class="align-self-center mr-3" src="'.base_url('img/poster/'.$item['poster']).'" alt="Generic placeholder image" width="40px">
+									<div class="media-body">
+										<h5 class="mt-0">'.$item['tenphim_vn'].'</h5>
+										<p>'.$item['tenphim_en'].'</p>
+									</div>
+								</div>
+							</a>';
+				}
+			}
+			else
+			{
+				$html .= '<p>Không tìm thấy phim bạn đang tìm</p>';
+			}
+			echo $html;
+		}
+	}
 }
