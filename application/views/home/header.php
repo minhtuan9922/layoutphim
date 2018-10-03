@@ -34,12 +34,7 @@
 				<input class="form-control mr-sm-2 bg-secondary text-light input-dark" type="search" placeholder="Tìm kiếm" aria-label="Search" id="timkiem">
 				<button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 				<div class="ketqua bg-secondary">
-					<div class="media">
-						<img class="align-self-center mr-3" src=".../64x64" alt="Generic placeholder image" width="40px">
-						<div class="media-body">
-							<h5 class="mt-0"><a href="" >tenphim</a></h5>
-						</div>
-					</div>
+					
 				</div>
 			</form>
 			<ul class="navbar-nav ml-auto">

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th7 11, 2018 lúc 12:59 PM
+-- Thời gian đã tạo: Th10 03, 2018 lúc 01:01 PM
 -- Phiên bản máy phục vụ: 5.7.21
--- Phiên bản PHP: 5.6.35
+-- Phiên bản PHP: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `daodien` (
   `ten_daodien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `ten_daodien_kd` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_daodien`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `daodien`
@@ -65,7 +65,16 @@ CREATE TABLE IF NOT EXISTS `daodien` (
 
 INSERT INTO `daodien` (`id_daodien`, `ten_daodien`, `ten_daodien_kd`) VALUES
 (1, 'Ryan Coogler', 'Ryan-Coogler'),
-(2, '', '');
+(2, '', ''),
+(3, 'J. A. Bayona', 'J.-A.-Bayona'),
+(4, 'J. A. Bayona', 'J.-A.-Bayona'),
+(5, 'J. A. Bayona', 'J.-A.-Bayona'),
+(6, 'J. A. Bayona', 'J.-A.-Bayona'),
+(7, 'J. A. Bayona', 'J.-A.-Bayona'),
+(8, 'J. A. Bayona', 'J.-A.-Bayona'),
+(9, 'J. A. Bayona', 'J.-A.-Bayona'),
+(10, 'J. A. Bayona', 'J.-A.-Bayona'),
+(11, 'J. A. Bayona', 'J.-A.-Bayona');
 
 -- --------------------------------------------------------
 
@@ -79,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `dienvien` (
   `ten_dienvien` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `ten_dienvien_kd` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_dienvien`)
-) ENGINE=MyISAM AUTO_INCREMENT=124 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=136 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `dienvien`
@@ -98,7 +107,19 @@ INSERT INTO `dienvien` (`id_dienvien`, `ten_dienvien`, `ten_dienvien_kd`) VALUES
 (10, 'Forest Whitaker', 'Forest-Whitaker'),
 (11, 'Andy Serkis', 'Andy-Serkis'),
 (12, 'John Kani', 'John-Kani'),
-(123, '', '');
+(123, '', ''),
+(124, 'Chris Pratt', 'Chris-Pratt'),
+(125, 'Bryce Dallas Howard', 'Bryce-Dallas-Howard'),
+(126, 'Rafe Spall', 'Rafe-Spall'),
+(127, 'Justice Smith', 'Justice-Smith'),
+(128, 'Daniella Pineda', 'Daniella-Pineda'),
+(129, 'James Cromwell', 'James-Cromwell'),
+(130, 'Toby Jones', 'Toby-Jones'),
+(131, 'Ted Levine', 'Ted-Levine'),
+(132, 'Jeff Goldblum', 'Jeff-Goldblum'),
+(133, 'BD Wong', 'BD-Wong'),
+(134, 'Geraldine Chaplin', 'Geraldine-Chaplin'),
+(135, 'Isabella Sermon', 'Isabella-Sermon');
 
 -- --------------------------------------------------------
 
@@ -112,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `kichban` (
   `kichban` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `kichban_kd` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_kichban`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `kichban`
@@ -124,7 +145,10 @@ INSERT INTO `kichban` (`id_kichban`, `kichban`, `kichban_kd`) VALUES
 (3, 'Jack Kirby', 'Jack-Kirby'),
 (4, 'Stan Lee', 'Stan-Lee'),
 (5, 'Simeon Wilkins', 'Simeon-Wilkins'),
-(6, '', '');
+(6, '', ''),
+(7, 'Derek Connolly', 'Derek-Connolly'),
+(8, 'Colin Trevorrow', 'Colin-Trevorrow'),
+(9, 'Michael Crichton', 'Michael-Crichton');
 
 -- --------------------------------------------------------
 
@@ -154,21 +178,21 @@ CREATE TABLE IF NOT EXISTS `phim` (
   `trailer` text COLLATE utf8_unicode_ci,
   `ngay_them` datetime DEFAULT NULL,
   PRIMARY KEY (`id_phim`)
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `phim`
 --
 
 INSERT INTO `phim` (`id_phim`, `tenphim_vn`, `tenphim_en`, `daodien`, `kichban`, `dienvien`, `theloai`, `nam_sanxuat`, `thoiluong`, `diem_imdb`, `link_phude`, `link_thuyetminh`, `poster`, `active`, `luotxem`, `gioithieu`, `phimbo`, `trailer`, `ngay_them`) VALUES
-(1, 'Thợ Săn Quỷ (2017)', 'Do not Kill It (2017) ', '', '', '', '', 2017, '00:00:00', '5.1', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqQXoxQ05OQUJTcTQ/preview', '', 'Dont.Kill.It.2016.jpg', 1, 44, 'Một con quỷ cổ xưa đang đe dọa một thị trấn nhỏ ở Mississippi.\r\n', 0, NULL, NULL),
-(2, 'Đại Náo Thiên Trúc (2017)', 'Buddies in India (2017)', '', '', '', '', 2017, '00:00:00', '4.0', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqSzZfeHEwVzd1QW8/preview', 'Buddies.in.India.2017.jpg', 1, 52, 'Đại Náo Thiên Trúc là tác phẩm điện ảnh phóng tác dựa trên tiểu thuyết Tây Du Ký của Ngô Thừa Ân. Xoay quanh quá trình sang Ấn Độ tìm kiếm di chúc của nhóm 4 người Đường Sâm, Vũ Không, Chu Thiên Bằng và Ngộ Tĩnh. Trong phim, Lục Tiểu Linh Đồng vào vai Võ Thánh, cha của Vũ Không (Vương Bảo Cường). Đặc biệt, ông còn tái hiện lại hình ảnh Tôn Ngộ Không huyền thoại của mình trên màn ảnh rộng.', 0, NULL, NULL),
+(1, 'Thợ Săn Quỷ (2017)', 'Do not Kill It (2017) ', '2', '[\"6\"]', '[\"123\"]', '[\"4\",7,\"6\"]', 2017, '00:00:00', '5.1', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqQXoxQ05OQUJTcTQ/preview', '', 'Dont.Kill.It.2016.jpg', 1, 45, 'Một con quỷ cổ xưa đang đe dọa một thị trấn nhỏ ở Mississippi.\r\n', 0, '', NULL),
+(2, 'Đại Náo Thiên Trúc (2017)', 'Buddies in India (2017)', '2', '[\"6\"]', '[\"123\"]', '[\"4\",\"7\"]', 2017, '00:00:00', '4.0', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqSzZfeHEwVzd1QW8/preview', 'Buddies.in.India.2017.jpg', 1, 52, 'Đại Náo Thiên Trúc là tác phẩm điện ảnh phóng tác dựa trên tiểu thuyết Tây Du Ký của Ngô Thừa Ân. Xoay quanh quá trình sang Ấn Độ tìm kiếm di chúc của nhóm 4 người Đường Sâm, Vũ Không, Chu Thiên Bằng và Ngộ Tĩnh. Trong phim, Lục Tiểu Linh Đồng vào vai Võ Thánh, cha của Vũ Không (Vương Bảo Cường). Đặc biệt, ông còn tái hiện lại hình ảnh Tôn Ngộ Không huyền thoại của mình trên màn ảnh rộng.', 0, '', NULL),
 (3, 'Siêu Chiến Binh (2017)', 'The Guardians (2017)', '', '', '', '', 2017, '00:00:00', '3.7', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqUnFOTWJxODJFbTg/preview', 'The.Guardians.2017.jpg', 1, 15, 'Khi cuộc chiến tranh lạnh giữa Nga và Mỹ không ngừng leo thang căng thẳng, một tổ chức tên Patriot được lập ra nhằm đào tạo một biệt đội siêu anh hùng bao gồm các thành viên của những nước Xô Viết. Họ được cải tạo gen và biến thành những chiến binh bất khả chiến bại. Suốt nhiều năm, những siêu anh hùng này cố gắng che giấu danh tính của mình cho đến khi thời thế buộc họ phải xuất hiện, bảo vệ nền hòa bình trái đất.', 0, NULL, NULL),
 (4, 'Sau Thảm Họa (2017)', 'Aftermath (2017)', '', '', '', '', 2017, '00:00:00', '5.7', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqWHFqck5QNHp5OXM/preview', 'Aftermath.2017.jpg', 1, 25, 'Bộ phim dựa trên một sự việc có thật về thảm họa hàng không. Roman (Arnold Schwarzenegger thủ vai) nóng lòng chào đón vợ và cô con gái đang mang thai trở về nước Mỹ. Trong tư thế háo hức, nhưng khi đến sân bay, ông nhận được tin khủng khiếp rằng người thân của mình đã tử nạn trong vụ va chạm máy bay thảm khốc. Trong chớp mắt, mất hết cả gia đình, quá suy sụp, Roman thu mình vào một thế giới đau khổ và trống rỗng, nơi chỉ lấp đầy những kỷ niệm cùng những câu hỏi không có lời đáp. Người đàn ông có số phận nghiệt ngã nhất thế gian không thể nào yên lòng và quyết tâm tìm ra người chịu trách nhiệm cho mất mát của ông.', 0, NULL, NULL),
 (5, 'Những Kẻ Khờ Mơ Mộng (2016)', 'La La Land (2016)', '', '', '', '', 2016, '00:00:00', '8.3', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqLUpTOW5xUXBQd2M/preview', '', 'La.La.Land.2016.jpg', 1, 58, 'La La Land là câu chuyện tình yêu tuyệt đẹp thời hiện đại giữa chàng nhạc công piano tài hoa chuyên diễn tại các quán bar Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, tình yêu và sự thành công dường như không thể song hành. Khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao? ', 0, NULL, NULL),
 (7, 'Tây Du Ký: Mối Tình Ngoại Truyện 2 (2017)', 'Journey to the West: The Demons Strike Back (2017)', '', '', '', '', 2017, '00:00:00', '5.5', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqbzlPRmZQUDREcDg/preview', 'Journey.to.the.West.The.Demons.Strike.Back2017.jpg', 1, 50, 'Tây Du Hàng Ma Thiên 2 2016 dựa trên cốt truyện nổi tiếng Tây Du Ký của Ngô Thừa Ân, chủ yếu xoay quanh câu chuyện thu phục 3 đệ tử của Đường Tam Tạng (Ngô Diệc Phàm). Trong đó, Lâm Canh Tân sẽ hóa thân thành Tôn Ngộ Không, khác xa với các hình tượng Tôn Ngộ Không khác. Tác phẩm do Châu Tinh Trì chỉ đạo diễn xuất, sẽ là một sự bùng nổ hay thảm họa?\r\n', 0, NULL, NULL),
 (8, 'xXx: Phản Đòn (2017)', 'xXx: Return of Xander Cage (2017)', '', '', '', '', 2017, '00:00:00', '5.3', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqcVJlUVpXQ0l0SUk/preview', 'xXx.Return.of.Xander.Cage.2017.jpg', 1, 99, 'xXx: Return Of Xander Cage 2017 là một tác phẩm điện ảnh hành động gay cấn được phát hành bởi hãng Paramount Pictures. Không chỉ quy tụ dàn diễn viên nổi tiếng quốc tế như Vin Diesel, Samuel L.Jackson, Chân Tử Đan, mà Sự Trở Lại Của Xander Cage còn có sự góp mặt của các nhân tố mới tiềm năng, điển hình như nam diễn viên Ngô Diệc Phàm.\r\n', 0, NULL, NULL),
-(9, 'Vũ Điệu Thần Tiên (2016)', 'Ballerina (2016)', '', '', '', '', 2016, '00:00:00', '6.8', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqNXVwVGZwc0twYXM/preview', 'Ballerina.2016.jpg', 1, 13, 'Vào những năm 1880, Félicie- một cô gái mồ côi nghèo với mơ ước trở thành một nữ diễn viên múa ballet nhưng không được đào tạo một cách chính quy… Cô bé quyết định thoát khỏi vùng nông thôn Brittany để đến với Paris hoa lệ cùng cậu bạn thân Victor. 11 tuổi – không một chút kinh nghiệm – không một xu dính túi nhưng với sự giúp đỡ của Victor và Odette (cựu diễn viên múa ballet tài giỏi) và sự quyết tâm cao độ, Félicie chấp nhận đương đầu với vô số thách thức để theo đuổi đam mê của mình. Liệu cô bé có đủ can đảm theo đuổi đam mê và biến ước mơ thành sự thật? ', 0, NULL, NULL),
+(9, 'Vũ Điệu Thần Tiên (2016)', 'Ballerina (2016)', '2', '[\"6\"]', '[\"123\"]', '[\"8\",\"5\",\"7\"]', 2016, '00:00:00', '6.8', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqNXVwVGZwc0twYXM/preview', 'Ballerina.2016.jpg', 1, 13, 'Vào những năm 1880, Félicie- một cô gái mồ côi nghèo với mơ ước trở thành một nữ diễn viên múa ballet nhưng không được đào tạo một cách chính quy… Cô bé quyết định thoát khỏi vùng nông thôn Brittany để đến với Paris hoa lệ cùng cậu bạn thân Victor. 11 tuổi – không một chút kinh nghiệm – không một xu dính túi nhưng với sự giúp đỡ của Victor và Odette (cựu diễn viên múa ballet tài giỏi) và sự quyết tâm cao độ, Félicie chấp nhận đương đầu với vô số thách thức để theo đuổi đam mê của mình. Liệu cô bé có đủ can đảm theo đuổi đam mê và biến ước mơ thành sự thật? ', 0, '', NULL),
 (10, 'Biệt Đội Mãnh Hổ (2016)', 'Railroad Tigers (2016)', '', '', '', '', 2016, '00:00:00', '6.1', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqOFZvSkdQVXZtMEk/preview', 'Railroad.Tigers.2016.jpg', 1, 16, 'Railroad Tigers là bộ phim hành động, lịch sử được nhiều người chờ đón. Năm 1941, trong bối cảnh Trung Quốc thù trong giặc ngoài, một công nhân đường sắt Trung Quốc đã dẫn dắt những anh em có cùng chí hướng để chống lại quân Nhật, cướp lấy thực phẩm cứu khổ tế bần. Trước tình hình đó, quân đội Nhật bắt đầu gửi thêm quân đội tới đàn áp khiến đội Mãnh Hổ gặp vô vàn khó khăn. Đây là bộ phim võ thuật tiếp theo của “ông vua” Thành Long, phim còn có sự tham gia của nam diễn viên thực lực trẻ tuổi Vương Đại Lục và cựu thành viên nhóm nhạc EXO- Hoàng Tử Thao. ', 0, NULL, NULL),
 (11, 'Đột Kích Màn Đêm (2017)', 'Sleepless (2017)', '', '', '', '', 2017, '00:00:00', '5.6', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqTExqZUlFODdoUHM/preview', 'Sleepless.2017.jpg', 1, 8, 'Sau khi phi vụ vận chuyển ma túy trái phép gặp thất bại bởi hai cảnh sát Vincent Downs (Jamie Foxx) và Sean (Tip T.I. Harris), gã chủ sòng bài Stan Rubino (Dermot Mulroney) quyết định ra tay trả thù bằng cách bắt cóc con trai của Vincent (Octavius J. Johnson).\r\nBị truy đuổi bởi cả thanh tra đến từ Sở Nội vụ là Jen Bryant (Michelle Monaghan) lẫn những tên trùm khét tiếng, viên sĩ quan da màu buộc phải dựa vào bản năng để có thể giải cứu con trai mình ngay trong đêm định mệnh. ', 0, NULL, NULL),
 (12, 'Đại Hiệp Triển Chiêu (2003)', 'Cat And Mouse (2003)', '', '', '', '', 2003, '00:00:00', '5.3', '', 'https://drive.google.com/file/d/0Bz7FgiHfhIxqRVhvbS1xTm5VWXc/preview', 'Cat.And.Mouse.2003.jpg', 1, 11, 'Trong phim Đại Hiệp Triển Chiêu, Bao Thanh Thiên là vị quan nổi tiếng nhất huyện Khai Phong thời Bắc Tống.Nhờ có ông mà dân chúng có được một cuộc sống ấm no hạnh phúc. Trong phim online này, Triển Chiêu là một trong những thủ hạ tâm đắc nhất của ông.Nhưng là một kẻ yêu thích sự tự do tự tại, cuộc sống nơi quan trường khiến Triển Chiêu cảm thấy nhàm chán.Anh liền đi chu du tứ hải hành hiệp trượng nghĩa.Trong một lần hành động,Triển Chiêu đã gặp phải một người bạn vừa đáng sợ vừa quan trọng trong cuộc đời của anh, Cẩm Mao Thử - Bạch Ngọc Đường.Và cũng xuất hiện 1 người con gái rất yêu anh nhưng cuối cùng lại ko có được anh - Nguyệt Hoa công chúa. Xem phim Đại Hiệp Triển Chiêu và hy vọng bộ phim sẽ mang lại những giờ phút thư giãn cho các bạn! \r\n', 0, NULL, NULL),
@@ -224,7 +248,34 @@ INSERT INTO `phim` (`id_phim`, `tenphim_vn`, `tenphim_en`, `daodien`, `kichban`,
 (66, 'aldlfladf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[4,5,6]', 2018, '00:01:34', '7.6', '', '', '', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:41:05'),
 (67, 'aldlfladf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', '7.6', '', '', '', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:41:27'),
 (68, 'sdfasdfdsaf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', '7.6', '', '', 'img/poster/Black_Panther1.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:48:22'),
-(69, 'adfadf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', '7.6', '', '', 'Black_Panther2.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:50:42');
+(69, 'adfadf', 'Black Panther', '1', '[\"1\",\"2\",\"3\",\"4\",\"5\"]', '[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"]', '[\"4\",\"5\",\"6\"]', 2018, '00:01:34', '7.6', '', '', 'Black_Panther2.jpg', 0, 0, '', 0, 'http://www.youtube.com/watch?v=xjDjIWPwcPU', '2018-06-17 18:50:42'),
+(70, 'ádfsd', 'Jurassic World: Fallen Kingdom', '11', '[\"7\",\"8\",\"9\"]', '[\"124\",\"125\",\"126\",\"127\",\"128\",\"129\",\"130\",\"131\",\"132\",\"133\",\"134\",\"135\"]', '[\"4\"]', 2018, '00:01:29', '0.0', '', '', 'Jurassic_World_Fallen_Kingdom.jpg', 1, 0, '', 0, 'https://www.youtube.com/embed/vn9mMeWcgoM', '2018-09-10 00:33:48');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `slide`
+--
+
+DROP TABLE IF EXISTS `slide`;
+CREATE TABLE IF NOT EXISTS `slide` (
+  `id_slide` int(11) NOT NULL AUTO_INCREMENT,
+  `id_phim` int(11) NOT NULL,
+  `poster` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `background` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `date` datetime NOT NULL,
+  `vitri` int(11) NOT NULL,
+  PRIMARY KEY (`id_slide`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `slide`
+--
+
+INSERT INTO `slide` (`id_slide`, `id_phim`, `poster`, `background`, `status`, `date`, `vitri`) VALUES
+(5, 5, 'La.La.Land.2016.jpg', 'Ballerina_2016.jpg', 1, '2018-09-16 22:46:20', 10),
+(6, 9, 'Ballerina.2016.jpg', 'Ballerina_20161.jpg', 1, '2018-09-19 19:26:34', 9);
 
 -- --------------------------------------------------------
 
@@ -239,7 +290,7 @@ CREATE TABLE IF NOT EXISTS `theloai` (
   `tentheloai_kd` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id_theloai`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `theloai`
@@ -248,7 +299,10 @@ CREATE TABLE IF NOT EXISTS `theloai` (
 INSERT INTO `theloai` (`id_theloai`, `tentheloai`, `tentheloai_kd`, `status`) VALUES
 (4, 'Hành động', 'Hanh-dong', 1),
 (5, 'Phưu lưu', 'Phuu-luu', 1),
-(6, 'Viễn tưởng', 'Vien-tuong', 1);
+(6, 'Viễn tưởng', 'Vien-tuong', 1),
+(7, 'Hài hước', 'Hai-huoc', 1),
+(8, 'Hoạt hình', 'Hoat-hinh', 1),
+(10, 'Tên thể loại', 'Ten_the_loai', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
