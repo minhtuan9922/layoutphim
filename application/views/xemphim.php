@@ -72,6 +72,10 @@
 							</div>
 							<div class="tieude">
 								<a href="<?=base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])) ?>"><?=$item['tenphim_vn'] ?></a>
+								<div class="nut-play-trailer">
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#trailer" onClick="play_trailer(<?=$item['id_phim'] ?>)">Trailer</button>
+									<a href="<?=base_url('xemphim/'.$item['id_phim'].'/'.$this->chuanhoa->convert_vi_to_en($item['tenphim_vn'])) ?>" class="btn btn-danger">Play</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -87,5 +91,33 @@
 		</div>
 	</div>
 </div>
-
+<!-- The Modal -->
+<div class="modal fade" id="trailer">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content trailer">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" id="trailer_youtube"  src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function play_trailer(id) {
+		$.ajax({
+			dataType: "JSON",
+			method: "POST",
+			url: "<?=base_url('home/trailer'); ?>",
+			data:{id:id},
+			success: function(result)
+			{
+				if(result.trailer) {
+					$('#trailer iframe').attr('src', result.trailer);
+				}
+			}
+		});
+	}
+	$("#trailer").on('hidden.bs.modal', function () {
+		$('#trailer iframe').attr('src', '');
+	});
+</script>
 

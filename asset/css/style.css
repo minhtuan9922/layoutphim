@@ -56,6 +56,8 @@ body {
 	width: 200px;
 	height: calc(100vh - 56px);
 	position: fixed;
+	display: block;
+	z-index: 1;
 }
 .menu-left ul {
 	padding-left: 0;
@@ -109,4 +111,29 @@ body {
 .login-height {
 	height: 100vh;
 	min-height: 500px;
+}
+.icon-menuleft {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	display: none;
+	z-index: 1;
+}
+.btn-showmenu {
+	background-color: transparent;
+	padding: 0;
+	font-size: 60px;
+	opacity: 0.3;
+}
+.btn-showmenu:hover {
+	opacity: 1;
+}
+@media(max-width: 768px) {
+	.menu-left {
+		display: none;
+	}
+	.icon-menuleft {
+		display: block;
+	}
 }

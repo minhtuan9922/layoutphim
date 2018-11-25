@@ -59,12 +59,12 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="email" class="text-light">Email</label>
-						<input type="email" id="email" name="email" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
+						<label for="email_dangnhap" class="text-light">Email</label>
+						<input type="email" id="email_dangnhap" name="email_dangnhap" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
 					</div>
 					<div class="form-group">
-						<label for="matkhau" class="text-light">Mật khẩu</label>
-						<input type="password" id="matkhau" name="matkhau" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
+						<label for="matkhau_dangnhap" class="text-light">Mật khẩu</label>
+						<input type="password" id="matkhau_dangnhap" name="matkhau_dangnhap" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
 					</div>
 				</div>
 				<div class="modal-footer border-t-dark">
@@ -87,12 +87,12 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label for="email" class="text-light">Email</label>
-						<input type="email" id="email" name="email" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
+						<label for="email_dangky" class="text-light">Email</label>
+						<input type="email" id="email_dangky" name="email_dangky" class="form-control bg-secondary input-dark text-light" placeholder="Nhập email">
 					</div>
 					<div class="form-group">
-						<label for="matkhau" class="text-light">Mật khẩu</label>
-						<input type="password" id="matkhau" name="matkhau" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
+						<label for="matkhau_dangky" class="text-light">Mật khẩu</label>
+						<input type="password" id="matkhau_dangky" name="matkhau_dangky" class="form-control bg-secondary input-dark text-light" placeholder="Nhập mật khẩu">
 					</div>
 					<div class="form-group">
 						<label for="nhaplai_matkhau" class="text-light">Nhập lại mật khẩu</label>
@@ -103,7 +103,7 @@
 						<input type="date" id="ngaysinh" name="ngaysinh" class="form-control bg-secondary input-dark text-light">
 					</div>
 					<div class="form-group">
-						<label for="matkhau" class="text-light">Giới tính</label>
+						<label for="gioitinh" class="text-light">Giới tính</label>
 						<select class="form-control bg-secondary input-dark text-light">
 							<option>Chọn giới tính</option>
 							<option value="1">Nam</option>

@@ -21,7 +21,7 @@
 		</ul>
 	</div>
 </nav>
-<div class="menu-left bg-dark">
+<div class="menu-left bg-dark" id="menuleft">
 	<div id="accordion">
 		<div class="card">
 			<div class="card-header">
@@ -82,7 +82,32 @@
 				</div>
 			</div>
 		</div>
+		<div class="card">
+			<div class="card-header">
+				<a class="collapsed card-link text-light <?php if($this->uri->segment(2) == 'user') echo 'active'; ?>" data-toggle="collapse" data-parent="#accordion" href="#user"><i class="fas fa-users"></i> Quản trị viên</a>
+			</div>
+			<div id="user" class="collapse <?php if($this->uri->segment(2) == 'user') echo 'show'; ?>">
+				<div class="card-body">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/user') echo 'active'; ?>" href="<?=base_url('admin/user') ?>"><i class="fas fa-list-ul"></i> Danh sách</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light <?php if($this->uri->uri_string() == 'admin/user/them') echo 'active'; ?>" href="<?=base_url('admin/user/them') ?>"><i class="fas fa-plus"></i> Thêm quản trị viên</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		
 
 	</div>
 </div>
+<div class="icon-menuleft">
+	<button class="btn btn-showmenu"><i class="fas fa-caret-right"></i></button>
+</div>
+<script>
+	$('.btn-showmenu').click(function() {
+		$('#menuleft').toggle('slow');
+	});
+</script>
