@@ -21,7 +21,7 @@ class Login extends CI_Controller {
 			$account = $this->input->post('account');
 			$password = md5($this->input->post('password'));
 			$check = $this->madmin->dangnhap($account,$password);
-			if(count($check) != 0)
+			if(!empty($check))
 			{
 				$this->session->set_userdata("admin_id", $check['id']);
 				redirect(base_url('admin'));

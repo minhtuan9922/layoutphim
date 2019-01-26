@@ -19,7 +19,7 @@ class Madmin extends CI_Model{
 		$this->db->from('admin');
 		$this->db->where('account', $account);
 		$kq = $this->db->get()->row_array();
-		if(count($kq) != 0)
+		if(!empty($kq))
 		{
 			return FALSE;
 		}
@@ -33,9 +33,9 @@ class Madmin extends CI_Model{
 		$this->db->select('*');
 		$this->db->from('admin');
 		$this->db->where('password', md5($password));
-		$this->db->where('id_admin', $id);
+		$this->db->where('id', $id);
 		$kq = $this->db->get()->row_array();
-		if(count($kq) == 0)
+		if(empty($kq))
 		{
 			return FALSE;
 		}
@@ -59,19 +59,19 @@ class Madmin extends CI_Model{
 	}
 	public function xoa_ad($id)
 	{
-		$this->db->where('id_admin', $id);
+		$this->db->where('id', $id);
 		return $this->db->delete('admin');
 	}
-	public function chinhsua($id)
+	public function get_user($id)
 	{
 		$this->db->select('*');
 		$this->db->from('admin');
-		$this->db->where('id_admin', $id);
+		$this->db->where('id', $id);
 		return $this->db->get()->row_array();
 	}
 	public function capnhat($data=array(),$id)
 	{
-		$this->db->where('id_admin',$id);
+		$this->db->where('id',$id);
         return $this->db->update('admin',$data);
 	}
 	public function edit($account)

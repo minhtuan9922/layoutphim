@@ -129,6 +129,9 @@ body {
 .btn-showmenu:hover {
 	opacity: 1;
 }
+.text-red {
+	color: red;
+}
 @media(max-width: 768px) {
 	.menu-left {
 		display: none;
