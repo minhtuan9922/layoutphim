@@ -281,12 +281,17 @@ class Phim extends CI_Controller {
 			$nam_sanxuat = $xml->ProductionYear;
 			$diem_imdb = $xml->IMDBrating;
 			$thoiluong = $xml->RunningTime;
+			if((int)$thoiluong > 0)
+			{
+				$thoiluong = (int)($thoiluong / 60).':'.($thoiluong % 60).':00';
+			}
 			$daodien = $xml->Director;
 			$kichban = str_replace('|', ',', $xml->WritersList);
 			$tieude = $xml->LocalTitle;
 			$theloai = $xml->Genres;
 			$dienvien = $xml->Persons;
 			$trailer = $xml->Trailer;
+			$gioithieu = $xml->Overview;
 			
 			$dulieu = '{
 				"tenphim_en":"'.$tenphim_en.'",
@@ -295,7 +300,8 @@ class Phim extends CI_Controller {
 				"thoiluong":"'.$thoiluong.'",
 				"daodien":"'.$daodien.'",
 				"kichban":"'.$kichban.'",
-				"trailer":"'.($trailer).'"
+				"trailer":"'.$trailer.'",
+				"gioithieu":"'.$gioithieu.'"
 				';
 			$theloai_tam = '';
 			foreach($theloai->Genre as $val)

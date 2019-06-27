@@ -1,250 +1,409 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Title>
-	<LocalTitle>Jurassic World: Fallen Kingdom</LocalTitle>
-	<OriginalTitle>Jurassic World: Fallen Kingdom</OriginalTitle>
+	<LocalTitle>Bumblebee</LocalTitle>
+	<OriginalTitle>Bumblebee</OriginalTitle>
 	<ProductionYear>2018</ProductionYear>
-	<Added>9/8/2018 1:14:37 PM</Added>
-	<IMDBrating>0.0</IMDBrating>
+	<Added>3/25/2019 9:06:37 PM</Added>
+	<IMDBrating>7.0</IMDBrating>
 	<ContentRating>PG-13</ContentRating>
 	<MPAARating>PG-13</MPAARating>
-	<IMDB>tt4881806</IMDB>
-	<IMDbId>tt4881806</IMDbId>
-	<TMDbId>351286</TMDbId>
-	<Budget>170000000</Budget>
-	<Revenue>1290354745</Revenue>
+	<IMDB>tt4701182</IMDB>
+	<IMDbId>tt4701182</IMDbId>
+	<TMDbId>424783</TMDbId>
+	<Budget>135000000</Budget>
+	<Revenue>420361283</Revenue>
 	<Language>English</Language>
 	<LanguageCode>en</LanguageCode>
 	<Country>US</Country>
-	<RunningTime>129</RunningTime>
-	<Overview>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Overview>
+	<RunningTime>114</RunningTime>
+	<Overview>On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.</Overview>
 	<Genres>
 		<Genre>Action</Genre>
 		<Genre>Adventure</Genre>
 		<Genre>Sci-Fi</Genre>
 	</Genres>
 	<Studios>
-		<Studio>Amblin Entertainment</Studio>
-		<Studio>Apaches Entertainment</Studio>
-		<Studio>Legendary Entertainment</Studio>
-		<Studio>Universal Pictures</Studio>
-		<Studio>Perfect World Pictures</Studio>
-		<Studio>The Kennedy/Marshall Company</Studio>
+		<Studio>Hasbro</Studio>
+		<Studio>Paramount</Studio>
+		<Studio>Allspark Pictures</Studio>
+		<Studio>Bay Films</Studio>
+		<Studio>Di Bonaventura Pictures</Studio>
+		<Studio>Tencent Pictures</Studio>
+		<Studio>Tom DeSanto/Don Murphy Production</Studio>
 	</Studios>
 	<Persons>
 		<Person>
-			<Name>Chris Pratt</Name>
+			<Name>Hailee Steinfeld</Name>
 			<Type>Actor</Type>
-			<Role>Owen Grady</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/gXKyT1YU5RWWPaE1je3ht58eUZr.jpg</Image>
+			<Role>Charlie Watson</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/vKwqK9DIlvoQlodbRTONWSghLk4.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Bryce Dallas Howard</Name>
+			<Name>Jorge Lendeborg Jr.</Name>
 			<Type>Actor</Type>
-			<Role>Claire Dearing</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7HIHalGGoJd101Wt3Y78Znfiohj.jpg</Image>
+			<Role>Memo</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jDkT3Yf2AWG21Iy8l7cakTEncJU.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Rafe Spall</Name>
+			<Name>John Cena</Name>
 			<Type>Actor</Type>
-			<Role>Eli Mills</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7ucsDEWvcMU4SpxtZEaYErPpXHh.jpg</Image>
+			<Role>Agent Jack Burns</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/WbnZd6SK3DRlQBBW1yP1xHwlbs.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Justice Smith</Name>
+			<Name>Jason Ian Drucker</Name>
 			<Type>Actor</Type>
-			<Role>Franklin Webb</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/9G8pKfvfbqs5fmRo0VtlHqxdVBQ.jpg</Image>
+			<Role>Otis Watson</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/5byvFfK7a34A2VDAI9comnI8h96.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Daniella Pineda</Name>
+			<Name>Pamela Adlon</Name>
 			<Type>Actor</Type>
-			<Role>Zia Rodriguez</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/AdmgjO8pLFqN1H40uo7Ws4h6IyK.jpg</Image>
+			<Role>Sally Watson</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/DbStLMSMhW1qtmKugYjS4yWOi.jpg</Image>
 		</Person>
 		<Person>
-			<Name>James Cromwell</Name>
+			<Name>Stephen Schneider</Name>
 			<Type>Actor</Type>
-			<Role>Benjamin Lockwood</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/f9HU6zS2K2DCRt2WoJBK61ElqPJ.jpg</Image>
+			<Role>Ron</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/khnkVoCxiUXzAhkQl1rrUwK2Ygt.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Toby Jones</Name>
+			<Name>Ricardo Hoyos</Name>
 			<Type>Actor</Type>
-			<Role>Mr. Eversoll</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/eOZe7EZ0Ojq8PaIn1HLVex5dZwc.jpg</Image>
+			<Role>Tripp</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/ja4ktQZgFKUlDrOsiA9nHeXUCCh.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Ted Levine</Name>
+			<Name>John Ortiz</Name>
 			<Type>Actor</Type>
-			<Role>Ken Wheatley</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/7O3vgqgicfNeGr3leC0qB074fjX.jpg</Image>
+			<Role>Dr. Powell</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/6EXZm45aPUOERq2rCrUnkz3sGoc.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Jeff Goldblum</Name>
+			<Name>Glynn Turman</Name>
 			<Type>Actor</Type>
-			<Role>Ian Malcolm</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/kcyEPgYtBP5Pm6LLeLGfXKjYovL.jpg</Image>
+			<Role>General Whalen</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/yEW4JrFPyTTsoSeDQYwHxBihMuM.jpg</Image>
 		</Person>
 		<Person>
-			<Name>BD Wong</Name>
+			<Name>Len Cariou</Name>
 			<Type>Actor</Type>
-			<Role>Dr. Wu</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/w7Hs9m6ocS2qlibvrLOvmyCKbAN.jpg</Image>
+			<Role>Hank</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/sXYaqG6en0MGbXG0zpVaWD7y76W.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Geraldine Chaplin</Name>
+			<Name>Kollin Holtz</Name>
 			<Type>Actor</Type>
-			<Role>Iris</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/mnPoiJrhJjJArySW8wMpf84pCxu.jpg</Image>
+			<Role>Craig</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/bMXTK1qcL2qAa9xqHggmJQJNc6T.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Isabella Sermon</Name>
+			<Name>Gracie Dzienny</Name>
 			<Type>Actor</Type>
-			<Role>Maisie Lockwood</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/17lNC9C1mNuP0o5AJamwTJ9oaD5.jpg</Image>
+			<Role>Tina</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/efqHAnG95i6HYVAeNic9TwoatkJ.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Peter Jason</Name>
+			<Name>Fred Dryer</Name>
 			<Type>Actor</Type>
-			<Role>Senator Sherwood</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/2VqCiv4R0kZW1Nwi60fIzmHKxpc.jpg</Image>
+			<Role>Sheriff Lock</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/glUDeSN7nMbmCfAVpIAtaDaoXaS.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Charlie Rawes</Name>
+			<Name>Isabelle Ellingson</Name>
 			<Type>Actor</Type>
-			<Role>Lead Mercenary</Role>
+			<Role>Mean Girlfriend</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/rQJBoxcHYE8NuRQqb4XDE53H525.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Mika Kubo</Name>
+			<Type>Actor</Type>
+			<Role>Mean Girlfriend</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/4cUGvZXqqIk7DR6dI2OX8ZkEKs3.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Felicia Stiles</Name>
+			<Type>Actor</Type>
+			<Role>Party Goer</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jU0Mc0bs8orxXcnSFWDc0YPDZBf.jpg</Image>
+		</Person>
+		<Person>
+			<Name>George Anagnostou</Name>
+			<Type>Actor</Type>
+			<Role>Party Goer</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/AlnRuf4mfeDGA3wOxo2NUuyMn3i.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Brandon Wardle</Name>
+			<Type>Actor</Type>
+			<Role>Party Goer</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/rE3qaiJy7AQ19OsKXtVejK9Lg0C.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Lenny Jacobson</Name>
+			<Type>Actor</Type>
+			<Role>Roy</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/pDRDMPsU85iEIc5JD7z3l9SQRTW.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Megyn Price</Name>
+			<Type>Actor</Type>
+			<Role>Amber</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/w9qgCVeCr6hs4ALzEDWMKG8jpvJ.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Krystin Goodwin</Name>
+			<Type>Actor</Type>
+			<Role>News Reporter</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/tOgst4BvSOtinyHsTXOBm9ZTJCY.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Nick Pilla</Name>
+			<Type>Actor</Type>
+			<Role>Young Agent Simmons</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/auj3cP6112l5AQYkmNOFQNBuPDY.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Sachin Bhatt</Name>
+			<Type>Actor</Type>
+			<Role>Pilot Hutton</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/usAEiMkX0ZQuIB7xDvbRLdpPLUJ.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Tim Martin Gleason</Name>
+			<Type>Actor</Type>
+			<Role>Charlie's Dad</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/gvpkprhsn1kO8p5mqy5ekcuHSAX.jpg</Image>
+		</Person>
+		<Person>
+			<Name>David Waters</Name>
+			<Type>Actor</Type>
+			<Role>Impatient Guy</Role>
 			<Image />
 		</Person>
 		<Person>
-			<Name>Kevin Layne</Name>
+			<Name>Antonio D. Charity</Name>
 			<Type>Actor</Type>
-			<Role>Sub Pilot</Role>
+			<Role>Bill The Mechanic</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/S8T0ABox1qJYbl84GWkQNU7wvZ.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Courtney Coker</Name>
+			<Type>Actor</Type>
+			<Role>Young Agent</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/40kWsdvxjZUm1L5NvKdl9kRwECO.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Edwin Hodge</Name>
+			<Type>Actor</Type>
+			<Role>Danny</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/oC56KKxXBufH182bw4QwtsZ5Jj6.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Jake Huang</Name>
+			<Type>Actor</Type>
+			<Role>Danny's Paintball Team</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/tJEsZN9FaQXDfMcSPFnEDwuyxkN.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Holland Diaz</Name>
+			<Type>Actor</Type>
+			<Role>Danny's Paintball Team</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/UotsXobHgwli9DrlCnAExxXGqk.jpg</Image>
+		</Person>
+		<Person>
+			<Name>David Cutler</Name>
+			<Type>Actor</Type>
+			<Role>Danny's Paintball Team</Role>
 			<Image />
 		</Person>
 		<Person>
-			<Name>Robert Emms</Name>
+			<Name>Lars Slind</Name>
 			<Type>Actor</Type>
-			<Role>Tech Merc</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/4wdONknsZLWHpH2NSyk0FyPPO8A.jpg</Image>
+			<Role>Humvee Driver</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/yTMrzD012icPAU9Kzlwh4ROJutM.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Michael Papajohn</Name>
+			<Name>Dylan O'Brien</Name>
 			<Type>Actor</Type>
-			<Role>InGen Contractor (uncredited)</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/9nVHCoYxCpGh9pO00xp7SybWd7b.jpg</Image>
+			<Role>B-127 / Bumblebee (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/gmU3f4aR6Bd8zkk6AiLm0dvWPaE.jpg</Image>
 		</Person>
 		<Person>
-			<Name>Daniel Stisen</Name>
+			<Name>Peter Cullen</Name>
 			<Type>Actor</Type>
-			<Role>Russian Bodyguard (uncredited)</Role>
-			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jhyIFfBnM5nLhHdpFiGIW6qk9x5.jpg</Image>
+			<Role>Optimus Prime (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/bEOlxkKjGKRHIwUDfPN3JlFffpx.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Angela Bassett</Name>
+			<Type>Actor</Type>
+			<Role>Shatter (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/qvIFNQLWzWyqjykiU0ONQ7u6Ihz.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Justin Theroux</Name>
+			<Type>Actor</Type>
+			<Role>Dropkick (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/vnI9L0rXBAw1HeC0Q8hJGeJMGAW.jpg</Image>
+		</Person>
+		<Person>
+			<Name>David Sobolov</Name>
+			<Type>Actor</Type>
+			<Role>Blitzwing (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/lUXbnlyQPsfAGg0oinCtj6KlOkt.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Grey DeLisle</Name>
+			<Type>Actor</Type>
+			<Role>Arcee (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/b2Viqswr0mAULRfPqeA0J40icyy.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Jon Bailey</Name>
+			<Type>Actor</Type>
+			<Role>Shockwave / Soundwave (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/jk211le3CThwhOIPBK2FsV9sSJC.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Steve Blum</Name>
+			<Type>Actor</Type>
+			<Role>Wheeljack (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/cpO0muunoigq1WHegeOEI1AIQAo.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Andrew Morgado</Name>
+			<Type>Actor</Type>
+			<Role>Cliffjumper (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/rDkWTPcsFtw5MQCi1qxSXXZlXG2.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Kirk Baily</Name>
+			<Type>Actor</Type>
+			<Role>Brawn / Seekers (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/pu0kg7Nbaw028jnQlQXLO5ZGaZk.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Dennis Singletary</Name>
+			<Type>Actor</Type>
+			<Role>Ratchet (voice)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/rlUQcql7XFfIWBNccKvIW0WnIPW.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Vanessa Ross</Name>
+			<Type>Actor</Type>
+			<Role>The Mean Girl (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/pfEABf4uwcd4gRIJz9b4aOaPEtl.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Tony Toste</Name>
+			<Type>Actor</Type>
+			<Role>Roller Coaster Rider (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/arlPM0nBiBJFhG9lr7z42UO4PGK.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Nico Abiera</Name>
+			<Type>Actor</Type>
+			<Role>Boardwalk Patron (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/ibAJLZ9p3hTOScJCK8Uk1vGyc5K.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Jiana Alvarez</Name>
+			<Type>Actor</Type>
+			<Role>Teen Party Goer / Mean Girl (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/yQQ0WPVNt46fGETsyeuklMMY74J.jpg</Image>
+		</Person>
+		<Person>
+			<Name>Yianni Apostolopolous</Name>
+			<Type>Actor</Type>
+			<Role>Teen Party Goer (uncredited)</Role>
+			<Image />
+		</Person>
+		<Person>
+			<Name>Jace Areff</Name>
+			<Type>Actor</Type>
+			<Role>Karate Studio Friend (uncredited)</Role>
+			<Image />
+		</Person>
+		<Person>
+			<Name>Manny Avina</Name>
+			<Type>Actor</Type>
+			<Role>Karate Student (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/1BXJJRzMKxopfFBlZUWzsEZMbQz.jpg</Image>
+		</Person>
+		<Person>
+			<Name>William W. Barbour</Name>
+			<Type>Actor</Type>
+			<Role>Neighbor (uncredited)</Role>
+			<Image>https://image.tmdb.org/t/p/w300_and_h450_bestv2/pAqnTFZlnrVEdOzwvXu9jv0gwHZ.jpg</Image>
 		</Person>
 	</Persons>
-	<Awards></Awards>
-	<BackdropURL>http://image.tmdb.org/t/p/original/3s9O5af2xWKWR5JzP2iJZpZeQQg.jpg</BackdropURL>
-	<Director>J. A. Bayona</Director>
-	<FullCertifications></FullCertifications>
-	<FormalMPAA></FormalMPAA>
-	<Votes>125064</Votes>
-	<Synopsis>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Synopsis>
-	<Plot>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Plot>
-	<Outline>Three years after the Jurassic World theme park was closed down, Owen and Claire return to Isla Nublar to save the dinosaurs when they learn that a once dormant volcano on the island is active and is threatening to extinguish all life there. Along the way, Owen sets out to find Blue, his lead raptor, and discovers a conspiracy that could disrupt the natural order of the entire planet. Life has found a way, again.</Outline>
-	<ShortDescription>Three years after the Jurassic World theme park was closed down, Owen and Claire return to Isla Nublar to save the dinosaurs when they learn that a once dormant volcano on the island is active and is threatening to extinguish all life there. Along the way, Owen sets out to find Blue, his lead raptor, and discovers a conspiracy that could disrupt the natural order of the entire planet. Life has found a way, again.</ShortDescription>
-	<PosterURL>http://image.tmdb.org/t/p/original/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg</PosterURL>
-	<Tagline>The park is gone</Tagline>
+	<Awards>3 nominations.</Awards>
+	<BackdropURL>http://image.tmdb.org/t/p/original/wtZj5nn6hVwgakPdg6y6gm3eFXU.jpg</BackdropURL>
+	<Director>Travis Knight</Director>
+	<FullCertifications>Argentina:13, Australia:M, Australia:PG, Austria:12, Brazil:12, Brazil:10, Canada:PG, Canada:G, Denmark:7, Finland:K-12, France:Tous publics, Germany:12, Hong Kong:IIA, Hungary:12, Iceland:12, India:UA, Indonesia:13+, Ireland:12A, Italy:T, Japan:G, Lithuania:N-13, Luxembourg:12, Malaysia:P13, Maldives:15+, Malta:12A, Mexico:B, Netherlands:12, New Zealand:PG, Nigeria:15, Norway:12, Philippines:PG-13, Portugal:M/12, Singapore:PG13, South Africa:10-12, South Korea:12, Spain:7, Sweden:11, Switzerland:12, Taiwan:PG-12, Thailand:13, Turkey:13A, United Kingdom:PG, United Kingdom:PG, United Kingdom:12A, United States:PG-13, Vietnam:C13</FullCertifications>
+	<FormalMPAA>Rated PG-13 for sequences of sci-fi action violence</FormalMPAA>
+	<Votes>63710</Votes>
+	<Synopsis>On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.</Synopsis>
+	<Plot>On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.</Plot>
+	<Outline>On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.</Outline>
+	<ShortDescription>On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.</ShortDescription>
+	<PosterURL>http://image.tmdb.org/t/p/original/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg</PosterURL>
+	<Tagline>Every Hero Has a Beginning</Tagline>
 	<Taglines>
-		<Tagline>The park is gone</Tagline>
+		<Tagline>Every Hero Has a Beginning</Tagline>
 	</Taglines>
 	<Top250></Top250>
-	<TrailerURL>http://www.youtube.com/watch?v=vn9mMeWcgoM</TrailerURL>
-	<Website>http://www.jurassicworld.com</Website>
-	<ReleaseDate>2018-06-06</ReleaseDate>
-	<WritersList>Derek Connolly|Colin Trevorrow|Michael Crichton</WritersList>
-	<Popularity>163.502</Popularity>
-	<VoteCount>3034</VoteCount>
-	<TMDbCollectionId>328</TMDbCollectionId>
-	<CollectionNumber>328</CollectionNumber>
-	<CollectionName>Jurassic Park</CollectionName>
+	<TrailerURL>http://www.youtube.com/watch?v=fAIX12F6958</TrailerURL>
+	<Website>http://bumblebeemovie.com</Website>
+	<ReleaseDate>2018-12-15</ReleaseDate>
+	<WritersList>Christina Hodson|Christina Hodson</WritersList>
+	<Popularity>359.316</Popularity>
+	<VoteCount>1533</VoteCount>
+	<TMDbCollectionId>0</TMDbCollectionId>
+	<CollectionNumber>0</CollectionNumber>
 	<Tags>
-		<Tag>tyrannosaurus rex</Tag>
-		<Tag>volcano</Tag>
-		<Tag>sequel</Tag>
-		<Tag>rescue mission</Tag>
-		<Tag>wild animal</Tag>
-		<Tag>dinosaur</Tag>
-		<Tag>genetic engineering</Tag>
-		<Tag>prehistoric creature</Tag>
-		<Tag>aftercreditsstinger</Tag>
-		<Tag>monster island</Tag>
+		<Tag>technology</Tag>
+		<Tag>based on toy</Tag>
+		<Tag>transformers</Tag>
+		<Tag>robot</Tag>
+		<Tag>spin off</Tag>
+		<Tag>1980s</Tag>
+		<Tag>autobot</Tag>
 	</Tags>
 	<SimilarMovies>
-		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
-		<SimilarMovie>Jurassic Park</SimilarMovie>
-		<SimilarMovie>Ice Age</SimilarMovie>
-		<SimilarMovie>Jurassic World</SimilarMovie>
-		<SimilarMovie>Dinosaur</SimilarMovie>
-		<SimilarMovie>The Good Dinosaur</SimilarMovie>
-		<SimilarMovie>The Land Before Time</SimilarMovie>
-		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
-		<SimilarMovie>Journey to the Center of the Earth</SimilarMovie>
-		<SimilarMovie>We're Back! A Dinosaur's Story</SimilarMovie>
-		<SimilarMovie>Age of Dinosaurs</SimilarMovie>
-		<SimilarMovie>One Million Years B.C.</SimilarMovie>
-		<SimilarMovie>The People That Time Forgot</SimilarMovie>
-		<SimilarMovie>The Lost World</SimilarMovie>
-		<SimilarMovie>Minions: Cro Minion</SimilarMovie>
-		<SimilarMovie>Dinosaur 13</SimilarMovie>
+		<SimilarMovie>Terminator Genisys</SimilarMovie>
+		<SimilarMovie>Chappie</SimilarMovie>
+		<SimilarMovie>The Matrix Revolutions</SimilarMovie>
+		<SimilarMovie>Terminator 3: Rise of the Machines</SimilarMovie>
+		<SimilarMovie>I, Robot</SimilarMovie>
+		<SimilarMovie>Automata</SimilarMovie>
+		<SimilarMovie>Ex Machina</SimilarMovie>
+		<SimilarMovie>Interstellar</SimilarMovie>
+		<SimilarMovie>A.I. Artificial Intelligence</SimilarMovie>
+		<SimilarMovie>Transcendence</SimilarMovie>
+		<SimilarMovie>2001: A Space Odyssey</SimilarMovie>
+		<SimilarMovie>The Matrix Reloaded</SimilarMovie>
+		<SimilarMovie>Terminator Salvation</SimilarMovie>
+		<SimilarMovie>The Terminator</SimilarMovie>
+		<SimilarMovie>Prometheus</SimilarMovie>
+		<SimilarMovie>Escape Plan 2: Hades</SimilarMovie>
+		<SimilarMovie>Rogue One: A Star Wars Story</SimilarMovie>
+		<SimilarMovie>Blade Runner 2049</SimilarMovie>
+		<SimilarMovie>Ready Player One</SimilarMovie>
 	</SimilarMovies>
 	<OtherID_RottenTomatoes></OtherID_RottenTomatoes>
 	<RottenTomatoesId></RottenTomatoesId>
 	<CriticRating></CriticRating>
 	<CriticRatingSummary></CriticRatingSummary>
-	<IMDB_ID>tt4881806</IMDB_ID>
-	<TMDB>351286</TMDB>
-	<TMDB_ID>351286</TMDB_ID>
-	<Rating>0.0</Rating>
+	<IMDB_ID>tt4701182</IMDB_ID>
+	<TMDB>424783</TMDB>
+	<TMDB_ID>424783</TMDB_ID>
+	<Rating>7.0</Rating>
 	<certification>PG-13</certification>
-	<Trailer>http://www.youtube.com/watch?v=vn9mMeWcgoM</Trailer>
-	<Runtime>129</Runtime>
-	<Description>Three years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the isla Nublar, so Claire Dearing, the former park manager, recruits Owen Grady to help prevent the extinction of the dinosaurs once again.</Description>
-	<PremiereDate>2018-06-06</PremiereDate>
-	<VideoAspect>2.35:1</VideoAspect>
-	<VideoBitrate>4588000</VideoBitrate>
-	<VideoCodec>x264</VideoCodec>
-	<VideoCodecType>H.264</VideoCodecType>
-	<VideoCodecRaw>AVC</VideoCodecRaw>
-	<VideoFileSize>6484948073</VideoFileSize>
-	<VideoHeight>536</VideoHeight>
-	<VideoLength>128</VideoLength>
-	<VideoLengthSeconds>7698</VideoLengthSeconds>
-	<VideoQuality>Great (720p HD)</VideoQuality>
-	<VideoWidth>1280</VideoWidth>
-	<AudioBitrate>1536000</AudioBitrate>
-	<AudioChannels>5.1</AudioChannels>
-	<AudioCodec>DTS</AudioCodec>
-	<AudioCodecRaw>DTS Coherent Acoustics</AudioCodecRaw>
-	<AudioFrequency>48000</AudioFrequency>
-	<AspectRatio>2.39:1</AspectRatio>
-	<MediaInfo>
-		<Video>
-			<Codec>x264</Codec>
-			<FFCodec>H.264</FFCodec>
-			<BitRate>4588000</BitRate>
-			<Height>536</Height>
-			<Width>1280</Width>
-			<FrameRate>23.976</FrameRate>
-			<Duration>128</Duration>
-			<DurationSeconds>7698</DurationSeconds>
-			<ScanType>Progressive</ScanType>
-		</Video>
-		<Audio>
-			<Codec>DTS</Codec>
-			<FFCodec>DTS</FFCodec>
-			<Channels>6</Channels>
-			<BitRate>1536000</BitRate>
-			<Language>eng</Language>
-		</Audio>
-	</MediaInfo>
-	<VideoHasSubtitles>True</VideoHasSubtitles>
-	<Type></Type>
+	<Trailer>http://www.youtube.com/watch?v=fAIX12F6958</Trailer>
+	<Runtime>114</Runtime>
+	<Description>On the run in the year of 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.</Description>
+	<PremiereDate>2018-12-15</PremiereDate>
 </Title>

@@ -141,7 +141,7 @@
 			contentType: false, 
 		}).done(function(ketqua) {
 			var dulieu = JSON.parse(ketqua);
-			$('#tenphim_en').val(dulieu.tenphim_en);
+			$('#tenphim_en').val(dulieu.tenphim_en + ' (' + dulieu.nam_sanxuat + ')');
 			$('#daodien').val(dulieu.daodien);
 			$('#kichban').val(dulieu.kichban);
 			$('#dienvien').val(dulieu.dienvien);
@@ -150,6 +150,7 @@
 			$('#thoiluong').val(dulieu.thoiluong);
 			$('#diem_imdb').val(dulieu.diem_imdb);
 			$('#trailer').val(dulieu.trailer);
+			$('#gioithieu').val(dulieu.gioithieu);
 		});
 	}
 	function chonhinh() 
