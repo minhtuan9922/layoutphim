@@ -116,4 +116,9 @@ class Mphim extends CI_Model{
 		$this->db->limit(10);
 		return $this->db->get()->result_array();
 	}
+	public function capnhat_luotxem($id)
+	{
+		$this->db->query("update phim set luotxem = luotxem + 1 where id_phim = '".$id."'");
+		//file_put_contents('data_report/log.txt', time().PHP_EOL, FILE_APPEND | LOCK_EX);
+	}
 }

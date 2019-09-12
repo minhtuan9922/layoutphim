@@ -12,6 +12,7 @@ class Xemphim extends CI_Controller {
 	public function index($id)
 	{
 		$data['title'] = 'Xem phim | phimmt';
+		$this->mphim->capnhat_luotxem($id);
 		$phim = $this->mphim->playphim($id);
 		
 		$kichban = json_decode($phim['kichban']);
@@ -70,9 +71,6 @@ class Xemphim extends CI_Controller {
 		);
 		
 		$data['phimcungtheloai'] = $this->mphim->phimcungtheloai($theloai, $phim['id_phim']);
-		
-		$luotxem = $phim['luotxem'] + 1;
-		$this->mphim->capnhat(array('luotxem' => $luotxem), $phim['id_phim']);
 		
 		$data['content'] = 'xemphim';
 		$this->load->view('index', $data);
